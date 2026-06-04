@@ -15,13 +15,41 @@ export const changelogEntries: ChangelogEntry[] = [
     {
         version: "1.0.0",
         date: "2026-06-04",
-        title: { en: "What's new is now here", cs: "Novinky máte nově tady" },
+        title: { en: "Subscriptions & plans", cs: "Předplatné a plány" },
         changes: [
             {
                 type: "added",
                 text: {
-                    en: "You can now see what's new in PowerTrainer on this page.",
-                    cs: "Nově zde uvidíte, co je v PowerTraineru nového.",
+                    en: "Subscriptions are here — upgrade to the Pro plan with secure Stripe checkout and manage your billing anytime from the customer portal.",
+                    cs: "Předplatné je tady — přejděte na plán Pro přes zabezpečenou platbu Stripe a fakturaci kdykoli spravujte v zákaznickém portálu.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Free and Pro plans for trainers: Pro raises the number of active athletes you can coach.",
+                    cs: "Plány Free a Pro pro trenéry: Pro zvyšuje počet aktivních atletů, které můžete trénovat.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "A new Subscription page shows your current plan, its status, and your payment details at a glance.",
+                    cs: "Nová stránka Předplatné přehledně zobrazuje váš aktuální plán, jeho stav a platební údaje.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "If a payment fails, you get an in-app notification with a one-click link to update your payment method.",
+                    cs: "Když platba selže, dostanete upozornění v aplikaci s odkazem na rychlou aktualizaci platební metody.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "A grace period keeps your access running while a failed payment is retried, so your coaching never stops abruptly.",
+                    cs: "Ochranná lhůta udrží váš přístup v provozu během opakování neúspěšné platby, takže vaše trénování náhle neskončí.",
                 },
             },
         ],
