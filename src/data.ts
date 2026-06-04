@@ -13,6 +13,27 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.0.1",
+        date: "2026-06-04",
+        title: { en: "Trainings & calendar redesign", cs: "Nový vzhled tréninků a kalendáře" },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "The trainings and calendar screens got a UX/UI rework — cleaner layout, clearer training events, and much better behavior on mobile, including a redesigned week view.",
+                    cs: "Obrazovky tréninků a kalendáře prošly úpravou UX/UI — přehlednější rozvržení, jasnější zobrazení tréninků a mnohem lepší chování na mobilu včetně přepracovaného týdenního zobrazení.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Smoother exercise detail view and a tidier trainings overview.",
+                    cs: "Vylepšený detail tréninku a přehled tréninků.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.0.0",
         date: "2026-06-04",
         title: { en: "Subscriptions & plans", cs: "Předplatné a plány" },
