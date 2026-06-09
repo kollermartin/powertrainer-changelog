@@ -13,6 +13,34 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.1.0",
+        date: "2026-06-08",
+        title: { en: "A calendar of our own", cs: "Vlastní kalendář" },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "The training calendar has been rebuilt from the ground up — faster and lighter, with a dedicated month view on desktop and a streamlined week view on mobile.",
+                    cs: "Tréninkový kalendář jsme přepracovali od základu — je rychlejší a lehčí, s vlastním měsíčním zobrazením na počítači a zjednodušeným týdenním zobrazením na mobilu.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Drag and drop a training onto another day to reschedule it instantly.",
+                    cs: "Přetáhněte trénink na jiný den a okamžitě jej přeplánujte.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Smoother drag-and-drop animations make moving trainings around feel effortless.",
+                    cs: "Plynulejší animace přetahování usnadňují přesouvání tréninků.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.0.1",
         date: "2026-06-04",
         title: { en: "Trainings & calendar redesign", cs: "Nový vzhled tréninků a kalendáře" },
