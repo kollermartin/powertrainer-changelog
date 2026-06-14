@@ -13,6 +13,34 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.2.0",
+        date: "2026-06-14",
+        title: { en: "Trainings 2.0 (beta)", cs: "Tréninky 2.0 (beta)" },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Introducing Trainings 2.0 (beta): build workouts set by set, giving each set its own reps, weight, and difficulty target instead of a single prescription for the whole exercise.",
+                    cs: "Představujeme Tréninky 2.0 (beta): sestavujte tréninky sérii po sérii — každá série může mít vlastní cíl pro opakování, váhu i obtížnost místo jednoho zadání pro celý cvik.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Athletes can log what they actually performed for each individual set, making progress tracking far more precise.",
+                    cs: "Atleti mohou zaznamenat, co skutečně odcvičili, pro každou jednotlivou sérii, takže sledování pokroku je mnohem přesnější.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Trainings 2.0 is an early beta running alongside the classic editor — your existing trainings keep working exactly as before, including drag-and-drop rescheduling on the calendar.",
+                    cs: "Tréninky 2.0 jsou v rané beta verzi a fungují vedle klasického editoru — vaše stávající tréninky fungují přesně jako dřív, včetně přeplánování přetažením v kalendáři.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.1.0",
         date: "2026-06-08",
         title: { en: "A calendar of our own", cs: "Vlastní kalendář" },
