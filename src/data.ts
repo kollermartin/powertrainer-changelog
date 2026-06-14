@@ -34,8 +34,8 @@ export const changelogEntries: ChangelogEntry[] = [
             {
                 type: "improved",
                 text: {
-                    en: "Trainings 2.0 is an early beta running alongside the classic editor — your existing trainings keep working exactly as before, including drag-and-drop rescheduling on the calendar.",
-                    cs: "Tréninky 2.0 jsou v rané beta verzi a fungují vedle klasického editoru — vaše stávající tréninky fungují přesně jako dřív, včetně přeplánování přetažením v kalendáři.",
+                    en: "Trainings 2.0 is in beta and works as a new training type. When creating a training you can choose between Classic training and Training 2.0. Each has its own editor and its own view. Everything will gradually be unified into Training 2.0.",
+                    cs: "Tréninky 2.0 jsou v beta verzi a fungují jako nový typ tréninku. Při vytváření tréninku máte na výběr Klasický trénink a Trénink 2.0. Každý z těchto tréninků má svůj vlastní editor a své zobrazení. Postupně bude vše sjednoceno do podoby Trénink 2.0.",
                 },
             },
         ],
