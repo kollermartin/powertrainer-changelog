@@ -13,6 +13,34 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.3.0",
+        date: "2026-06-17",
+        title: { en: "Trainings 2.0 is now standard", cs: "Tréninky 2.0 jsou nově standardem" },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "Trainings 2.0 is out of beta and is now the standard way to train. When you create a training it's always built set by set — the separate Classic option is gone.",
+                    cs: "Tréninky 2.0 opouštějí beta verzi a stávají se standardním způsobem tréninku. Nový trénink se nově vždy sestavuje sérii po sérii — samostatná volba Klasický trénink už není.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "All your existing trainings have been automatically upgraded to the new set-based format — there's nothing you need to do, and your uploaded videos stay attached.",
+                    cs: "Všechny vaše stávající tréninky byly automaticky převedeny do nového formátu se sériemi — nemusíte nic dělat a vaše nahraná videa zůstávají na svém místě.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Every training now opens in the same editor and the same view, so the experience is consistent everywhere.",
+                    cs: "Každý trénink se nově otevírá ve stejném editoru a zobrazení, takže máte všude jednotné prostředí.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.2.0",
         date: "2026-06-14",
         title: { en: "Trainings 2.0 (beta)", cs: "Tréninky 2.0 (beta)" },
