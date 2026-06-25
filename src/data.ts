@@ -13,6 +13,27 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.4.0",
+        date: "2026-06-25",
+        title: { en: "Your trainings on a calendar", cs: "Vaše tréninky v kalendáři" },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "Your trainings now live on a calendar instead of a plain list — browse any month on desktop or any week on mobile.",
+                    cs: "Vaše tréninky se nově zobrazují v kalendáři místo jednoduchého seznamu — procházejte libovolný měsíc na počítači nebo týden na mobilu.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Opening a training now takes you to its full detail page, and going back returns you to the exact month or week you were viewing.",
+                    cs: "Otevření tréninku vás nově přenese na celou stránku s detailem a po návratu zpět se vrátíte přesně na měsíc nebo týden, který jste si prohlíželi.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.3.0",
         date: "2026-06-17",
         title: { en: "Trainings 2.0 is now standard", cs: "Tréninky 2.0 jsou nově standardem" },
