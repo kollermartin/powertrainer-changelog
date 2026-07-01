@@ -13,6 +13,34 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.5.0",
+        date: "2026-07-01",
+        title: { en: "Plan your own trainings", cs: "Plánujte si vlastní tréninky" },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "You can now create your own trainings directly on your calendar — plan a workout for any day yourself, without waiting for a trainer to assign one.",
+                    cs: "Nově si můžete vytvářet vlastní tréninky přímo ve svém kalendáři — naplánujte si trénink na libovolný den sami, bez čekání na přiřazení od trenéra.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Manage your own trainings freely: edit them, duplicate them, drag them to another day, or delete them anytime.",
+                    cs: "Své tréninky si spravujete podle sebe: upravte je, zkopírujte, přetáhněte na jiný den nebo je kdykoli smažte.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Trainings assigned by your trainer appear on the same calendar, labelled with their author and kept view-only, so your own plans and your trainer's never get mixed up.",
+                    cs: "Tréninky přiřazené trenérem se zobrazují ve stejném kalendáři, označené jménem autora, a zůstávají jen ke čtení, takže se vaše vlastní plány a plány od trenéra nikdy nepomíchají.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.4.0",
         date: "2026-06-25",
         title: { en: "Your trainings on a calendar", cs: "Vaše tréninky v kalendáři" },
