@@ -13,6 +13,34 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.6.0",
+        date: "2026-07-08",
+        title: { en: "Explore the exercise database", cs: "Prozkoumejte databázi cviků" },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Athletes now have a new Exercises section — browse the public exercise database and open any exercise to see its details and demonstration video.",
+                    cs: "Sportovci mají nově k dispozici sekci Cviky — procházejte veřejnou databázi cviků a každý cvik si otevřete i s detailem a ukázkovým videem.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Find exercises quickly: search by name and filter by muscle group, movement pattern, exercise type, or plane of motion.",
+                    cs: "Cviky rychle dohledáte: vyhledávejte podle názvu a filtrujte podle svalové skupiny, pohybového vzoru, typu cviku nebo roviny pohybu.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Star exercises as favorites — they are offered first when you pick exercises while creating your own training.",
+                    cs: "Označte si cviky hvězdičkou jako oblíbené — při výběru cviků do vlastního tréninku se pak nabízejí jako první.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.5.0",
         date: "2026-07-01",
         title: { en: "Plan your own trainings", cs: "Plánujte si vlastní tréninky" },
