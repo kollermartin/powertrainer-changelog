@@ -13,6 +13,34 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.7.0",
+        date: "2026-07-10",
+        title: { en: "Autosave and draft trainings", cs: "Automatické ukládání a koncepty tréninků" },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "Trainings now save automatically as you build them — every change is stored as you go, so you no longer need to save manually and won't lose your work if you leave the page or close the tab.",
+                    cs: "Tréninky se nově ukládají automaticky během tvorby — každá změna se průběžně uloží, takže už nemusíte ukládat ručně a o svou práci nepřijdete, ani když stránku opustíte nebo zavřete okno.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Trainers can now build a training as a private draft — take your time putting it together, and your athlete won't see it until it's ready.",
+                    cs: "Trenéři mohou nově sestavit trénink jako soukromý koncept — připravte ho v klidu a sportovec ho uvidí, až bude připravený.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Publish a training when it's ready to share with your athlete, and unpublish it anytime to hide it again — both right from the calendar.",
+                    cs: "Až je trénink připravený sdílet se sportovcem, zveřejněte ho — a kdykoli ho můžete opět skrýt zrušením zveřejnění, obojí přímo z kalendáře.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.6.0",
         date: "2026-07-08",
         title: { en: "Explore the exercise database", cs: "Prozkoumejte databázi cviků" },
