@@ -13,6 +13,37 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.7.1",
+        date: "2026-07-12",
+        title: {
+            en: "Log your own metrics and safer published trainings",
+            cs: "Zapisujte vlastní metriky a bezpečnější zveřejněné tréninky",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Athletes can now add their own columns to the set log — track extra metrics beyond what the trainer prescribed, such as weight or RPE, when logging your results (up to 3 columns in total).",
+                    cs: "Sportovci si nově mohou do záznamu sérií přidat vlastní sloupce — při zapisování výsledků tak zaznamenáte i další metriky nad rámec předpisu od trenéra, například váhu nebo RPE (celkem max. 3 sloupce).",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Published trainings are now protected from accidental edits — the editor opens them read-only with a notice, and making changes requires unpublishing first.",
+                    cs: "Zveřejněné tréninky jsou nově chráněné před nechtěnými úpravami — editor je otevře pouze pro čtení s upozorněním a pro změny je potřeba nejprve zrušit zveřejnění.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Past trainings can no longer be published or unpublished — like editing, these actions are only available for upcoming trainings.",
+                    cs: "Tréninky v minulosti už nelze zveřejnit ani skrýt — stejně jako úpravy jsou tyto akce dostupné jen pro nadcházející tréninky.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.7.0",
         date: "2026-07-10",
         title: { en: "Autosave and draft trainings", cs: "Automatické ukládání a koncepty tréninků" },
