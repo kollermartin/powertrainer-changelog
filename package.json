@@ -1,6 +1,6 @@
 {
     "name": "@powertrainer/changelog",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "Single source of truth for the PowerTrainer changelog — shared data + a simple React component across fe-web (React 18) and fe-landing (React 19).",
     "type": "module",
     "main": "./dist/index.cjs",
