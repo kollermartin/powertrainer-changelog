@@ -13,6 +13,44 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.8.0",
+        date: "2026-07-14",
+        title: {
+            en: "Never start from scratch with a new client",
+            cs: "Se svým novým klientem nezačínáte od nuly",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "When an athlete joins your group, you can now see their previous trainings, performances, and competitions from any trainer who has coached them — no more starting from a blank slate with a new client.",
+                    cs: "Když se k vám sportovec připojí, uvidíte nově jeho předchozí tréninky, výkony a soutěže od jakéhokoli trenéra, který ho trénoval — s novým klientem už nezačínáte od nuly.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Trainings, performances, and competitions created by another trainer are now clearly labeled with their author's name and shown read-only, so you can always tell your own entries apart from a client's history with someone else.",
+                    cs: "Tréninky, výkony a soutěže vytvořené jiným trenérem jsou nově označené jménem autora a zobrazují se pouze pro čtení — své záznamy tak vždy snadno odlišíte od historie klienta s jiným trenérem.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Athletes can now see all the trainer groups they belong to under Settings, and leave any group at any time — leaving immediately removes that trainer's access to their history.",
+                    cs: "Sportovci nově v Nastavení uvidí všechny trenérské skupiny, do kterých patří, a mohou kdykoli libovolnou skupinu opustit — opuštěním trenérovi okamžitě odeberou přístup ke své historii.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Before accepting a new trainer's invitation, athletes now see exactly what that trainer will be able to see, so they know what they're agreeing to.",
+                    cs: "Před přijetím pozvánky od nového trenéra sportovci nově uvidí přesně, co bude moct trenér vidět, takže vědí, s čím souhlasí.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.7.1",
         date: "2026-07-12",
         title: {
