@@ -13,6 +13,37 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.8.1",
+        date: "2026-07-16",
+        title: {
+            en: "Complete your training without scrolling",
+            cs: "Dokončete trénink bez zbytečného scrollování",
+        },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "The “Complete training” button now stays pinned to the bottom of the screen as you scroll through a training's detail, so it's always within reach instead of hidden at the very end.",
+                    cs: "Tlačítko „Dokončit trénink“ nyní zůstává ukotvené u spodního okraje obrazovky, když procházíte detail tréninku — máte ho tak vždy po ruce a není schované úplně na konci.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "On phones, tapping into a text field no longer zooms the page in, so forms stay put and are easier to fill out.",
+                    cs: "Na telefonu se po klepnutí do textového pole už stránka nezvětší (nezoomuje) — formuláře tak zůstávají na místě a snáz se vyplňují.",
+                },
+            },
+            {
+                type: "fixed",
+                text: {
+                    en: "The complete and feedback controls now appear only on trainings you created or that are assigned to you, so they no longer show up when viewing someone else's training.",
+                    cs: "Tlačítko pro dokončení a hodnocení se nyní zobrazují jen u tréninků, které jste vytvořili nebo které vám byly přiřazeny — u cizích tréninků se už neukazují.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.8.0",
         date: "2026-07-14",
         title: {
