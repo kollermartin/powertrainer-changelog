@@ -13,6 +13,37 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.9.0",
+        date: "2026-07-21",
+        title: {
+            en: "Upgrade your plan in a couple of taps",
+            cs: "Vylepšete svůj plán během pár kliknutí",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "New Studio plan — coach up to 50 athletes on a single subscription, for growing teams that have outgrown Pro.",
+                    cs: "Nový plán Studio — trénujte až 50 sportovců v rámci jednoho předplatného. Ideální pro rostoucí týmy, kterým už Pro nestačí.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "You can now upgrade to a higher plan directly from Settings → Subscription. Before you confirm, you'll see exactly what you'll pay today — the unused time on your current plan is credited automatically and only the difference is charged.",
+                    cs: "Na vyšší plán teď přejdete přímo v Nastavení → Předplatné. Než platbu potvrdíte, uvidíte přesně, kolik dnes zaplatíte — nevyužitý čas ze stávajícího plánu se automaticky odečte a doúčtuje se jen rozdíl.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Plan upgrades take effect immediately — your new athlete limit is available the moment your payment goes through, with no waiting for the next billing cycle.",
+                    cs: "Vylepšení plánu se projeví okamžitě — nový limit sportovců máte k dispozici hned po zaplacení, bez čekání na další zúčtovací období.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.8.1",
         date: "2026-07-16",
         title: {
