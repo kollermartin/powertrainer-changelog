@@ -13,6 +13,44 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.10.0",
+        date: "2026-07-27",
+        title: {
+            en: "Track your own progress, no trainer required",
+            cs: "Sledujte svůj pokrok, trenéra nepotřebujete",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Athletes can now log their own competitions, personal bests, and video on their own trainings — all the things that used to require a trainer to set up for you.",
+                    cs: "Sportovci si nově mohou sami zaznamenat vlastní soutěže, osobní rekordy a video u svých tréninků — všechno, co dřív musel nastavit trenér.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Add your own custom exercises and tutorials to the exercise database — write your own instructions, or link a video, for movements the public database doesn't cover.",
+                    cs: "Do databáze cviků si nově můžete přidat vlastní cviky a tutoriály — napište si vlastní instrukce nebo přiložte video k cvikům, které veřejná databáze neobsahuje.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "New Solo plan for athletes — one subscription unlocks unlimited self-tracked competitions and personal bests, unlimited custom exercises and tutorials, and unlimited video on your own trainings.",
+                    cs: "Nový plán Solo pro sportovce — jedno předplatné odemkne neomezené vlastní soutěže a osobní rekordy, neomezené vlastní cviky a tutoriály a neomezené video u vlastních tréninků.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "A new usage panel under Settings → Subscription shows exactly how much of your free allowance you've used for each feature, with a link to upgrade when you're close to a limit.",
+                    cs: "Nový panel v Nastavení → Předplatné ukazuje, kolik jste už využili z bezplatného limitu u každé funkce, a odkaz na upgrade, když se limitu blížíte.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.9.0",
         date: "2026-07-21",
         title: {
