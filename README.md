@@ -3,7 +3,7 @@
 Single source of truth for the PowerTrainer changelog, shared by **fe-web** (React 18) and
 **fe-landing** (React 19). Ships:
 
-- the changelog **data** (typed, EN/CS inline with EN fallback for other locales),
+- the changelog **data** (typed, fully translated into all six supported locales),
 - a `localize()` helper,
 - a dependency-free, hook-free **`<Changelog />`** React component (works as a client component
   *and* a Next.js server component),
@@ -68,7 +68,9 @@ getChangelog().map((entry) =>
 ## Adding a changelog entry (the publish checklist)
 
 1. Prepend a new `ChangelogEntry` to the array in [`src/data.ts`](./src/data.ts) — newest at the
-   top. `en` text is required; `cs` (and other locales) are optional and fall back to `en`.
+   top. Only `en` is required by the type and `localize()` falls back to it, but **fill in all six
+   locales** (`en cs de fr ru uk`) — the existing entries are fully translated, so a partial entry
+   would render as an English island inside an otherwise localized list.
 2. Bump the version: `npm version patch` (or `minor` / `major`).
 3. Build + publish: `npm publish` (runs `build` via `prepublishOnly`; publishes publicly).
 4. In **fe-web** and **fe-landing**: `npm install @powertrainer/changelog@latest`, commit, deploy.
@@ -87,5 +89,7 @@ npm test        # vitest (localize + component render)
 ## Conventions
 
 - Data authored newest-first; `getChangelog()` re-sorts by date descending defensively.
-- `SupportedLocale` mirrors fe-web's i18n locales (`en cs ru uk fr de`); fe-landing uses `en cs`.
+- `SupportedLocale` (`en cs ru uk fr de`) matches the locales **both** apps ship — fe-web's i18n
+  namespaces and fe-landing's `app/[lang]/dictionaries/`. Register per language: DE informal (du),
+  FR `vous`, CS/RU/UK formal (vy/вы/ви).
 - The component carries no styling dependency (no Ant Design / Tailwind) so it drops into both apps.
