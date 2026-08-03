@@ -1,6 +1,15 @@
 export type SupportedLocale = "en" | "cs" | "ru" | "uk" | "fr" | "de";
 
 /**
+ * What a consumer may hand to `locale`. Keeps autocomplete for the six supported
+ * codes while accepting the raw value an app's i18n layer produces — `i18n.language`
+ * or a route segment, which can carry a region subtag (`de-DE`). `resolveLocale()`
+ * normalizes it, so consumers never need an `as SupportedLocale` cast that would
+ * hide a genuinely unsupported value.
+ */
+export type LocaleInput = SupportedLocale | (string & {});
+
+/**
  * A localized string. `en` is required and is used as the fallback for any
  * locale that isn't provided, so an entry never renders blank.
  */

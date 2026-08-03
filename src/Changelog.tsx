@@ -1,4 +1,4 @@
-import type { ChangeType, ChangelogEntry, SupportedLocale } from "./types";
+import type { ChangeType, ChangelogEntry, LocaleInput } from "./types";
 import { localize } from "./localize";
 import { getChangelog } from "./data";
 
@@ -9,8 +9,11 @@ const DEFAULT_LABELS: Record<ChangeType, string> = {
 };
 
 export interface ChangelogProps {
-    /** Locale to render entry text in. Falls back to English per-string. Default "en". */
-    locale?: SupportedLocale;
+    /**
+     * Locale to render entry text in. Accepts a raw i18n value (`de`, `de-DE`, `DE`) —
+     * it is normalized internally and falls back to English if unsupported. Default "en".
+     */
+    locale?: LocaleInput;
     /** Entries to render. Defaults to the bundled changelog (newest first). */
     entries?: ChangelogEntry[];
     /** Override the change-type tag labels (e.g. translated "Added"/"Improved"/"Fixed"). */
@@ -18,7 +21,7 @@ export interface ChangelogProps {
     /** Extra class name on the root element, for app-specific styling. */
     className?: string;
     /** Format the ISO date for display. Defaults to the raw ISO date string. */
-    formatDate?: (isoDate: string, locale: SupportedLocale) => string;
+    formatDate?: (isoDate: string, locale: LocaleInput) => string;
 }
 
 /**
