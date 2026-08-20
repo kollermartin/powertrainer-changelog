@@ -19,6 +19,86 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.13.0",
+        date: "2026-08-20",
+        title: {
+            en: "Find a coach, or be found by one",
+            cs: "Najděte si trenéra — nebo ať si najdou vás",
+            de: "Finde einen Coach – oder lass dich finden",
+            fr: "Trouvez un coach, ou laissez-vous trouver",
+            ru: "Найдите тренера — или пусть найдут вас",
+            uk: "Знайдіть тренера — або нехай знайдуть вас",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Everything to do with coaching now sits in one Coaching section in the navigation instead of being scattered through Settings — Find a trainer and My trainers for athletes, Clients, Requests and My profile for trainers. A dot marks whatever is waiting for your answer.",
+                    cs: "Všechno kolem trénování je teď v jedné sekci Coaching v navigaci, místo aby to bylo rozeseté v Nastavení — Najít trenéra a Moji trenéři pro sportovce, Klienti, Žádosti a Můj profil pro trenéry. Tečka označuje to, co čeká na vaši odpověď.",
+                    de: "Alles rund ums Coaching liegt jetzt in einem Coaching-Bereich in der Navigation, statt über die Einstellungen verteilt zu sein — Trainer finden und Meine Trainer für Athleten, Klienten, Anfragen und Mein Profil für Trainer. Ein Punkt zeigt dir, was auf deine Antwort wartet.",
+                    fr: "Tout ce qui touche au coaching se trouve désormais dans une seule section Coaching de la navigation, au lieu d'être dispersé dans les Paramètres — Trouver un coach et Mes coachs pour les athlètes, Clients, Demandes et Mon profil pour les coachs. Un point signale ce qui attend votre réponse.",
+                    ru: "Всё, что связано с коучингом, теперь собрано в одном разделе Коучинг в навигации, а не разбросано по Настройкам — Найти тренера и Мои тренеры для спортсменов, Клиенты, Запросы и Мой профиль для тренеров. Точка отмечает то, что ждёт вашего ответа.",
+                    uk: "Усе, що пов'язано з коучингом, тепер зібрано в одному розділі Коучинг у навігації, а не розкидано по Налаштуваннях — Знайти тренера та Мої тренери для спортсменів, Клієнти, Запити та Мій профіль для тренерів. Точка позначає те, що очікує на вашу відповідь.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Athletes can browse the trainer catalog under Coaching → Find a trainer — open a trainer to read what they specialise in, the languages they coach in, where they work, what they charge and the certificates they state. Filter by focus area, language and location, show only trainers taking new clients, and sort by price or by name.",
+                    cs: "Sportovci si mohou prohlížet katalog trenérů v Coaching → Najít trenéra — otevřete trenéra a přečtete si jeho zaměření, jazyky, ve kterých trénuje, kde působí, kolik si účtuje a jaké uvádí certifikáty. Filtrovat lze podle zaměření, jazyka a lokality, zobrazit jen trenéry přijímající nové klienty a řadit podle ceny nebo jména.",
+                    de: "Athleten können den Trainerkatalog unter Coaching → Trainer finden durchstöbern — öffne einen Trainer und du siehst seine Schwerpunkte, die Sprachen, in denen er coacht, wo er arbeitet, was er verlangt und welche Zertifikate er angibt. Filtere nach Schwerpunkt, Sprache und Ort, zeige nur Trainer, die neue Klienten annehmen, und sortiere nach Preis oder Name.",
+                    fr: "Les athlètes peuvent parcourir le catalogue des coachs dans Coaching → Trouver un coach — ouvrez un coach pour découvrir ses spécialités, les langues dans lesquelles il coache, où il travaille, ses tarifs et les certifications qu'il déclare. Filtrez par spécialité, langue et lieu, n'affichez que les coachs acceptant de nouveaux clients, et triez par prix ou par nom.",
+                    ru: "Спортсмены могут просматривать каталог тренеров в разделе Коучинг → Найти тренера — откройте тренера и увидите его специализации, языки, на которых он тренирует, где он работает, сколько берёт и какие сертификаты указывает. Фильтруйте по специализации, языку и местоположению, показывайте только тренеров, принимающих новых клиентов, и сортируйте по цене или имени.",
+                    uk: "Спортсмени можуть переглядати каталог тренерів у розділі Коучинг → Знайти тренера — відкрийте тренера й побачите його спеціалізації, мови, якими він тренує, де він працює, скільки бере та які сертифікати вказує. Фільтруйте за спеціалізацією, мовою та місцезнаходженням, показуйте лише тренерів, які приймають нових клієнтів, і сортуйте за ціною або іменем.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Ask a trainer to coach you straight from their profile, with a message about what you train and what you want to work on — they see your name and your message, never your email or phone number. Requests waiting for an answer are listed above the catalog, and you can withdraw one at any time.",
+                    cs: "O trénování můžete trenéra požádat přímo z jeho profilu, se zprávou o tom, co trénujete a na čem chcete pracovat — uvidí vaše jméno a vaši zprávu, nikdy ne váš e-mail nebo telefon. Žádosti, které čekají na odpověď, najdete nad katalogem a kdykoli je můžete odvolat.",
+                    de: "Frag einen Trainer direkt aus seinem Profil nach Coaching — mit einer Nachricht dazu, was du trainierst und woran du arbeiten willst. Er sieht deinen Namen und deine Nachricht, niemals deine E-Mail-Adresse oder Telefonnummer. Anfragen, die auf eine Antwort warten, stehen über dem Katalog, und du kannst sie jederzeit zurückziehen.",
+                    fr: "Demandez un coaching directement depuis le profil d'un coach, avec un message sur ce que vous pratiquez et ce que vous voulez travailler — il voit votre nom et votre message, jamais votre e-mail ni votre téléphone. Les demandes en attente de réponse s'affichent au-dessus du catalogue et vous pouvez les retirer à tout moment.",
+                    ru: "Попросить тренера о тренировках можно прямо из его профиля, приложив сообщение о том, что вы тренируете и над чем хотите работать — он увидит ваше имя и сообщение, но никогда e-mail или телефон. Запросы, ожидающие ответа, показаны над каталогом, и вы можете отозвать их в любой момент.",
+                    uk: "Попросити тренера про тренування можна просто з його профілю, додавши повідомлення про те, що ви тренуєте і над чим хочете працювати — він побачить ваше ім'я та повідомлення, але ніколи e-mail чи телефон. Запити, що очікують на відповідь, показані над каталогом, і ви можете відкликати їх будь-коли.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Trainers get a public profile to fill in — profile and cover photo, a gallery, a description of your coaching, focus areas, languages, pricing, certificates, links to your public work and the places you coach. A completeness meter shows what is still missing, more complete profiles appear higher in the catalog, and nothing is visible to anybody until you publish it.",
+                    cs: "Trenéři mají nově veřejný profil — profilová a titulní fotka, galerie, popis vašeho trénování, zaměření, jazyky, ceny, certifikáty, odkazy na vaši veřejnou práci a místa, kde trénujete. Ukazatel úplnosti profilu říká, co ještě chybí, úplnější profily se v katalogu zobrazují výš a dokud profil nezveřejníte, nevidí ho nikdo.",
+                    de: "Trainer bekommen ein öffentliches Profil — Profil- und Titelbild, eine Galerie, eine Beschreibung deines Coachings, Schwerpunkte, Sprachen, Preise, Zertifikate, Links zu deiner öffentlichen Arbeit und die Orte, an denen du coachst. Eine Anzeige der Profil-Vollständigkeit zeigt, was noch fehlt, vollständigere Profile erscheinen weiter oben im Katalog, und bis du veröffentlichst, sieht es niemand.",
+                    fr: "Les coachs disposent d'un profil public à remplir — photo de profil et de couverture, galerie, description de votre coaching, spécialités, langues, tarifs, certifications, liens vers votre travail public et les lieux où vous coachez. Un indicateur de complétude montre ce qu'il reste à ajouter, les profils les plus complets apparaissent plus haut dans le catalogue, et personne ne voit rien avant que vous ne publiiez.",
+                    ru: "У тренеров появился публичный профиль — фото профиля и обложка, галерея, описание вашего подхода, специализации, языки, цены, сертификаты, ссылки на ваши публичные материалы и места, где вы тренируете. Индикатор заполненности показывает, чего не хватает, более заполненные профили стоят в каталоге выше, а до публикации профиль не видит никто.",
+                    uk: "У тренерів з'явився публічний профіль — фото профілю та обкладинка, галерея, опис вашого підходу, спеціалізації, мови, ціни, сертифікати, посилання на ваші публічні матеріали та місця, де ви тренуєте. Індикатор заповненості показує, чого не вистачає, заповненіші профілі стоять у каталозі вище, а до публікації профіль не бачить ніхто.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Answer requests under Coaching → Requests: accept and the athlete joins your clients and the two of you see each other's contact details, or decline and they can ask you again later. If somebody has approached you before, the request says so and how it ended.",
+                    cs: "Žádosti vyřídíte v Coaching → Žádosti: po přijetí se sportovec zařadí mezi vaše klienty a vy dva na sebe uvidíte kontakty, po odmítnutí vás může požádat znovu později. Pokud vás už někdo v minulosti oslovil, žádost to uvede — včetně toho, jak to skončilo.",
+                    de: "Anfragen beantwortest du unter Coaching → Anfragen: Nimm an, und der Athlet wird zu deinen Klienten hinzugefügt und ihr beide sieht die Kontaktdaten des anderen — oder lehne ab, dann kann er dich später erneut fragen. Hat dich jemand schon einmal angefragt, steht das in der Anfrage, samt Ausgang.",
+                    fr: "Répondez aux demandes dans Coaching → Demandes : en acceptant, l'athlète rejoint vos clients et vous voyez chacun les coordonnées de l'autre ; en refusant, il pourra vous solliciter à nouveau plus tard. Si quelqu'un vous a déjà approché, la demande l'indique, avec ce qui s'était passé.",
+                    ru: "Отвечайте на запросы в разделе Коучинг → Запросы: приняв, вы добавляете спортсмена в клиенты и видите контакты друг друга; отклонив — он сможет обратиться к вам позже снова. Если человек обращался раньше, запрос сообщит об этом и о том, чем всё закончилось.",
+                    uk: "Відповідайте на запити в розділі Коучинг → Запити: прийнявши, ви додаєте спортсмена до клієнтів і бачите контакти одне одного; відхиливши — він зможе звернутися до вас пізніше знову. Якщо людина зверталася раніше, запит повідомить про це й про те, чим усе завершилося.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "One switch closes the door without hiding you: turn Accepting new clients off and the request button goes, but your profile stays in the catalog, so athletes can still find you and come back later. Requests already waiting are unaffected.",
+                    cs: "Jedním přepínačem zavřete dveře, aniž byste zmizeli: vypněte Noví klienti a zmizí tlačítko pro odeslání žádosti, ale váš profil zůstane v katalogu, takže vás sportovci najdou a mohou se vrátit později. Už čekající žádosti to nijak neovlivní.",
+                    de: "Ein Schalter schließt die Tür, ohne dich zu verstecken: Schalte Neue Klienten annehmen aus, und der Anfrage-Button verschwindet — dein Profil bleibt aber im Katalog, sodass Athleten dich weiterhin finden und später wiederkommen können. Bereits wartende Anfragen bleiben davon unberührt.",
+                    fr: "Un seul interrupteur ferme la porte sans vous faire disparaître : désactivez Accepter de nouveaux clients et le bouton de demande disparaît, mais votre profil reste dans le catalogue — les athlètes peuvent toujours vous trouver et revenir plus tard. Les demandes déjà en attente ne sont pas affectées.",
+                    ru: "Один переключатель закрывает дверь, не скрывая вас: отключите Приём новых клиентов, и кнопка запроса исчезнет, но профиль останется в каталоге — спортсмены по-прежнему найдут вас и смогут вернуться позже. Уже ожидающие запросы это не затронет.",
+                    uk: "Один перемикач зачиняє двері, не приховуючи вас: вимкніть Приймання нових клієнтів, і кнопка запиту зникне, але профіль залишиться в каталозі — спортсмени й далі знайдуть вас і зможуть повернутися пізніше. Запити, що вже очікують, це не зачепить.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.10.0",
         date: "2026-07-27",
         title: {
