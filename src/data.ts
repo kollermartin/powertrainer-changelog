@@ -19,6 +19,42 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.13.1",
+        date: "2026-08-21",
+        title: {
+            en: "Coaching, back to one press",
+            cs: "Coaching zpátky na jedno kliknutí",
+            de: "Coaching – wieder ein Klick",
+            fr: "Le coaching, à un clic",
+            ru: "Коучинг — снова в один клик",
+            uk: "Коучинг — знову в один клік",
+        },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "The Coaching section is gone and its pages are back in the main navigation, where they take one press instead of two: for trainers, Clients sits at the top again with Requests as a tab beside it, and My profile has an entry of its own. For athletes there is one Trainer catalog entry, with My trainers as its second tab. No page went away — every one keeps the address you may have bookmarked, and the dot still marks whatever is waiting for your answer.",
+                    cs: "Sekce Coaching zmizela a její stránky se vrátily do hlavní navigace, kde jsou na jedno kliknutí místo dvou: trenérům jsou Klienti opět nahoře a Žádosti jsou vedle nich jako záložka, Můj profil má vlastní položku. Sportovci mají jednu položku Katalog trenérů a Moji trenéři jsou její druhá záložka. Žádná stránka nezmizela — všechny mají stejnou adresu jako dřív, i tu, kterou si možná máte uloženou, a tečka pořád označuje to, co čeká na vaši odpověď.",
+                    de: "Der Coaching-Bereich ist aufgelöst und seine Seiten stehen wieder in der Hauptnavigation, wo du sie mit einem Klick statt zwei erreichst: Bei Trainern liegt Klienten wieder oben, Anfragen sitzt als Tab daneben, und Mein Profil hat einen eigenen Eintrag. Athleten haben einen Eintrag Trainerkatalog, mit Meine Trainer als zweitem Tab. Keine Seite ist verschwunden — alle behalten ihre Adresse, auch die, die du vielleicht als Lesezeichen hast, und der Punkt zeigt weiterhin, was auf deine Antwort wartet.",
+                    fr: "La section Coaching disparaît et ses pages reviennent dans la navigation principale, où elles s'atteignent en un clic au lieu de deux : pour les coachs, Clients se retrouve en haut avec Demandes en onglet à côté, et Mon profil a sa propre entrée. Les athlètes ont une seule entrée Catalogue des coachs, avec Mes coachs comme second onglet. Aucune page n'a disparu — toutes gardent leur adresse, y compris celle que vous avez peut-être mise en favori, et le point signale toujours ce qui attend votre réponse.",
+                    ru: "Раздел Коучинг убран, а его страницы вернулись в основную навигацию, где до них один клик вместо двух: у тренеров Клиенты снова наверху, Запросы — вкладкой рядом, а Мой профиль получил отдельный пункт. У спортсменов один пункт Каталог тренеров, а Мои тренеры — его вторая вкладка. Ни одна страница не пропала — адреса те же, включая тот, который вы могли сохранить в закладках, и точка по-прежнему отмечает то, что ждёт вашего ответа.",
+                    uk: "Розділ Коучинг прибрано, а його сторінки повернулися до основної навігації, де до них один клік замість двох: у тренерів Клієнти знову вгорі, Запити — вкладкою поруч, а Мій профіль отримав окремий пункт. У спортсменів один пункт Каталог тренерів, а Мої тренери — його друга вкладка. Жодна сторінка не зникла — адреси ті самі, включно з тією, яку ви могли зберегти в закладках, і точка так само позначає те, що очікує на вашу відповідь.",
+                },
+            },
+            {
+                type: "fixed",
+                text: {
+                    en: "Opening a client's training now keeps you with that client. The trail above the page reads Clients / their name / Training, so leaving the session takes you back to their page instead of dropping you into your own trainings.",
+                    cs: "Když otevřete trénink klienta, zůstanete u něj. Cesta nad stránkou zní Klienti / jméno klienta / Trénink, takže z tréninku se vrátíte na jeho stránku, a ne do svých vlastních tréninků.",
+                    de: "Wenn du das Training eines Klienten öffnest, bleibst du jetzt bei diesem Klienten. Der Pfad über der Seite lautet Klienten / Name / Training, sodass du aus der Einheit zurück auf seine Seite kommst und nicht in deinen eigenen Trainings landest.",
+                    fr: "Ouvrir l'entraînement d'un client vous garde désormais chez ce client. Le fil au-dessus de la page indique Clients / son nom / Entraînement : en quittant la séance, vous revenez sur sa page au lieu d'atterrir dans vos propres entraînements.",
+                    ru: "Открывая тренировку клиента, вы теперь остаётесь у этого клиента. Путь над страницей читается как Клиенты / имя / Тренировка, поэтому из тренировки вы возвращаетесь на его страницу, а не в свои собственные тренировки.",
+                    uk: "Відкриваючи тренування клієнта, ви тепер залишаєтесь у цього клієнта. Шлях над сторінкою читається як Клієнти / ім'я / Тренування, тож із тренування ви повертаєтесь на його сторінку, а не до власних тренувань.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.13.0",
         date: "2026-08-20",
         title: {
