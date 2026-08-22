@@ -19,6 +19,31 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.15.1",
+        date: "2026-08-22",
+        title: {
+            en: "Your WhatsApp number is a contact detail",
+            cs: "Vaše číslo na WhatsApp je kontakt",
+            de: "Deine WhatsApp-Nummer ist eine Kontaktangabe",
+            fr: "Votre numéro WhatsApp est une coordonnée",
+            ru: "Ваш номер WhatsApp — это контакт",
+            uk: "Ваш номер WhatsApp — це контакт",
+        },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "WhatsApp has moved out of Where to find you and into your contact details, where it belongs — a phone number is not something to publish to everyone browsing the catalog. It now behaves like your email address and phone: only athletes whose coaching request you have accepted can see it, and they reach you in one tap. If you added it earlier today, please enter it again under your contact details.",
+                    cs: "WhatsApp jsme přesunuli z Kde vás najdou do vašich kontaktů, kam patří — telefonní číslo není něco, co se zveřejňuje všem, kdo si prohlížejí katalog. Teď se chová jako váš e-mail a telefon: uvidí ho jen sportovci, jejichž žádost o vedení jste přijali, a dostanou se k vám jedním kliknutím. Pokud jste ho dnes už přidali, zadejte ho prosím znovu v kontaktech.",
+                    de: "WhatsApp ist von Wo man dich findet zu deinen Kontaktdaten gewandert, wo es hingehört — eine Telefonnummer veröffentlicht man nicht für alle, die den Katalog durchsehen. Sie verhält sich jetzt wie deine E-Mail-Adresse und deine Telefonnummer: nur Sportler, deren Coaching-Anfrage du angenommen hast, sehen sie, und sie erreichen dich mit einem Tippen. Hast du sie heute schon eingetragen, gib sie bitte noch einmal bei deinen Kontaktdaten ein.",
+                    fr: "WhatsApp a quitté Où vous trouver pour rejoindre vos coordonnées, là où c'est sa place — un numéro de téléphone ne se publie pas auprès de tous ceux qui parcourent le catalogue. Il se comporte désormais comme votre adresse e-mail et votre téléphone : seuls les athlètes dont vous avez accepté la demande de coaching le voient, et ils vous joignent en une pression. Si vous l'avez ajouté plus tôt dans la journée, saisissez-le à nouveau dans vos coordonnées.",
+                    ru: "WhatsApp переехал из блока Где вас найти в ваши контакты, где ему и место: номер телефона не стоит показывать всем, кто просматривает каталог. Теперь он ведёт себя как ваш адрес электронной почты и телефон — его видят только спортсмены, чью заявку на сопровождение вы приняли, и связываются с вами одним нажатием. Если вы добавили его сегодня раньше, укажите его снова в контактах.",
+                    uk: "WhatsApp переїхав із блоку Де вас знайти до ваших контактів, де йому й місце: номер телефону не варто показувати всім, хто переглядає каталог. Тепер він поводиться як ваша електронна адреса та телефон — його бачать лише спортсмени, чию заявку на супровід ви прийняли, і зв'язуються з вами одним натисканням. Якщо ви додали його сьогодні раніше, укажіть його знову в контактах.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.15.0",
         date: "2026-08-22",
         title: {
