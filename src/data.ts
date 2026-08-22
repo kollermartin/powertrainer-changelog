@@ -19,6 +19,31 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.15.0",
+        date: "2026-08-22",
+        title: {
+            en: "Now on WhatsApp",
+            cs: "Teď i na WhatsAppu",
+            de: "Jetzt auch auf WhatsApp",
+            fr: "Maintenant sur WhatsApp",
+            ru: "Теперь и в WhatsApp",
+            uk: "Тепер і у WhatsApp",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Trainers can add WhatsApp to where athletes find them, alongside Instagram, YouTube and TikTok. Type in your phone number and we build the link — include the country code, or it will only work for athletes in your own country. Your profile shows it as WhatsApp rather than writing the number out, and one tap opens a chat with you.",
+                    cs: "Trenéři si mohou přidat WhatsApp k místům, kde je sportovci najdou, vedle Instagramu, YouTube a TikToku. Zadejte telefonní číslo a odkaz sestavíme za vás — uveďte i předvolbu země, jinak bude fungovat jen sportovcům z vaší země. Ve vašem profilu se ukáže jako WhatsApp, číslo se nikde nevypisuje, a jedno kliknutí otevře chat s vámi.",
+                    de: "Trainer können WhatsApp dort hinzufügen, wo Sportler sie finden — neben Instagram, YouTube und TikTok. Gib deine Telefonnummer ein und wir bauen den Link — mit Ländervorwahl, sonst funktioniert er nur für Sportler in deinem eigenen Land. In deinem Profil steht WhatsApp statt der ausgeschriebenen Nummer, und ein Tippen öffnet einen Chat mit dir.",
+                    fr: "Les coachs peuvent ajouter WhatsApp aux endroits où les athlètes les trouvent, aux côtés d'Instagram, YouTube et TikTok. Saisissez votre numéro de téléphone et nous construisons le lien — avec l'indicatif pays, sinon il ne fonctionnera que pour les athlètes de votre pays. Votre profil affiche WhatsApp plutôt que le numéro écrit en clair, et une pression ouvre une conversation avec vous.",
+                    ru: "Тренеры могут добавить WhatsApp туда, где их находят спортсмены, рядом с Instagram, YouTube и TikTok. Укажите номер телефона — ссылку мы соберём сами; добавьте код страны, иначе она сработает только у спортсменов из вашей страны. В профиле это показывается как WhatsApp, а не выписанным номером, и одно нажатие открывает чат с вами.",
+                    uk: "Тренери можуть додати WhatsApp туди, де їх знаходять спортсмени, поряд з Instagram, YouTube і TikTok. Укажіть номер телефону — посилання ми складемо самі; додайте код країни, інакше воно працюватиме лише для спортсменів із вашої країни. У профілі це показується як WhatsApp, а не виписаним номером, і одне натискання відкриває чат із вами.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.14.0",
         date: "2026-08-22",
         title: {
