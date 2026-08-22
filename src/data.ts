@@ -19,6 +19,64 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.14.0",
+        date: "2026-08-22",
+        title: {
+            en: "Say what you charge, find what fits",
+            cs: "Řekněte si cenu, najděte, co vám sedí",
+            de: "Sag, was du nimmst – finde, was passt",
+            fr: "Dites vos tarifs, trouvez ce qui vous convient",
+            ru: "Назовите свою цену — найдите подходящую",
+            uk: "Назвіть свою ціну — знайдіть підхожу",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Trainers can price each kind of offer separately instead of quoting one monthly rate — Online coaching, Single training session, Training plan only and Consultation. Switch on the ones you actually sell, give each a single price or a range, and choose one currency for all of them. Anything left switched off is simply not shown. If you had a monthly rate before, it is already in place as your Online coaching price.",
+                    cs: "Trenéři si mohou nacenit každý typ nabídky zvlášť místo jedné měsíční ceny — Online coaching, Jednorázový trénink, Pouze tréninkový plán a Konzultace. Zapněte to, co skutečně nabízíte, u každého uveďte jednu cenu nebo rozsah a vyberte jednu měnu pro všechny. Co necháte vypnuté, se nezobrazí. Pokud jste dřív měli měsíční cenu, je už na místě jako cena Online coachingu.",
+                    de: "Trainer können jede Angebotsart einzeln bepreisen, statt einen einzigen Monatspreis zu nennen — Online-Coaching, Einzelne Trainingseinheit, Nur Trainingsplan und Beratung. Schalte ein, was du wirklich anbietest, gib jeweils einen festen Preis oder eine Preisspanne an und wähle eine Währung für alles. Was aus bleibt, wird nicht angezeigt. Hattest du vorher einen Monatspreis, steht er schon als Preis für Online-Coaching.",
+                    fr: "Les coachs peuvent tarifer chaque type d'offre séparément au lieu d'annoncer un seul tarif mensuel — Coaching en ligne, Séance d'entraînement unique, Plan d'entraînement seul et Consultation. Activez ce que vous proposez vraiment, indiquez pour chacun un tarif unique ou une fourchette, et choisissez une seule devise pour l'ensemble. Ce qui reste désactivé n'est pas affiché. Si vous aviez un tarif mensuel, il est déjà en place comme tarif du Coaching en ligne.",
+                    ru: "Тренеры могут назначить цену каждому типу услуги отдельно, а не одну месячную — Онлайн-сопровождение, Одна тренировка, Только план тренировок и Консультация. Включите то, что действительно предлагаете, укажите для каждого одну цену или диапазон и выберите одну валюту для всех. Всё, что выключено, не показывается. Если у вас была месячная цена, она уже стоит как цена Онлайн-сопровождения.",
+                    uk: "Тренери можуть призначити ціну кожному типу послуги окремо, а не одну місячну — Онлайн-супровід, Одне тренування, Тільки тренувальний план і Консультація. Увімкніть те, що справді пропонуєте, вкажіть для кожного одну ціну або діапазон і виберіть одну валюту для всіх. Усе, що вимкнено, не показується. Якщо у вас була місячна ціна, вона вже стоїть як ціна Онлайн-супроводу.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "A trainer's card and their profile now list every price they quote, each one named, so online coaching reads right next to the cost of a single session. Trainers who have not priced anything still say Price on request — which has always meant ask them, not that the coaching is free.",
+                    cs: "Karta trenéra i jeho profil teď uvádějí každou cenu, kterou nabízí, vždy s názvem, takže online coaching vidíte hned vedle ceny jednoho tréninku. U trenérů, kteří nic nenacenili, se dál píše Cena na dotaz — což vždycky znamenalo zeptejte se jich, ne že je trénování zdarma.",
+                    de: "Auf der Karte eines Trainers und in seinem Profil stehen jetzt alle Preise, die er nennt, jeder mit Bezeichnung — so liest sich das Online-Coaching direkt neben dem Preis für eine einzelne Einheit. Bei Trainern ohne Preisangabe steht weiterhin Preis auf Anfrage — das hat immer bedeutet: frag nach, nicht dass das Coaching kostenlos ist.",
+                    fr: "La carte d'un coach et son profil affichent désormais chacun de ses tarifs, avec son intitulé, si bien que le coaching en ligne se lit juste à côté du prix d'une séance. Pour les coachs qui n'ont rien tarifé, on lit toujours Prix sur demande — cela a toujours voulu dire demandez-leur, pas que le coaching est gratuit.",
+                    ru: "На карточке тренера и в его профиле теперь перечислены все цены, которые он указал, каждая с названием, так что онлайн-сопровождение читается прямо рядом с ценой одной тренировки. У тренеров, которые ничего не оценили, по-прежнему написано Цена по запросу — это всегда значило спросите у них, а не что занятия бесплатны.",
+                    uk: "На картці тренера та в його профілі тепер перелічені всі ціни, які він указав, кожна з назвою, тож онлайн-супровід читається просто поруч із ціною одного тренування. У тренерів, які нічого не оцінили, так само написано Ціна за запитом — це завжди означало запитайте в них, а не що заняття безкоштовні.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Three new filters in the catalog: the kind of offer you are after, the most you want to pay, and the currency. Filtering by a kind of offer shows only the trainers who sell it. Pick a kind of offer first and the price box opens up — a maximum on its own could not say which of a trainer's prices it was about.",
+                    cs: "Tři nové filtry v katalogu: typ nabídky, který hledáte, nejvyšší cena, kterou chcete zaplatit, a měna. Filtr podle typu nabídky zobrazí jen trenéry, kteří ji nabízejí. Nejdřív vyberte typ nabídky a políčko s cenou se otevře — samotné maximum by neřeklo, které z cen trenéra se týká.",
+                    de: "Drei neue Filter im Katalog: die Angebotsart, die du suchst, der Höchstpreis, den du zahlen willst, und die Währung. Ein Filter nach Angebotsart zeigt nur die Trainer, die sie anbieten. Wähle zuerst eine Angebotsart, dann öffnet sich das Preisfeld — ein Höchstpreis allein könnte nicht sagen, welchen Preis eines Trainers er meint.",
+                    fr: "Trois nouveaux filtres dans le catalogue : le type d'offre que vous cherchez, le prix maximum que vous voulez payer, et la devise. Filtrer par type d'offre n'affiche que les coachs qui la proposent. Choisissez d'abord un type d'offre et le champ du prix s'ouvre — un maximum seul ne pourrait pas dire de quel tarif du coach il s'agit.",
+                    ru: "Три новых фильтра в каталоге: тип услуги, который вы ищете, максимальная цена, которую вы готовы заплатить, и валюта. Фильтр по типу услуги показывает только тренеров, которые её предлагают. Сначала выберите тип услуги — и поле цены станет доступным: сам по себе максимум не сказал бы, к какой из цен тренера он относится.",
+                    uk: "Три нові фільтри в каталозі: тип послуги, який ви шукаєте, максимальна ціна, яку ви готові заплатити, і валюта. Фільтр за типом послуги показує лише тренерів, які її пропонують. Спочатку виберіть тип послуги — і поле ціни стане доступним: сам по собі максимум не сказав би, до якої з цін тренера він належить.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Sorting by price now follows what you filtered for. Ask for consultations and it ranks their consultation prices rather than their monthly ones, so the cheapest trainer for what you actually want is the one at the top. With no kind of offer picked it ranks online coaching, and there the trainers who have not priced it come last rather than first — no price means ask, not free. The order is no longer called Monthly rate — catalog links you already shared still open the same list.",
+                    cs: "Řazení podle ceny teď sleduje to, co jste vyfiltrovali. Když hledáte konzultace, řadí se podle ceny konzultací, ne podle měsíční ceny — nahoře je tedy nejlevnější trenér pro to, co skutečně chcete. Když žádný typ nabídky nevyberete, řadí se podle online coachingu — a tam jsou trenéři, kteří ho nenacenili, na konci, ne na začátku: chybějící cena znamená zeptejte se, ne zdarma. Řazení už se nejmenuje Měsíční cena — odkazy na katalog, které jste už sdíleli, otevřou stejný seznam.",
+                    de: "Die Sortierung nach Preis folgt jetzt deinem Filter. Suchst du eine Beratung, wird nach den Beratungspreisen sortiert und nicht nach den Monatspreisen — oben steht also der günstigste Trainer für das, was du wirklich willst. Wählst du keine Angebotsart, wird nach Online-Coaching sortiert — und dort stehen die Trainer, die es nicht bepreist haben, am Ende statt am Anfang: kein Preis heißt frag nach, nicht kostenlos. Die Sortierung heißt nicht mehr Monatspreis — Katalog-Links, die du schon geteilt hast, öffnen dieselbe Liste.",
+                    fr: "Le tri par prix suit désormais votre filtre. Cherchez une consultation et il classe les tarifs de consultation plutôt que les tarifs mensuels : en haut se trouve donc le coach le moins cher pour ce que vous voulez vraiment. Sans type d'offre choisi, le tri porte sur le coaching en ligne — et là, les coachs qui ne l'ont pas tarifé passent en dernier au lieu du premier : pas de tarif veut dire demandez, pas gratuit. Le tri ne s'appelle plus Tarif mensuel — les liens du catalogue que vous avez déjà partagés ouvrent la même liste.",
+                    ru: "Сортировка по цене теперь следует за вашим фильтром. Ищете консультацию — и она упорядочивает цены консультаций, а не месячные, так что наверху оказывается самый доступный тренер именно для того, что вам нужно. Если тип услуги не выбран, сортировка идёт по онлайн-сопровождению — и там тренеры, которые его не оценили, идут в конце, а не в начале: нет цены значит спросите, а не бесплатно. Сортировка больше не называется Месячная цена — ссылки на каталог, которыми вы уже делились, открывают тот же список.",
+                    uk: "Сортування за ціною тепер слідує за вашим фільтром. Шукаєте консультацію — і воно впорядковує ціни консультацій, а не місячні, тож нагорі опиняється найдоступніший тренер саме для того, що вам потрібно. Якщо тип послуги не вибрано, сортування йде за онлайн-супроводом — і там тренери, які його не оцінили, ідуть у кінці, а не на початку: немає ціни означає запитайте, а не безкоштовно. Сортування більше не називається Місячна ціна — посилання на каталог, якими ви вже ділилися, відкривають той самий список.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.13.1",
         date: "2026-08-21",
         title: {
