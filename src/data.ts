@@ -19,6 +19,31 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.16.0",
+        date: "2026-08-23",
+        title: {
+            en: "Show how many athletes you coach",
+            cs: "Ukažte, kolik sportovců vedete",
+            de: "Zeige, wie viele Sportler du betreust",
+            fr: "Affichez le nombre d'athlètes que vous accompagnez",
+            ru: "Покажите, сколько спортсменов вы ведёте",
+            uk: "Покажіть, скількох спортсменів ви ведете",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "You can now show how many athletes you coach on your trainer profile. It stays off until you turn it on — the switch is at the end of your profile form, under your website. Only the athletes you are actively coaching are counted, the number keeps itself up to date as your client list changes, and nothing appears at all while you have no active clients. If you leave it off you lose nothing: it has no effect on where you appear in the trainer catalog.",
+                    cs: "Na svém profilu trenéra teď můžete zobrazit, kolik sportovců vedete. Dokud to sami nezapnete, nezobrazuje se — přepínač najdete na konci formuláře profilu, pod webem. Počítají se jen sportovci, které aktuálně vedete, číslo se udržuje aktuální samo podle vašeho seznamu klientů a dokud žádné aktivní klienty nemáte, nezobrazí se nic. Když to necháte vypnuté, nic tím neztrácíte: na to, kde se objevíte v katalogu trenérů, to nemá vliv.",
+                    de: "Du kannst jetzt auf deinem Trainerprofil zeigen, wie viele Sportler du betreust. Es bleibt aus, bis du es einschaltest — den Schalter findest du am Ende deines Profilformulars, unter deiner Website. Gezählt werden nur die Sportler, die du aktuell betreust, die Zahl hält sich mit deiner Kundenliste von selbst aktuell, und solange du keine aktiven Kunden hast, erscheint gar nichts. Lässt du es aus, verlierst du nichts: darauf, wo du im Trainerkatalog auftauchst, hat es keinen Einfluss.",
+                    fr: "Vous pouvez désormais afficher sur votre profil d'entraîneur le nombre d'athlètes que vous accompagnez. C'est désactivé jusqu'à ce que vous l'activiez — l'interrupteur se trouve à la fin du formulaire de votre profil, sous votre site web. Seuls les athlètes que vous accompagnez actuellement sont comptés, le nombre se met à jour tout seul au fil de votre liste de clients, et rien ne s'affiche tant que vous n'avez aucun client actif. Si vous le laissez désactivé, vous ne perdez rien : cela n'a aucun effet sur votre place dans le catalogue des entraîneurs.",
+                    ru: "Теперь в профиле тренера можно показывать, сколько спортсменов вы ведёте. Пока вы сами это не включите, число не отображается — переключатель находится в конце формы профиля, под сайтом. Считаются только спортсмены, которых вы ведёте сейчас, число само остаётся актуальным вместе с вашим списком клиентов, и пока активных клиентов нет, не показывается ничего. Если оставите выключенным, вы ничего не теряете: на то, где вы окажетесь в каталоге тренеров, это не влияет.",
+                    uk: "Тепер у профілі тренера можна показувати, скількох спортсменів ви ведете. Поки ви самі це не увімкнете, число не відображається — перемикач розташований у кінці форми профілю, під сайтом. Враховуються лише спортсмени, яких ви ведете зараз, число саме залишається актуальним разом із вашим списком клієнтів, і поки активних клієнтів немає, не показується нічого. Якщо залишите вимкненим, ви нічого не втрачаєте: на те, де ви опинитеся в каталозі тренерів, це не впливає.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.15.1",
         date: "2026-08-22",
         title: {
