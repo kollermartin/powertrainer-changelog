@@ -3,11 +3,11 @@ import type { ChangelogEntry } from "./types";
 /**
  * The PowerTrainer changelog — the single source of truth, authored newest-first.
  *
- * To publish a new entry:
- *   1. Prepend a new ChangelogEntry to this array (newest at the top).
- *   2. Bump the package version (npm version patch | minor | major).
- *   3. npm publish.
- *   4. Update `@powertrainer/changelog` in fe-web and fe-landing, then deploy.
+ * To release a new entry (this package is a GitHub tag dep, never published to npm):
+ *   1. Prepend a new ChangelogEntry to this array (newest at the top), and commit it.
+ *   2. npm version minor for a feature, patch for an improvement or a fix — this tags v<x>.
+ *   3. git push origin main && git push origin v<x> — the tag push is the release.
+ *   4. In fe-web and fe-landing: npm install @powertrainer/changelog (naming it matters), then deploy.
  *
  * Every string is written in all six supported locales (en, cs, de, fr, ru, uk) —
  * the same coverage both consuming apps ship. `en` is the only required one and
@@ -18,6 +18,31 @@ import type { ChangelogEntry } from "./types";
  * See README.md for the full checklist.
  */
 export const changelogEntries: ChangelogEntry[] = [
+    {
+        version: "1.17.0",
+        date: "2026-08-23",
+        title: {
+            en: "See the catalog your profile is in",
+            cs: "Podívejte se do katalogu, ve kterém je váš profil",
+            de: "Sieh dir den Katalog an, in dem dein Profil steht",
+            fr: "Découvrez le catalogue où figure votre profil",
+            ru: "Посмотрите каталог, в котором есть ваш профиль",
+            uk: "Перегляньте каталог, у якому є ваш профіль",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "As a trainer you can now open the trainer catalog and read it the way athletes do. It is a second tab beside My profile, so writing your profile and seeing how it reads among everyone else's happens in one place. Your own listing is in there too, marked as yours and in the position it really landed in — the clearest way to see what finishing your profile actually changes.",
+                    cs: "Jako trenér si teď můžete otevřít katalog trenérů a číst ho stejně jako sportovci. Najdete ho jako druhou záložku vedle Můj profil, takže psaní profilu i pohled na to, jak vypadá mezi ostatními, máte na jednom místě. Je v něm i váš vlastní profil — označený jako váš a na místě, kde se skutečně objevil. Nejlépe tak uvidíte, co doplnění profilu opravdu změní.",
+                    de: "Als Trainer kannst du jetzt den Trainerkatalog öffnen und ihn so lesen, wie Sportler ihn lesen. Er ist ein zweiter Tab neben Mein Profil, damit das Schreiben deines Profils und der Blick darauf, wie es sich zwischen allen anderen liest, an einem Ort passieren. Dein eigenes Profil steht auch darin — als deines markiert und an der Stelle, an der es wirklich gelandet ist. So siehst du am deutlichsten, was das Vervollständigen deines Profils tatsächlich bringt.",
+                    fr: "En tant que coach, vous pouvez désormais ouvrir le catalogue des coachs et le lire comme le font les athlètes. C'est un second onglet à côté de Mon profil : rédiger votre profil et voir ce qu'il donne parmi tous les autres se fait donc au même endroit. Votre propre fiche y figure aussi, signalée comme la vôtre et à la place qu'elle occupe réellement — la façon la plus claire de voir ce que compléter votre profil change vraiment.",
+                    ru: "Как тренер вы теперь можете открыть каталог тренеров и читать его так же, как его читают спортсмены. Это вторая вкладка рядом с Мой профиль, поэтому работа над профилем и взгляд на то, как он выглядит среди остальных, оказываются в одном месте. Ваш профиль тоже есть в каталоге — отмеченный как ваш и на том месте, куда действительно попал. Так проще всего увидеть, что даёт заполнение профиля.",
+                    uk: "Як тренер ви тепер можете відкрити каталог тренерів і читати його так само, як його читають спортсмени. Це друга вкладка поряд із Мій профіль, тому робота над профілем і погляд на те, як він виглядає серед інших, відбуваються в одному місці. Ваш профіль також є в каталозі — позначений як ваш і на тому місці, куди справді потрапив. Так найпростіше побачити, що дає заповнення профілю.",
+                },
+            },
+        ],
+    },
     {
         version: "1.16.0",
         date: "2026-08-23",
