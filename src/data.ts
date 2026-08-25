@@ -19,6 +19,53 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.18.0",
+        date: "2026-08-25",
+        title: {
+            en: "Rate your trainer, and read what others said",
+            cs: "Ohodnoťte svého trenéra a přečtěte si, co říkají ostatní",
+            de: "Bewerte deinen Trainer und lies, was andere sagen",
+            fr: "Évaluez votre coach et lisez ce que disent les autres",
+            ru: "Оцените тренера и почитайте, что говорят другие",
+            uk: "Оцініть тренера й почитайте, що кажуть інші",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Athletes can now review a trainer — one to five stars, and as much or as little text as you like with it. The button is on the trainer's page in the catalog, beside their name. You do not have to have trained with them, and each trainer can be reviewed once. Your review is published under your full name, and the form says so before you send it. Afterwards you can change the stars, change the text, or take the review down again: it is yours, and nobody else can touch it. The trainer is told when a review arrives and when a rating changes.",
+                    cs: "Sportovci teď mohou trenérovi napsat recenzi — jedna až pět hvězdiček a k tomu tolik textu, kolik chcete, nebo žádný. Tlačítko najdete na profilu trenéra v katalogu, vedle jeho jména. Nemusíte s ním trénovat a každého trenéra lze ohodnotit jednou. Recenze se zveřejní pod vaším celým jménem a formulář vás na to upozorní ještě před odesláním. Hvězdičky i text pak můžete kdykoli změnit, nebo recenzi zase stáhnout: je vaše a nikdo jiný s ní nic dělat nemůže. Trenérovi přijde upozornění, když recenze přijde a když se hodnocení změní.",
+                    de: "Sportler können einen Trainer jetzt bewerten — ein bis fünf Sterne, und dazu so viel oder so wenig Text, wie du willst. Der Button steht auf der Trainerseite im Katalog, neben dem Namen. Du musst nicht mit dem Trainer trainiert haben, und jeder Trainer lässt sich einmal bewerten. Deine Bewertung erscheint unter deinem vollen Namen, und das Formular sagt es dir, bevor du sie abschickst. Danach kannst du die Sterne ändern, den Text ändern oder die Bewertung wieder zurückziehen: sie ist deine, und niemand sonst kann etwas daran ändern. Der Trainer wird benachrichtigt, wenn eine Bewertung eintrifft und wenn sich eine Bewertung ändert.",
+                    fr: "Les athlètes peuvent désormais laisser un avis à un coach — de une à cinq étoiles, avec autant de texte que vous voulez, ou aucun. Le bouton se trouve sur la page du coach dans le catalogue, à côté de son nom. Il n'est pas nécessaire de vous être entraîné avec lui, et chaque coach peut recevoir un seul avis de votre part. Votre avis est publié sous votre nom complet, et le formulaire vous le dit avant l'envoi. Ensuite vous pouvez changer la note, changer le texte, ou retirer l'avis : il est à vous, et personne d'autre n'y touche. Le coach est prévenu lorsqu'un avis arrive et lorsqu'une note change.",
+                    ru: "Спортсмены теперь могут оставить тренеру отзыв — от одной до пяти звёзд и столько текста, сколько захотите, или совсем без него. Кнопка находится на странице тренера в каталоге, рядом с его именем. Тренироваться у него для этого не нужно, а оставить отзыв каждому тренеру можно один раз. Отзыв публикуется под вашим полным именем — форма предупреждает об этом до отправки. Потом оценку и текст можно изменить или отзыв убрать совсем: он ваш, и никто другой его не тронет. Тренер получает уведомление, когда отзыв появляется и когда оценка меняется.",
+                    uk: "Спортсмени тепер можуть залишити тренерові відгук — від однієї до п'яти зірок і стільки тексту, скільки захочете, або зовсім без нього. Кнопка розташована на сторінці тренера в каталозі, поряд з його іменем. Тренуватися в нього для цього не потрібно, а залишити відгук кожному тренерові можна один раз. Відгук публікується під вашим повним іменем — форма попереджає про це до надсилання. Згодом оцінку й текст можна змінити або відгук прибрати зовсім: він ваш, і ніхто інший його не змінить. Тренер отримує повідомлення, коли відгук з'являється і коли оцінка змінюється.",
+                },
+            },
+            {
+                type: "added",
+                text: {
+                    en: "Every trainer in the catalog now shows their rating and how many reviews it is made of — on their card and on their page, and nothing at all rather than a zero until somebody has reviewed them. Rating joins the Sort by menu, and it counts the reviews as well as the average: 4.6 from forty athletes places above 5.0 from one, so a single review cannot lift anybody to the top. Trainers nobody has reviewed yet come last.",
+                    cs: "U každého trenéra v katalogu teď vidíte jeho hodnocení a počet recenzí, ze kterých se skládá — na kartě i na profilu. Dokud ho nikdo neohodnotil, nezobrazí se nic, ne nula. V nabídce Řadit podle je nově Hodnocení a bere v úvahu i počet recenzí, ne jen průměr: 4,6 od čtyřiceti sportovců je výš než 5,0 od jednoho, takže jediná recenze nikoho nahoru nedostane. Trenéři, které ještě nikdo nehodnotil, jsou na konci.",
+                    de: "Jeder Trainer im Katalog zeigt jetzt seine Bewertung und aus wie vielen Bewertungen sie besteht — auf der Karte und auf seiner Seite. Solange ihn niemand bewertet hat, steht dort nichts und keine Null. Im Menü Sortieren nach gibt es neu Bewertung, und sie rechnet die Anzahl mit ein, nicht nur den Schnitt: 4,6 von vierzig Sportlern steht über 5,0 von einem, eine einzige Bewertung bringt also niemanden nach oben. Trainer, die noch niemand bewertet hat, stehen am Ende.",
+                    fr: "Chaque coach du catalogue affiche maintenant sa note et le nombre d'avis dont elle est faite — sur sa fiche et sur sa page. Tant que personne ne l'a évalué, il n'y a rien du tout plutôt qu'un zéro. Note rejoint le menu Trier par, et elle tient compte du nombre d'avis, pas seulement de la moyenne : 4,6 donné par quarante athlètes passe devant 5,0 donné par un seul, donc un avis unique ne place personne en tête. Les coachs que personne n'a encore évalués arrivent en dernier.",
+                    ru: "У каждого тренера в каталоге теперь видны его оценка и число отзывов, из которых она сложилась, — и на карточке, и на странице. Пока никто не оставил отзыв, там нет ничего, а не ноль. В меню «Сортировка» появилась «Оценка», и она учитывает не только среднее, но и количество отзывов: 4,6 от сорока спортсменов оказывается выше 5,0 от одного, так что один отзыв никого наверх не поднимет. Тренеры, которых ещё никто не оценил, идут последними.",
+                    uk: "У кожного тренера в каталозі тепер видно його оцінку та кількість відгуків, з яких вона склалася, — і на картці, і на сторінці. Поки ніхто не залишив відгук, там немає нічого, а не нуль. У меню «Сортування» з'явилася «Оцінка», і вона враховує не лише середнє, а й кількість відгуків: 4,6 від сорока спортсменів опиняється вище за 5,0 від одного, тож один відгук нікого нагору не підніме. Тренери, яких ще ніхто не оцінив, ідуть останніми.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "My trainers now shows each of your trainers as the card you found them on — photo, rating and prices — and the card opens their page, which is where a review is written. A trainer who has not published a profile keeps their place in the list, with your contact details for them as before.",
+                    cs: "Moji trenéři teď zobrazují každého vašeho trenéra jako kartu, na které jste ho našli — s fotkou, hodnocením a cenami — a karta otevře jeho profil, kde se recenze píše. Trenér, který profil nezveřejnil, zůstává v seznamu i s kontakty na něj jako dosud.",
+                    de: "Meine Trainer zeigt jeden deiner Trainer jetzt als die Karte, auf der du ihn gefunden hast — mit Foto, Bewertung und Preisen — und die Karte öffnet seine Seite, auf der eine Bewertung geschrieben wird. Ein Trainer ohne veröffentlichtes Profil behält seinen Platz in der Liste, mit seinen Kontaktdaten wie bisher.",
+                    fr: "Mes coachs affiche désormais chacun de vos coachs sous la forme de la fiche où vous l'avez trouvé — photo, note et tarifs — et la fiche ouvre sa page, là où s'écrit un avis. Un coach qui n'a pas publié de profil garde sa place dans la liste, avec ses coordonnées comme avant.",
+                    ru: "«Мои тренеры» теперь показывают каждого вашего тренера той же карточкой, по которой вы его нашли, — с фото, оценкой и ценами, — и карточка открывает его страницу, где пишется отзыв. Тренер, который не публиковал профиль, остаётся в списке вместе с контактами, как и раньше.",
+                    uk: "«Мої тренери» тепер показують кожного вашого тренера тією ж карткою, за якою ви його знайшли, — з фото, оцінкою та цінами, — і картка відкриває його сторінку, де пишеться відгук. Тренер, який не публікував профіль, залишається у списку разом із контактами, як і раніше.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.17.0",
         date: "2026-08-23",
         title: {
