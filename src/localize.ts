@@ -1,6 +1,6 @@
 import type { LocaleInput, LocalizedText, SupportedLocale } from "./types";
 
-const SUPPORTED: readonly SupportedLocale[] = ["en", "cs", "ru", "uk", "fr", "de"];
+const SUPPORTED: readonly SupportedLocale[] = ["en", "cs", "ru", "uk", "fr", "de", "pl"];
 
 /**
  * Normalize whatever a consumer passes as a locale down to a `SupportedLocale`.

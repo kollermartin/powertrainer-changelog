@@ -9,11 +9,11 @@ import type { ChangelogEntry } from "./types";
  *   3. git push origin main && git push origin v<x> — the tag push is the release.
  *   4. In fe-web and fe-landing: npm install @powertrainer/changelog (naming it matters), then deploy.
  *
- * Every string is written in all six supported locales (en, cs, de, fr, ru, uk) —
+ * Every string is written in all seven supported locales (en, cs, de, fr, ru, uk, pl) —
  * the same coverage both consuming apps ship. `en` is the only required one and
- * `localize()` falls back to it, but new entries should fill in all six.
+ * `localize()` falls back to it, but new entries should fill in all seven.
  *
- * Register, matching both apps: DE informal (du), FR vous, CS/RU/UK formal (vy/вы/ви).
+ * Register, matching both apps: DE informal (du), FR vous, PL informal (ty), CS/RU/UK formal (vy/вы/ви).
  *
  * See README.md for the full checklist.
  */
@@ -28,6 +28,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Évaluez votre coach et lisez ce que disent les autres",
             ru: "Оцените тренера и почитайте, что говорят другие",
             uk: "Оцініть тренера й почитайте, що кажуть інші",
+            pl: "Oceń swojego trenera i przeczytaj, co mówią inni",
         },
         changes: [
             {
@@ -39,6 +40,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les athlètes peuvent désormais laisser un avis à un coach — de une à cinq étoiles, avec autant de texte que vous voulez, ou aucun. Le bouton se trouve sur la page du coach dans le catalogue, à côté de son nom. Il n'est pas nécessaire de vous être entraîné avec lui, et chaque coach peut recevoir un seul avis de votre part. Votre avis est publié sous votre nom complet, et le formulaire vous le dit avant l'envoi. Ensuite vous pouvez changer la note, changer le texte, ou retirer l'avis : il est à vous, et personne d'autre n'y touche. Le coach est prévenu lorsqu'un avis arrive et lorsqu'une note change.",
                     ru: "Спортсмены теперь могут оставить тренеру отзыв — от одной до пяти звёзд и столько текста, сколько захотите, или совсем без него. Кнопка находится на странице тренера в каталоге, рядом с его именем. Тренироваться у него для этого не нужно, а оставить отзыв каждому тренеру можно один раз. Отзыв публикуется под вашим полным именем — форма предупреждает об этом до отправки. Потом оценку и текст можно изменить или отзыв убрать совсем: он ваш, и никто другой его не тронет. Тренер получает уведомление, когда отзыв появляется и когда оценка меняется.",
                     uk: "Спортсмени тепер можуть залишити тренерові відгук — від однієї до п'яти зірок і стільки тексту, скільки захочете, або зовсім без нього. Кнопка розташована на сторінці тренера в каталозі, поряд з його іменем. Тренуватися в нього для цього не потрібно, а залишити відгук кожному тренерові можна один раз. Відгук публікується під вашим повним іменем — форма попереджає про це до надсилання. Згодом оцінку й текст можна змінити або відгук прибрати зовсім: він ваш, і ніхто інший його не змінить. Тренер отримує повідомлення, коли відгук з'являється і коли оцінка змінюється.",
+                    pl: "Sportowcy mogą teraz wystawić trenerowi opinię — od jednej do pięciu gwiazdek, a do tego tyle tekstu, ile chcesz, albo wcale. Przycisk jest na stronie trenera w katalogu, obok jego imienia. Nie musisz z nim trenować, a każdego trenera można ocenić raz. Twoja opinia jest publikowana pod Twoim imieniem i nazwiskiem, a formularz mówi o tym przed wysłaniem. Potem możesz zmienić gwiazdki, zmienić tekst albo opinię z powrotem wycofać: jest Twoja i nikt inny jej nie ruszy. Trener dowiaduje się, kiedy opinia przychodzi i kiedy ocena się zmienia.",
                 },
             },
             {
@@ -50,6 +52,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Chaque coach du catalogue affiche maintenant sa note et le nombre d'avis dont elle est faite — sur sa fiche et sur sa page. Tant que personne ne l'a évalué, il n'y a rien du tout plutôt qu'un zéro. Note rejoint le menu Trier par, et elle tient compte du nombre d'avis, pas seulement de la moyenne : 4,6 donné par quarante athlètes passe devant 5,0 donné par un seul, donc un avis unique ne place personne en tête. Les coachs que personne n'a encore évalués arrivent en dernier.",
                     ru: "У каждого тренера в каталоге теперь видны его оценка и число отзывов, из которых она сложилась, — и на карточке, и на странице. Пока никто не оставил отзыв, там нет ничего, а не ноль. В меню «Сортировка» появилась «Оценка», и она учитывает не только среднее, но и количество отзывов: 4,6 от сорока спортсменов оказывается выше 5,0 от одного, так что один отзыв никого наверх не поднимет. Тренеры, которых ещё никто не оценил, идут последними.",
                     uk: "У кожного тренера в каталозі тепер видно його оцінку та кількість відгуків, з яких вона склалася, — і на картці, і на сторінці. Поки ніхто не залишив відгук, там немає нічого, а не нуль. У меню «Сортування» з'явилася «Оцінка», і вона враховує не лише середнє, а й кількість відгуків: 4,6 від сорока спортсменів опиняється вище за 5,0 від одного, тож один відгук нікого нагору не підніме. Тренери, яких ще ніхто не оцінив, ідуть останніми.",
+                    pl: "U każdego trenera w katalogu widać teraz jego ocenę i to, z ilu opinii się składa — na karcie i na jego stronie, a dopóki nikt go nie ocenił, nie ma tam nic, nie zera. W menu Sortuj według pojawiła się Ocena i liczy się w niej nie tylko średnia, ale i liczba opinii: 4,6 od czterdziestu sportowców jest wyżej niż 5,0 od jednego, więc jedna opinia nie wyniesie nikogo na górę. Trenerzy, których nikt jeszcze nie ocenił, są na końcu.",
                 },
             },
             {
@@ -61,6 +64,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Mes coachs affiche désormais chacun de vos coachs sous la forme de la fiche où vous l'avez trouvé — photo, note et tarifs — et la fiche ouvre sa page, là où s'écrit un avis. Un coach qui n'a pas publié de profil garde sa place dans la liste, avec ses coordonnées comme avant.",
                     ru: "«Мои тренеры» теперь показывают каждого вашего тренера той же карточкой, по которой вы его нашли, — с фото, оценкой и ценами, — и карточка открывает его страницу, где пишется отзыв. Тренер, который не публиковал профиль, остаётся в списке вместе с контактами, как и раньше.",
                     uk: "«Мої тренери» тепер показують кожного вашого тренера тією ж карткою, за якою ви його знайшли, — з фото, оцінкою та цінами, — і картка відкриває його сторінку, де пишеться відгук. Тренер, який не публікував профіль, залишається у списку разом із контактами, як і раніше.",
+                    pl: "Moi trenerzy pokazują teraz każdego Twojego trenera jako kartę, na której go znalazłeś — ze zdjęciem, oceną i cenami — a karta otwiera jego stronę, na której pisze się opinię. Trener, który nie opublikował profilu, zostaje na swoim miejscu na liście, z Twoimi danymi kontaktowymi do niego jak dotąd.",
                 },
             },
         ],
@@ -75,6 +79,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Découvrez le catalogue où figure votre profil",
             ru: "Посмотрите каталог, в котором есть ваш профиль",
             uk: "Перегляньте каталог, у якому є ваш профіль",
+            pl: "Zobacz katalog, w którym jest Twój profil",
         },
         changes: [
             {
@@ -86,6 +91,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "En tant que coach, vous pouvez désormais ouvrir le catalogue des coachs et le lire comme le font les athlètes. C'est un second onglet à côté de Mon profil : rédiger votre profil et voir ce qu'il donne parmi tous les autres se fait donc au même endroit. Votre propre fiche y figure aussi, signalée comme la vôtre et à la place qu'elle occupe réellement — la façon la plus claire de voir ce que compléter votre profil change vraiment.",
                     ru: "Как тренер вы теперь можете открыть каталог тренеров и читать его так же, как его читают спортсмены. Это вторая вкладка рядом с Мой профиль, поэтому работа над профилем и взгляд на то, как он выглядит среди остальных, оказываются в одном месте. Ваш профиль тоже есть в каталоге — отмеченный как ваш и на том месте, куда действительно попал. Так проще всего увидеть, что даёт заполнение профиля.",
                     uk: "Як тренер ви тепер можете відкрити каталог тренерів і читати його так само, як його читають спортсмени. Це друга вкладка поряд із Мій профіль, тому робота над профілем і погляд на те, як він виглядає серед інших, відбуваються в одному місці. Ваш профіль також є в каталозі — позначений як ваш і на тому місці, куди справді потрапив. Так найпростіше побачити, що дає заповнення профілю.",
+                    pl: "Jako trener możesz teraz otworzyć katalog trenerów i czytać go tak, jak czytają go sportowcy. To druga zakładka obok Mojego profilu, więc pisanie profilu i sprawdzanie, jak wygląda pośród wszystkich innych, dzieje się w jednym miejscu. Twój własny wpis też tam jest, oznaczony jako Twój i w pozycji, w której naprawdę wylądował — najlepszy sposób, aby zobaczyć, co właściwie zmienia dokończenie profilu.",
                 },
             },
         ],
@@ -100,6 +106,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Affichez le nombre d'athlètes que vous accompagnez",
             ru: "Покажите, сколько спортсменов вы ведёте",
             uk: "Покажіть, скількох спортсменів ви ведете",
+            pl: "Pokaż, ilu sportowców trenujesz",
         },
         changes: [
             {
@@ -111,6 +118,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Vous pouvez désormais afficher sur votre profil d'entraîneur le nombre d'athlètes que vous accompagnez. C'est désactivé jusqu'à ce que vous l'activiez — l'interrupteur se trouve à la fin du formulaire de votre profil, sous votre site web. Seuls les athlètes que vous accompagnez actuellement sont comptés, le nombre se met à jour tout seul au fil de votre liste de clients, et rien ne s'affiche tant que vous n'avez aucun client actif. Si vous le laissez désactivé, vous ne perdez rien : cela n'a aucun effet sur votre place dans le catalogue des entraîneurs.",
                     ru: "Теперь в профиле тренера можно показывать, сколько спортсменов вы ведёте. Пока вы сами это не включите, число не отображается — переключатель находится в конце формы профиля, под сайтом. Считаются только спортсмены, которых вы ведёте сейчас, число само остаётся актуальным вместе с вашим списком клиентов, и пока активных клиентов нет, не показывается ничего. Если оставите выключенным, вы ничего не теряете: на то, где вы окажетесь в каталоге тренеров, это не влияет.",
                     uk: "Тепер у профілі тренера можна показувати, скількох спортсменів ви ведете. Поки ви самі це не увімкнете, число не відображається — перемикач розташований у кінці форми профілю, під сайтом. Враховуються лише спортсмени, яких ви ведете зараз, число саме залишається актуальним разом із вашим списком клієнтів, і поки активних клієнтів немає, не показується нічого. Якщо залишите вимкненим, ви нічого не втрачаєте: на те, де ви опинитеся в каталозі тренерів, це не впливає.",
+                    pl: "Na swoim profilu trenera możesz teraz pokazać, ilu sportowców trenujesz. Jest wyłączone, dopóki tego nie włączysz — przełącznik jest na końcu formularza profilu, pod Twoją stroną internetową. Liczeni są tylko sportowcy, których aktywnie prowadzisz, liczba sama się aktualizuje wraz ze zmianami na liście klientów, a dopóki nie masz aktywnych klientów, nie pojawia się nic. Jeśli zostawisz to wyłączone, nic nie tracisz: nie ma to żadnego wpływu na to, gdzie pojawiasz się w katalogu trenerów.",
                 },
             },
         ],
@@ -125,6 +133,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Votre numéro WhatsApp est une coordonnée",
             ru: "Ваш номер WhatsApp — это контакт",
             uk: "Ваш номер WhatsApp — це контакт",
+            pl: "Twój numer WhatsApp to dane kontaktowe",
         },
         changes: [
             {
@@ -136,6 +145,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "WhatsApp a quitté Où vous trouver pour rejoindre vos coordonnées, là où c'est sa place — un numéro de téléphone ne se publie pas auprès de tous ceux qui parcourent le catalogue. Il se comporte désormais comme votre adresse e-mail et votre téléphone : seuls les athlètes dont vous avez accepté la demande de coaching le voient, et ils vous joignent en une pression. Si vous l'avez ajouté plus tôt dans la journée, saisissez-le à nouveau dans vos coordonnées.",
                     ru: "WhatsApp переехал из блока Где вас найти в ваши контакты, где ему и место: номер телефона не стоит показывать всем, кто просматривает каталог. Теперь он ведёт себя как ваш адрес электронной почты и телефон — его видят только спортсмены, чью заявку на сопровождение вы приняли, и связываются с вами одним нажатием. Если вы добавили его сегодня раньше, укажите его снова в контактах.",
                     uk: "WhatsApp переїхав із блоку Де вас знайти до ваших контактів, де йому й місце: номер телефону не варто показувати всім, хто переглядає каталог. Тепер він поводиться як ваша електронна адреса та телефон — його бачать лише спортсмени, чию заявку на супровід ви прийняли, і зв'язуються з вами одним натисканням. Якщо ви додали його сьогодні раніше, укажіть його знову в контактах.",
+                    pl: "WhatsApp przeniósł się z sekcji Gdzie Cię znaleźć do Twoich danych kontaktowych, gdzie jego miejsce — numeru telefonu nie publikuje się każdemu, kto przegląda katalog. Zachowuje się teraz jak Twój adres e-mail i telefon: widzą go tylko sportowcy, których prośbę o współpracę przyjąłeś, i odezwą się do Ciebie jednym dotknięciem. Jeśli dodałeś go wcześniej dzisiaj, wpisz go jeszcze raz w danych kontaktowych.",
                 },
             },
         ],
@@ -150,6 +160,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Maintenant sur WhatsApp",
             ru: "Теперь и в WhatsApp",
             uk: "Тепер і у WhatsApp",
+            pl: "Teraz na WhatsAppie",
         },
         changes: [
             {
@@ -161,6 +172,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les coachs peuvent ajouter WhatsApp aux endroits où les athlètes les trouvent, aux côtés d'Instagram, YouTube et TikTok. Saisissez votre numéro de téléphone et nous construisons le lien — avec l'indicatif pays, sinon il ne fonctionnera que pour les athlètes de votre pays. Votre profil affiche WhatsApp plutôt que le numéro écrit en clair, et une pression ouvre une conversation avec vous.",
                     ru: "Тренеры могут добавить WhatsApp туда, где их находят спортсмены, рядом с Instagram, YouTube и TikTok. Укажите номер телефона — ссылку мы соберём сами; добавьте код страны, иначе она сработает только у спортсменов из вашей страны. В профиле это показывается как WhatsApp, а не выписанным номером, и одно нажатие открывает чат с вами.",
                     uk: "Тренери можуть додати WhatsApp туди, де їх знаходять спортсмени, поряд з Instagram, YouTube і TikTok. Укажіть номер телефону — посилання ми складемо самі; додайте код країни, інакше воно працюватиме лише для спортсменів із вашої країни. У профілі це показується як WhatsApp, а не виписаним номером, і одне натискання відкриває чат із вами.",
+                    pl: "Trenerzy mogą dodać WhatsApp do miejsc, w których sportowcy ich znajdą, obok Instagrama, YouTube'a i TikToka. Wpisz swój numer telefonu, a my zbudujemy link — podaj numer kierunkowy kraju, inaczej zadziała tylko dla sportowców z Twojego kraju. Profil pokazuje go jako WhatsApp, a nie wypisuje numeru, i jedno dotknięcie otwiera czat z Tobą.",
                 },
             },
         ],
@@ -175,6 +187,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Dites vos tarifs, trouvez ce qui vous convient",
             ru: "Назовите свою цену — найдите подходящую",
             uk: "Назвіть свою ціну — знайдіть підхожу",
+            pl: "Powiedz, ile bierzesz, znajdź to, co pasuje",
         },
         changes: [
             {
@@ -186,6 +199,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les coachs peuvent tarifer chaque type d'offre séparément au lieu d'annoncer un seul tarif mensuel — Coaching en ligne, Séance d'entraînement unique, Plan d'entraînement seul et Consultation. Activez ce que vous proposez vraiment, indiquez pour chacun un tarif unique ou une fourchette, et choisissez une seule devise pour l'ensemble. Ce qui reste désactivé n'est pas affiché. Si vous aviez un tarif mensuel, il est déjà en place comme tarif du Coaching en ligne.",
                     ru: "Тренеры могут назначить цену каждому типу услуги отдельно, а не одну месячную — Онлайн-сопровождение, Одна тренировка, Только план тренировок и Консультация. Включите то, что действительно предлагаете, укажите для каждого одну цену или диапазон и выберите одну валюту для всех. Всё, что выключено, не показывается. Если у вас была месячная цена, она уже стоит как цена Онлайн-сопровождения.",
                     uk: "Тренери можуть призначити ціну кожному типу послуги окремо, а не одну місячну — Онлайн-супровід, Одне тренування, Тільки тренувальний план і Консультація. Увімкніть те, що справді пропонуєте, вкажіть для кожного одну ціну або діапазон і виберіть одну валюту для всіх. Усе, що вимкнено, не показується. Якщо у вас була місячна ціна, вона вже стоїть як ціна Онлайн-супроводу.",
+                    pl: "Trenerzy mogą wycenić każdy rodzaj oferty osobno, zamiast podawać jedną stawkę miesięczną — Trening online, Jednorazowy trening, Tylko plan treningowy i Konsultacja. Włącz te, które naprawdę sprzedajesz, podaj do każdego jedną cenę albo zakres i wybierz jedną walutę dla wszystkich. Czego nie włączysz, po prostu się nie pokaże. Jeśli miałeś wcześniej stawkę miesięczną, jest już na miejscu jako cena Twojego treningu online.",
                 },
             },
             {
@@ -197,6 +211,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "La carte d'un coach et son profil affichent désormais chacun de ses tarifs, avec son intitulé, si bien que le coaching en ligne se lit juste à côté du prix d'une séance. Pour les coachs qui n'ont rien tarifé, on lit toujours Prix sur demande — cela a toujours voulu dire demandez-leur, pas que le coaching est gratuit.",
                     ru: "На карточке тренера и в его профиле теперь перечислены все цены, которые он указал, каждая с названием, так что онлайн-сопровождение читается прямо рядом с ценой одной тренировки. У тренеров, которые ничего не оценили, по-прежнему написано Цена по запросу — это всегда значило спросите у них, а не что занятия бесплатны.",
                     uk: "На картці тренера та в його профілі тепер перелічені всі ціни, які він указав, кожна з назвою, тож онлайн-супровід читається просто поруч із ціною одного тренування. У тренерів, які нічого не оцінили, так само написано Ціна за запитом — це завжди означало запитайте в них, а не що заняття безкоштовні.",
+                    pl: "Karta trenera i jego profil wypisują teraz każdą podaną cenę, każdą z nazwą, więc trening online czyta się od razu obok kosztu jednej jednostki. Trenerzy, którzy nic nie wycenili, nadal mówią Cena do ustalenia — co zawsze znaczyło zapytaj, a nie że trenowanie jest darmowe.",
                 },
             },
             {
@@ -208,6 +223,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Trois nouveaux filtres dans le catalogue : le type d'offre que vous cherchez, le prix maximum que vous voulez payer, et la devise. Filtrer par type d'offre n'affiche que les coachs qui la proposent. Choisissez d'abord un type d'offre et le champ du prix s'ouvre — un maximum seul ne pourrait pas dire de quel tarif du coach il s'agit.",
                     ru: "Три новых фильтра в каталоге: тип услуги, который вы ищете, максимальная цена, которую вы готовы заплатить, и валюта. Фильтр по типу услуги показывает только тренеров, которые её предлагают. Сначала выберите тип услуги — и поле цены станет доступным: сам по себе максимум не сказал бы, к какой из цен тренера он относится.",
                     uk: "Три нові фільтри в каталозі: тип послуги, який ви шукаєте, максимальна ціна, яку ви готові заплатити, і валюта. Фільтр за типом послуги показує лише тренерів, які її пропонують. Спочатку виберіть тип послуги — і поле ціни стане доступним: сам по собі максимум не сказав би, до якої з цін тренера він належить.",
+                    pl: "Trzy nowe filtry w katalogu: rodzaj oferty, której szukasz, najwięcej, ile chcesz zapłacić, i waluta. Filtrowanie po rodzaju oferty pokazuje tylko trenerów, którzy ją sprzedają. Wybierz najpierw rodzaj oferty i otworzy się pole ceny — kwota maksymalna sama nie mogłaby powiedzieć, o którą z cen trenera chodzi.",
                 },
             },
             {
@@ -219,6 +235,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Le tri par prix suit désormais votre filtre. Cherchez une consultation et il classe les tarifs de consultation plutôt que les tarifs mensuels : en haut se trouve donc le coach le moins cher pour ce que vous voulez vraiment. Sans type d'offre choisi, le tri porte sur le coaching en ligne — et là, les coachs qui ne l'ont pas tarifé passent en dernier au lieu du premier : pas de tarif veut dire demandez, pas gratuit. Le tri ne s'appelle plus Tarif mensuel — les liens du catalogue que vous avez déjà partagés ouvrent la même liste.",
                     ru: "Сортировка по цене теперь следует за вашим фильтром. Ищете консультацию — и она упорядочивает цены консультаций, а не месячные, так что наверху оказывается самый доступный тренер именно для того, что вам нужно. Если тип услуги не выбран, сортировка идёт по онлайн-сопровождению — и там тренеры, которые его не оценили, идут в конце, а не в начале: нет цены значит спросите, а не бесплатно. Сортировка больше не называется Месячная цена — ссылки на каталог, которыми вы уже делились, открывают тот же список.",
                     uk: "Сортування за ціною тепер слідує за вашим фільтром. Шукаєте консультацію — і воно впорядковує ціни консультацій, а не місячні, тож нагорі опиняється найдоступніший тренер саме для того, що вам потрібно. Якщо тип послуги не вибрано, сортування йде за онлайн-супроводом — і там тренери, які його не оцінили, ідуть у кінці, а не на початку: немає ціни означає запитайте, а не безкоштовно. Сортування більше не називається Місячна ціна — посилання на каталог, якими ви вже ділилися, відкривають той самий список.",
+                    pl: "Sortowanie po cenie idzie teraz za tym, co odfiltrowałeś. Poproś o konsultacje i uszereguje ceny konsultacji, a nie miesięczne, więc na górze jest najtańszy trener od tego, czego naprawdę chcesz. Bez wybranego rodzaju oferty szereguje trening online i tam trenerzy, którzy go nie wycenili, są na końcu, a nie na początku — brak ceny znaczy zapytaj, nie darmo. Ta kolejność nie nazywa się już Stawka miesięczna — udostępnione wcześniej linki do katalogu nadal otwierają tę samą listę.",
                 },
             },
         ],
@@ -233,6 +250,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Le coaching, à un clic",
             ru: "Коучинг — снова в один клик",
             uk: "Коучинг — знову в один клік",
+            pl: "Współpraca — znów jedno kliknięcie",
         },
         changes: [
             {
@@ -244,6 +262,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "La section Coaching disparaît et ses pages reviennent dans la navigation principale, où elles s'atteignent en un clic au lieu de deux : pour les coachs, Clients se retrouve en haut avec Demandes en onglet à côté, et Mon profil a sa propre entrée. Les athlètes ont une seule entrée Catalogue des coachs, avec Mes coachs comme second onglet. Aucune page n'a disparu — toutes gardent leur adresse, y compris celle que vous avez peut-être mise en favori, et le point signale toujours ce qui attend votre réponse.",
                     ru: "Раздел Коучинг убран, а его страницы вернулись в основную навигацию, где до них один клик вместо двух: у тренеров Клиенты снова наверху, Запросы — вкладкой рядом, а Мой профиль получил отдельный пункт. У спортсменов один пункт Каталог тренеров, а Мои тренеры — его вторая вкладка. Ни одна страница не пропала — адреса те же, включая тот, который вы могли сохранить в закладках, и точка по-прежнему отмечает то, что ждёт вашего ответа.",
                     uk: "Розділ Коучинг прибрано, а його сторінки повернулися до основної навігації, де до них один клік замість двох: у тренерів Клієнти знову вгорі, Запити — вкладкою поруч, а Мій профіль отримав окремий пункт. У спортсменів один пункт Каталог тренерів, а Мої тренери — його друга вкладка. Жодна сторінка не зникла — адреси ті самі, включно з тією, яку ви могли зберегти в закладках, і точка так само позначає те, що очікує на вашу відповідь.",
+                    pl: "Sekcja Współpraca zniknęła, a jej strony wróciły do głównej nawigacji, gdzie są jednym kliknięciem, a nie dwoma: dla trenerów Klienci są znów na górze, z Prośbami jako zakładką obok, a Mój profil ma własny wpis. Dla sportowców jest jeden wpis Katalog trenerów, a Moi trenerzy to jego druga zakładka. Żadna strona nie zniknęła — każda zachowuje adres, który mogłeś zapisać w zakładkach, a kropka nadal oznacza to, co czeka na Twoją odpowiedź.",
                 },
             },
             {
@@ -255,6 +274,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Ouvrir l'entraînement d'un client vous garde désormais chez ce client. Le fil au-dessus de la page indique Clients / son nom / Entraînement : en quittant la séance, vous revenez sur sa page au lieu d'atterrir dans vos propres entraînements.",
                     ru: "Открывая тренировку клиента, вы теперь остаётесь у этого клиента. Путь над страницей читается как Клиенты / имя / Тренировка, поэтому из тренировки вы возвращаетесь на его страницу, а не в свои собственные тренировки.",
                     uk: "Відкриваючи тренування клієнта, ви тепер залишаєтесь у цього клієнта. Шлях над сторінкою читається як Клієнти / ім'я / Тренування, тож із тренування ви повертаєтесь на його сторінку, а не до власних тренувань.",
+                    pl: "Otwarcie treningu klienta zostawia Cię teraz przy tym kliencie. Ścieżka nad stroną czyta się Klienci / jego imię / Trening, więc wyjście z jednostki wraca na jego stronę, a nie wrzuca Cię do Twoich własnych treningów.",
                 },
             },
         ],
@@ -269,6 +289,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Trouvez un coach, ou laissez-vous trouver",
             ru: "Найдите тренера — или пусть найдут вас",
             uk: "Знайдіть тренера — або нехай знайдуть вас",
+            pl: "Znajdź trenera albo daj się znaleźć",
         },
         changes: [
             {
@@ -280,6 +301,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Tout ce qui touche au coaching se trouve désormais dans une seule section Coaching de la navigation, au lieu d'être dispersé dans les Paramètres — Trouver un coach et Mes coachs pour les athlètes, Clients, Demandes et Mon profil pour les coachs. Un point signale ce qui attend votre réponse.",
                     ru: "Всё, что связано с коучингом, теперь собрано в одном разделе Коучинг в навигации, а не разбросано по Настройкам — Найти тренера и Мои тренеры для спортсменов, Клиенты, Запросы и Мой профиль для тренеров. Точка отмечает то, что ждёт вашего ответа.",
                     uk: "Усе, що пов'язано з коучингом, тепер зібрано в одному розділі Коучинг у навігації, а не розкидано по Налаштуваннях — Знайти тренера та Мої тренери для спортсменів, Клієнти, Запити та Мій профіль для тренерів. Точка позначає те, що очікує на вашу відповідь.",
+                    pl: "Wszystko, co dotyczy współpracy z trenerem, siedzi teraz w jednej sekcji Współpraca w nawigacji, zamiast być rozsypane po Ustawieniach — Znajdź trenera i Moi trenerzy dla sportowców, Klienci, Prośby i Mój profil dla trenerów. Kropka oznacza to, co czeka na Twoją odpowiedź.",
                 },
             },
             {
@@ -291,6 +313,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les athlètes peuvent parcourir le catalogue des coachs dans Coaching → Trouver un coach — ouvrez un coach pour découvrir ses spécialités, les langues dans lesquelles il coache, où il travaille, ses tarifs et les certifications qu'il déclare. Filtrez par spécialité, langue et lieu, n'affichez que les coachs acceptant de nouveaux clients, et triez par prix ou par nom.",
                     ru: "Спортсмены могут просматривать каталог тренеров в разделе Коучинг → Найти тренера — откройте тренера и увидите его специализации, языки, на которых он тренирует, где он работает, сколько берёт и какие сертификаты указывает. Фильтруйте по специализации, языку и местоположению, показывайте только тренеров, принимающих новых клиентов, и сортируйте по цене или имени.",
                     uk: "Спортсмени можуть переглядати каталог тренерів у розділі Коучинг → Знайти тренера — відкрийте тренера й побачите його спеціалізації, мови, якими він тренує, де він працює, скільки бере та які сертифікати вказує. Фільтруйте за спеціалізацією, мовою та місцезнаходженням, показуйте лише тренерів, які приймають нових клієнтів, і сортуйте за ціною або іменем.",
+                    pl: "Sportowcy mogą przeglądać katalog trenerów w Współpraca → Znajdź trenera — otwórz trenera, aby przeczytać, w czym się specjalizuje, w jakich językach trenuje, gdzie pracuje, ile bierze i jakie certyfikaty podaje. Filtruj po specjalizacji, języku i lokalizacji, pokaż tylko trenerów przyjmujących nowych klientów i sortuj po cenie albo po nazwie.",
                 },
             },
             {
@@ -302,6 +325,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Demandez un coaching directement depuis le profil d'un coach, avec un message sur ce que vous pratiquez et ce que vous voulez travailler — il voit votre nom et votre message, jamais votre e-mail ni votre téléphone. Les demandes en attente de réponse s'affichent au-dessus du catalogue et vous pouvez les retirer à tout moment.",
                     ru: "Попросить тренера о тренировках можно прямо из его профиля, приложив сообщение о том, что вы тренируете и над чем хотите работать — он увидит ваше имя и сообщение, но никогда e-mail или телефон. Запросы, ожидающие ответа, показаны над каталогом, и вы можете отозвать их в любой момент.",
                     uk: "Попросити тренера про тренування можна просто з його профілю, додавши повідомлення про те, що ви тренуєте і над чим хочете працювати — він побачить ваше ім'я та повідомлення, але ніколи e-mail чи телефон. Запити, що очікують на відповідь, показані над каталогом, і ви можете відкликати їх будь-коли.",
+                    pl: "Poproś trenera o współpracę wprost z jego profilu, z wiadomością o tym, co trenujesz i nad czym chcesz pracować — widzi Twoje imię i Twoją wiadomość, nigdy Twojego e-maila ani telefonu. Prośby czekające na odpowiedź są wypisane nad katalogiem i każdą możesz wycofać w dowolnej chwili.",
                 },
             },
             {
@@ -313,6 +337,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les coachs disposent d'un profil public à remplir — photo de profil et de couverture, galerie, description de votre coaching, spécialités, langues, tarifs, certifications, liens vers votre travail public et les lieux où vous coachez. Un indicateur de complétude montre ce qu'il reste à ajouter, les profils les plus complets apparaissent plus haut dans le catalogue, et personne ne voit rien avant que vous ne publiiez.",
                     ru: "У тренеров появился публичный профиль — фото профиля и обложка, галерея, описание вашего подхода, специализации, языки, цены, сертификаты, ссылки на ваши публичные материалы и места, где вы тренируете. Индикатор заполненности показывает, чего не хватает, более заполненные профили стоят в каталоге выше, а до публикации профиль не видит никто.",
                     uk: "У тренерів з'явився публічний профіль — фото профілю та обкладинка, галерея, опис вашого підходу, спеціалізації, мови, ціни, сертифікати, посилання на ваші публічні матеріали та місця, де ви тренуєте. Індикатор заповненості показує, чого не вистачає, заповненіші профілі стоять у каталозі вище, а до публікації профіль не бачить ніхто.",
+                    pl: "Trenerzy dostają publiczny profil do wypełnienia — zdjęcie profilowe i zdjęcie w tle, galerię, opis swojej pracy, specjalizacje, języki, ceny, certyfikaty, linki do publicznej działalności i miejsca, w których trenujesz. Miernik kompletności pokazuje, czego jeszcze brakuje, bardziej kompletne profile pojawiają się w katalogu wyżej, a nikt nie widzi niczego, dopóki tego nie opublikujesz.",
                 },
             },
             {
@@ -324,6 +349,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Répondez aux demandes dans Coaching → Demandes : en acceptant, l'athlète rejoint vos clients et vous voyez chacun les coordonnées de l'autre ; en refusant, il pourra vous solliciter à nouveau plus tard. Si quelqu'un vous a déjà approché, la demande l'indique, avec ce qui s'était passé.",
                     ru: "Отвечайте на запросы в разделе Коучинг → Запросы: приняв, вы добавляете спортсмена в клиенты и видите контакты друг друга; отклонив — он сможет обратиться к вам позже снова. Если человек обращался раньше, запрос сообщит об этом и о том, чем всё закончилось.",
                     uk: "Відповідайте на запити в розділі Коучинг → Запити: прийнявши, ви додаєте спортсмена до клієнтів і бачите контакти одне одного; відхиливши — він зможе звернутися до вас пізніше знову. Якщо людина зверталася раніше, запит повідомить про це й про те, чим усе завершилося.",
+                    pl: "Odpowiadaj na prośby w Współpraca → Prośby: przyjmij i sportowiec dołączy do Twoich klientów, a wy oboje zobaczycie swoje dane kontaktowe, albo odrzuć i będzie mógł poprosić Cię później ponownie. Jeśli ktoś zwracał się do Ciebie wcześniej, prośba to mówi — i mówi, jak się to skończyło.",
                 },
             },
             {
@@ -335,6 +361,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Un seul interrupteur ferme la porte sans vous faire disparaître : désactivez Accepter de nouveaux clients et le bouton de demande disparaît, mais votre profil reste dans le catalogue — les athlètes peuvent toujours vous trouver et revenir plus tard. Les demandes déjà en attente ne sont pas affectées.",
                     ru: "Один переключатель закрывает дверь, не скрывая вас: отключите Приём новых клиентов, и кнопка запроса исчезнет, но профиль останется в каталоге — спортсмены по-прежнему найдут вас и смогут вернуться позже. Уже ожидающие запросы это не затронет.",
                     uk: "Один перемикач зачиняє двері, не приховуючи вас: вимкніть Приймання нових клієнтів, і кнопка запиту зникне, але профіль залишиться в каталозі — спортсмени й далі знайдуть вас і зможуть повернутися пізніше. Запити, що вже очікують, це не зачепить.",
+                    pl: "Jeden przełącznik zamyka drzwi, nie ukrywając Cię: wyłącz Przyjmowanie nowych klientów i przycisk prośby zniknie, ale Twój profil zostanie w katalogu, więc sportowcy nadal Cię znajdą i wrócą później. Prośby, które już czekają, nie są tym objęte.",
                 },
             },
         ],
@@ -349,6 +376,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Suivez vos progrès, sans entraîneur",
             ru: "Следите за своим прогрессом — тренер не нужен",
             uk: "Стежте за своїм прогресом — тренер не потрібен",
+            pl: "Śledź własne postępy, bez trenera",
         },
         changes: [
             {
@@ -360,6 +388,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les athlètes peuvent désormais enregistrer eux-mêmes leurs compétitions, leurs records personnels et des vidéos sur leurs propres entraînements — tout ce qui nécessitait auparavant l'intervention d'un entraîneur.",
                     ru: "Спортсмены теперь могут сами записывать собственные соревнования, личные рекорды и видео в своих тренировках — всё то, что раньше должен был настраивать тренер.",
                     uk: "Спортсмени тепер можуть самі записувати власні змагання, особисті рекорди та відео у своїх тренуваннях — усе те, що раніше мав налаштовувати тренер.",
+                    pl: "Sportowcy mogą teraz zapisywać własne zawody, rekordy i wideo we własnych treningach — wszystko to, co dotąd wymagało trenera, który by to dla Ciebie ustawił.",
                 },
             },
             {
@@ -371,6 +400,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Ajoutez vos propres exercices et tutoriels à la base d'exercices — rédigez vos consignes ou associez une vidéo aux mouvements que la base publique ne couvre pas.",
                     ru: "Добавляйте в базу упражнений собственные упражнения и уроки — напишите свои инструкции или приложите видео к движениям, которых нет в публичной базе.",
                     uk: "Додавайте до бази вправ власні вправи та уроки — напишіть свої інструкції або додайте відео до рухів, яких немає в публічній базі.",
+                    pl: "Dodawaj do bazy ćwiczeń własne ćwiczenia i poradniki — napisz własne wskazówki albo podlinkuj wideo do ruchów, których publiczna baza nie obejmuje.",
                 },
             },
             {
@@ -382,6 +412,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Nouveau forfait Solo pour les athlètes — un seul abonnement débloque un nombre illimité de compétitions et de records personnels, d'exercices et de tutoriels personnalisés, et de vidéos sur vos propres entraînements.",
                     ru: "Новый план Solo для спортсменов — одна подписка снимает ограничения на собственные соревнования и личные рекорды, свои упражнения и уроки, а также видео в собственных тренировках.",
                     uk: "Новий план Solo для спортсменів — одна підписка знімає обмеження на власні змагання та особисті рекорди, свої вправи й уроки, а також відео у власних тренуваннях.",
+                    pl: "Nowy plan Solo dla sportowców — jedna subskrypcja znosi limity samodzielnie zapisywanych zawodów i rekordów, własnych ćwiczeń i poradników oraz wideo we własnych treningach.",
                 },
             },
             {
@@ -393,6 +424,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Un nouveau panneau dans Paramètres → Abonnement indique précisément la part de votre quota gratuit déjà utilisée pour chaque fonctionnalité, avec un lien pour passer à l'offre supérieure lorsque vous approchez d'une limite.",
                     ru: "Новая панель в разделе Настройки → Подписка показывает, сколько бесплатного лимита вы уже израсходовали по каждой функции, и даёт ссылку на переход к более высокому плану, когда лимит близко.",
                     uk: "Нова панель у розділі Налаштування → Підписка показує, скільки безкоштовного ліміту ви вже витратили за кожною функцією, і дає посилання на перехід до вищого плану, коли ліміт близько.",
+                    pl: "Nowy panel wykorzystania w Ustawieniach → Subskrypcja pokazuje dokładnie, ile darmowego limitu wykorzystałeś w każdej funkcji, wraz z linkiem do podniesienia planu, gdy zbliżasz się do limitu.",
                 },
             },
         ],
@@ -407,6 +439,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Changez de forfait en quelques clics",
             ru: "Смените план за пару кликов",
             uk: "Змініть план за пару кліків",
+            pl: "Podnieś plan w kilku dotknięciach",
         },
         changes: [
             {
@@ -418,6 +451,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Nouveau forfait Studio — accompagnez jusqu'à 50 athlètes avec un seul abonnement. Idéal pour les équipes en croissance qui ont dépassé Pro.",
                     ru: "Новый план Studio — ведите до 50 спортсменов в рамках одной подписки. Идеально для растущих команд, которым уже мало Pro.",
                     uk: "Новий план Studio — ведіть до 50 спортсменів у межах однієї підписки. Ідеально для команд, що зростають і яким уже замало Pro.",
+                    pl: "Nowy plan Studio — prowadź do 50 sportowców w jednej subskrypcji, dla rosnących zespołów, którym Pro już nie wystarcza.",
                 },
             },
             {
@@ -429,6 +463,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Vous pouvez désormais passer à un forfait supérieur directement dans Paramètres → Abonnement. Avant de confirmer, vous voyez exactement ce que vous paierez aujourd'hui — le temps non utilisé de votre forfait actuel est crédité automatiquement et seule la différence est facturée.",
                     ru: "Перейти на более высокий план теперь можно прямо в разделе Настройки → Подписка. Перед подтверждением вы увидите точную сумму к оплате сегодня — неиспользованное время текущего плана засчитывается автоматически, и списывается только разница.",
                     uk: "Перейти на вищий план тепер можна просто в розділі Налаштування → Підписка. Перед підтвердженням ви побачите точну суму до сплати сьогодні — невикористаний час поточного плану зараховується автоматично, і списується лише різниця.",
+                    pl: "Plan możesz teraz podnieść wprost w Ustawieniach → Subskrypcja. Przed potwierdzeniem zobaczysz dokładnie, ile zapłacisz dziś — niewykorzystany czas z obecnego planu jest zaliczany automatycznie i pobieramy tylko różnicę.",
                 },
             },
             {
@@ -440,6 +475,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les changements de forfait prennent effet immédiatement — votre nouvelle limite d'athlètes est disponible dès que le paiement est validé, sans attendre le cycle de facturation suivant.",
                     ru: "Смена плана вступает в силу сразу — новый лимит спортсменов доступен в момент прохождения платежа, без ожидания следующего расчётного периода.",
                     uk: "Зміна плану набуває чинності одразу — новий ліміт спортсменів доступний у момент проходження платежу, без очікування наступного розрахункового періоду.",
+                    pl: "Podniesienie planu działa od razu — nowy limit sportowców jest dostępny w momencie zaksięgowania płatności, bez czekania na następny okres rozliczeniowy.",
                 },
             },
         ],
@@ -454,6 +490,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Terminez votre entraînement sans faire défiler",
             ru: "Завершайте тренировку без лишней прокрутки",
             uk: "Завершуйте тренування без зайвого прокручування",
+            pl: "Zakończ trening bez przewijania",
         },
         changes: [
             {
@@ -465,6 +502,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Le bouton « Terminer l'entraînement » reste désormais fixé en bas de l'écran pendant que vous faites défiler le détail d'un entraînement — il est donc toujours à portée de main au lieu d'être caché tout en bas.",
                     ru: "Кнопка «Завершить тренировку» теперь закреплена внизу экрана, пока вы прокручиваете детали тренировки, — она всегда под рукой, а не спрятана в самом конце.",
                     uk: "Кнопка «Завершити тренування» тепер закріплена внизу екрана, поки ви прокручуєте деталі тренування, — вона завжди під рукою, а не схована в самому кінці.",
+                    pl: "Przycisk „Zakończ trening” zostaje teraz przyklejony do dołu ekranu, kiedy przewijasz szczegóły treningu, więc jest zawsze pod ręką, a nie ukryty na samym końcu.",
                 },
             },
             {
@@ -476,6 +514,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Sur téléphone, toucher un champ de texte ne zoome plus la page — les formulaires restent en place et sont plus faciles à remplir.",
                     ru: "На телефоне при нажатии на текстовое поле страница больше не увеличивается — формы остаются на месте и заполнять их удобнее.",
                     uk: "На телефоні при натисканні на текстове поле сторінка більше не збільшується — форми залишаються на місці, і заповнювати їх зручніше.",
+                    pl: "Na telefonach dotknięcie pola tekstowego nie przybliża już strony, więc formularze zostają na miejscu i łatwiej je wypełnić.",
                 },
             },
             {
@@ -487,6 +526,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les boutons de validation et de retour n'apparaissent plus que sur les entraînements que vous avez créés ou qui vous sont assignés — ils ne s'affichent plus sur l'entraînement de quelqu'un d'autre.",
                     ru: "Кнопки завершения и обратной связи теперь показываются только у тренировок, которые вы создали или которые вам назначены, — у чужих тренировок они больше не появляются.",
                     uk: "Кнопки завершення та зворотного зв'язку тепер показуються лише в тренуваннях, які ви створили або які вам призначено, — у чужих тренуваннях вони більше не з'являються.",
+                    pl: "Przyciski zakończenia i informacji zwrotnej pojawiają się teraz tylko w treningach, które utworzyłeś albo które są Tobie przypisane, więc nie wyskakują już przy przeglądaniu treningu kogoś innego.",
                 },
             },
         ],
@@ -501,6 +541,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Ne repartez jamais de zéro avec un nouveau client",
             ru: "С новым клиентом вы не начинаете с нуля",
             uk: "З новим клієнтом ви не починаєте з нуля",
+            pl: "Nigdy nie zaczynaj z nowym klientem od zera",
         },
         changes: [
             {
@@ -512,6 +553,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Lorsqu'un athlète rejoint votre groupe, vous voyez désormais ses entraînements, performances et compétitions antérieurs, quel que soit l'entraîneur qui l'a accompagné — fini le départ de zéro avec un nouveau client.",
                     ru: "Когда спортсмен вступает в вашу группу, вы теперь видите его прошлые тренировки, результаты и соревнования от любого тренера, который его вёл, — с новым клиентом больше не нужно начинать с чистого листа.",
                     uk: "Коли спортсмен приєднується до вашої групи, ви тепер бачите його минулі тренування, результати та змагання від будь-якого тренера, який його вів, — з новим клієнтом більше не треба починати з чистого аркуша.",
+                    pl: "Kiedy sportowiec dołącza do Twojej grupy, widzisz teraz jego dawne treningi, rekordy i zawody od każdego trenera, który go prowadził — koniec z zaczynaniem z nowym klientem od czystej karty.",
                 },
             },
             {
@@ -523,6 +565,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les entraînements, performances et compétitions créés par un autre entraîneur portent désormais clairement le nom de leur auteur et sont en lecture seule — vous distinguez ainsi toujours vos propres entrées de l'historique du client avec quelqu'un d'autre.",
                     ru: "Тренировки, результаты и соревнования, созданные другим тренером, теперь помечены именем автора и доступны только для чтения — свои записи вы всегда легко отличите от истории клиента с кем-то другим.",
                     uk: "Тренування, результати та змагання, створені іншим тренером, тепер позначені іменем автора й доступні лише для читання — свої записи ви завжди легко відрізните від історії клієнта з кимось іншим.",
+                    pl: "Treningi, rekordy i zawody utworzone przez innego trenera są teraz wyraźnie podpisane imieniem autora i pokazane tylko do wglądu, więc zawsze odróżnisz swoje wpisy od historii klienta z kimś innym.",
                 },
             },
             {
@@ -534,6 +577,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les athlètes voient désormais dans les Paramètres tous les groupes d'entraîneurs auxquels ils appartiennent et peuvent quitter n'importe quel groupe à tout moment — le quitter retire immédiatement l'accès de cet entraîneur à leur historique.",
                     ru: "Спортсмены теперь видят в настройках все тренерские группы, в которых состоят, и могут в любой момент покинуть любую из них — при этом доступ тренера к их истории прекращается сразу.",
                     uk: "Спортсмени тепер бачать у налаштуваннях усі тренерські групи, до яких належать, і можуть будь-коли покинути будь-яку з них — при цьому доступ тренера до їхньої історії припиняється одразу.",
+                    pl: "Sportowcy widzą teraz w Ustawieniach wszystkie grupy trenerskie, do których należą, i mogą opuścić każdą w dowolnej chwili — opuszczenie od razu odbiera temu trenerowi dostęp do ich historii.",
                 },
             },
             {
@@ -545,6 +589,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Avant d'accepter l'invitation d'un nouvel entraîneur, les athlètes voient désormais exactement ce que celui-ci pourra consulter, et savent donc à quoi ils consentent.",
                     ru: "Перед принятием приглашения от нового тренера спортсмены теперь видят, что именно этот тренер сможет просматривать, — и понимают, на что соглашаются.",
                     uk: "Перед прийняттям запрошення від нового тренера спортсмени тепер бачать, що саме цей тренер зможе переглядати, — і розуміють, на що погоджуються.",
+                    pl: "Przed przyjęciem zaproszenia od nowego trenera sportowcy widzą teraz dokładnie, co ten trener będzie mógł zobaczyć, więc wiedzą, na co się godzą.",
                 },
             },
         ],
@@ -559,6 +604,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Enregistrez vos propres mesures et publiez vos entraînements en toute sécurité",
             ru: "Записывайте свои метрики и безопаснее публикуйте тренировки",
             uk: "Записуйте власні метрики та безпечніше публікуйте тренування",
+            pl: "Zapisuj własne parametry, bezpieczniejsze opublikowane treningi",
         },
         changes: [
             {
@@ -570,6 +616,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les athlètes peuvent désormais ajouter leurs propres colonnes au journal des séries — enregistrez des mesures supplémentaires au-delà de ce que l'entraîneur a prescrit, comme la charge ou le RPE (jusqu'à 3 colonnes au total).",
                     ru: "Спортсмены теперь могут добавлять собственные столбцы в журнал подходов — записывайте дополнительные метрики сверх того, что задал тренер, например вес или RPE (всего до 3 столбцов).",
                     uk: "Спортсмени тепер можуть додавати власні стовпці до журналу підходів — записуйте додаткові метрики понад те, що задав тренер, наприклад вагу або RPE (загалом до 3 стовпців).",
+                    pl: "Sportowcy mogą teraz dodać do zapisu serii własne kolumny — śledź parametry poza tym, co zaplanował trener, na przykład ciężar albo RPE, zapisując swoje wyniki (łącznie do 3 kolumn).",
                 },
             },
             {
@@ -581,6 +628,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les entraînements publiés sont désormais protégés des modifications accidentelles — l'éditeur les ouvre en lecture seule avec un avertissement, et toute modification exige de les dépublier d'abord.",
                     ru: "Опубликованные тренировки теперь защищены от случайных правок — редактор открывает их только для чтения с предупреждением, а для изменений нужно сначала снять публикацию.",
                     uk: "Опубліковані тренування тепер захищені від випадкових правок — редактор відкриває їх лише для читання з попередженням, а для змін потрібно спершу зняти публікацію.",
+                    pl: "Opublikowane treningi są teraz chronione przed przypadkową edycją — edytor otwiera je tylko do wglądu z odpowiednią informacją, a wprowadzenie zmian wymaga najpierw wycofania publikacji.",
                 },
             },
             {
@@ -592,6 +640,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les entraînements passés ne peuvent plus être publiés ni dépubliés — comme la modification, ces actions ne sont disponibles que pour les entraînements à venir.",
                     ru: "Прошедшие тренировки больше нельзя опубликовать или снять с публикации — как и редактирование, эти действия доступны только для предстоящих тренировок.",
                     uk: "Минулі тренування більше не можна опублікувати або зняти з публікації — як і редагування, ці дії доступні лише для майбутніх тренувань.",
+                    pl: "Dawnych treningów nie można już publikować ani wycofywać ich publikacji — tak jak edycja, te akcje są dostępne tylko dla nadchodzących treningów.",
                 },
             },
         ],
@@ -606,6 +655,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Enregistrement automatique et brouillons d'entraînement",
             ru: "Автосохранение и черновики тренировок",
             uk: "Автозбереження та чернетки тренувань",
+            pl: "Autozapis i szkice treningów",
         },
         changes: [
             {
@@ -617,6 +667,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les entraînements sont désormais enregistrés automatiquement au fur et à mesure — chaque modification est sauvegardée en continu, vous n'avez plus besoin d'enregistrer manuellement et ne perdez pas votre travail si vous quittez la page ou fermez l'onglet.",
                     ru: "Тренировки теперь сохраняются автоматически по мере составления — каждое изменение записывается сразу, поэтому вручную сохранять не нужно, и работа не потеряется, если вы уйдёте со страницы или закроете вкладку.",
                     uk: "Тренування тепер зберігаються автоматично під час складання — кожна зміна записується одразу, тож зберігати вручну не потрібно, і робота не втратиться, якщо ви підете зі сторінки або закриєте вкладку.",
+                    pl: "Treningi zapisują się teraz automatycznie w trakcie budowania — każda zmiana jest zapisywana na bieżąco, więc nie musisz już zapisywać ręcznie i nie stracisz swojej pracy, kiedy wyjdziesz ze strony albo zamkniesz kartę.",
                 },
             },
             {
@@ -628,6 +679,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les entraîneurs peuvent désormais construire un entraînement sous forme de brouillon privé — prenez le temps de le préparer, votre athlète ne le verra qu'une fois prêt.",
                     ru: "Тренеры теперь могут составить тренировку как приватный черновик — готовьте её спокойно, спортсмен увидит её, только когда она будет готова.",
                     uk: "Тренери тепер можуть скласти тренування як приватну чернетку — готуйте його спокійно, спортсмен побачить його лише тоді, коли воно буде готове.",
+                    pl: "Trenerzy mogą teraz zbudować trening jako prywatny szkic — składaj go w swoim tempie, a sportowiec nie zobaczy go, dopóki nie będzie gotowy.",
                 },
             },
             {
@@ -639,6 +691,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Publiez un entraînement lorsqu'il est prêt à être partagé avec votre athlète, et dépubliez-le à tout moment pour le masquer à nouveau — le tout directement depuis le calendrier.",
                     ru: "Опубликуйте тренировку, когда она готова к отправке спортсмену, и в любой момент снимите публикацию, чтобы снова её скрыть, — и то и другое прямо из календаря.",
                     uk: "Опублікуйте тренування, коли воно готове до надсилання спортсмену, і будь-коли зніміть публікацію, щоб знову його приховати, — і те, і те просто з календаря.",
+                    pl: "Opublikuj trening, kiedy jest gotowy dla sportowca, i wycofaj publikację w dowolnej chwili, aby znów go ukryć — jedno i drugie wprost z kalendarza.",
                 },
             },
         ],
@@ -653,6 +706,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Explorez la base d'exercices",
             ru: "Изучите базу упражнений",
             uk: "Дослідіть базу вправ",
+            pl: "Przeglądaj bazę ćwiczeń",
         },
         changes: [
             {
@@ -664,6 +718,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les athlètes disposent désormais d'une section Exercices — parcourez la base d'exercices publique et ouvrez n'importe quel exercice pour voir son détail et sa vidéo de démonstration.",
                     ru: "У спортсменов появился новый раздел «Упражнения» — просматривайте публичную базу упражнений и открывайте любое упражнение с описанием и демонстрационным видео.",
                     uk: "У спортсменів з'явився новий розділ «Вправи» — переглядайте публічну базу вправ і відкривайте будь-яку вправу з описом і демонстраційним відео.",
+                    pl: "Sportowcy mają nową sekcję Ćwiczenia — przeglądaj publiczną bazę ćwiczeń i otwórz dowolne ćwiczenie, aby zobaczyć jego szczegóły i wideo pokazowe.",
                 },
             },
             {
@@ -675,6 +730,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Trouvez rapidement un exercice : cherchez par nom et filtrez par groupe musculaire, schéma de mouvement, type d'exercice ou plan de mouvement.",
                     ru: "Быстро находите упражнения: ищите по названию и фильтруйте по группе мышц, паттерну движения, типу упражнения или плоскости движения.",
                     uk: "Швидко знаходьте вправи: шукайте за назвою та фільтруйте за групою м'язів, патерном руху, типом вправи або площиною руху.",
+                    pl: "Szybko znajdź ćwiczenia: szukaj po nazwie i filtruj po grupie mięśniowej, wzorcu ruchu, typie ćwiczenia albo płaszczyźnie ruchu.",
                 },
             },
             {
@@ -686,6 +742,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Marquez des exercices comme favoris — ils sont proposés en premier lorsque vous choisissez des exercices pour votre propre entraînement.",
                     ru: "Отмечайте упражнения как избранные — при выборе упражнений для собственной тренировки они предлагаются первыми.",
                     uk: "Позначайте вправи як улюблені — під час вибору вправ для власного тренування вони пропонуються першими.",
+                    pl: "Oznaczaj ćwiczenia gwiazdką jako ulubione — są proponowane jako pierwsze, gdy wybierasz ćwiczenia przy tworzeniu własnego treningu.",
                 },
             },
         ],
@@ -700,6 +757,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Planifiez vos propres entraînements",
             ru: "Планируйте собственные тренировки",
             uk: "Плануйте власні тренування",
+            pl: "Planuj własne treningi",
         },
         changes: [
             {
@@ -711,6 +769,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Vous pouvez désormais créer vos propres entraînements directement dans votre calendrier — planifiez vous-même une séance n'importe quel jour, sans attendre qu'un entraîneur vous en assigne une.",
                     ru: "Теперь вы можете создавать собственные тренировки прямо в своём календаре — запланируйте занятие на любой день сами, не дожидаясь назначения от тренера.",
                     uk: "Тепер ви можете створювати власні тренування просто у своєму календарі — заплануйте заняття на будь-який день самі, не чекаючи призначення від тренера.",
+                    pl: "Możesz teraz tworzyć własne treningi wprost w swoim kalendarzu — zaplanuj jednostkę na dowolny dzień sam, bez czekania, aż trener Ci ją przypisze.",
                 },
             },
             {
@@ -722,6 +781,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Gérez librement vos propres entraînements : modifiez-les, dupliquez-les, faites-les glisser vers un autre jour ou supprimez-les à tout moment.",
                     ru: "Управляйте своими тренировками свободно: редактируйте, копируйте, перетаскивайте на другой день или удаляйте в любой момент.",
                     uk: "Керуйте своїми тренуваннями вільно: редагуйте, копіюйте, перетягуйте на інший день або видаляйте будь-коли.",
+                    pl: "Zarządzaj własnymi treningami swobodnie: edytuj je, duplikuj, przeciągaj na inny dzień albo usuwaj w dowolnej chwili.",
                 },
             },
             {
@@ -733,6 +793,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les entraînements assignés par votre entraîneur apparaissent dans le même calendrier, signés par leur auteur et en lecture seule — vos propres plans et ceux de votre entraîneur ne se mélangent jamais.",
                     ru: "Тренировки, назначенные тренером, отображаются в том же календаре с указанием автора и только для просмотра — ваши планы и планы тренера никогда не перепутаются.",
                     uk: "Тренування, призначені тренером, відображаються в тому ж календарі із зазначенням автора й лише для перегляду — ваші плани та плани тренера ніколи не переплутаються.",
+                    pl: "Treningi przypisane przez trenera pojawiają się w tym samym kalendarzu, podpisane autorem i tylko do wglądu, więc Twoje plany i plany trenera nigdy się nie pomieszają.",
                 },
             },
         ],
@@ -747,6 +808,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Vos entraînements dans un calendrier",
             ru: "Ваши тренировки в календаре",
             uk: "Ваші тренування в календарі",
+            pl: "Twoje treningi w kalendarzu",
         },
         changes: [
             {
@@ -758,6 +820,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Vos entraînements se trouvent désormais dans un calendrier plutôt que dans une simple liste — parcourez n'importe quel mois sur ordinateur ou n'importe quelle semaine sur mobile.",
                     ru: "Ваши тренировки теперь показываются в календаре, а не простым списком — листайте любой месяц на компьютере или любую неделю на телефоне.",
                     uk: "Ваші тренування тепер показуються в календарі, а не простим списком — гортайте будь-який місяць на комп'ютері або будь-який тиждень на телефоні.",
+                    pl: "Twoje treningi mieszkają teraz w kalendarzu, a nie na zwykłej liście — przejrzyj dowolny miesiąc na komputerze albo dowolny tydzień na telefonie.",
                 },
             },
             {
@@ -769,6 +832,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Ouvrir un entraînement vous amène désormais à sa page de détail complète, et le retour vous ramène exactement au mois ou à la semaine que vous consultiez.",
                     ru: "Открытие тренировки теперь ведёт на её полную страницу с деталями, а возврат возвращает вас точно к тому месяцу или неделе, которые вы просматривали.",
                     uk: "Відкриття тренування тепер веде на його повну сторінку з деталями, а повернення повертає вас точно до того місяця чи тижня, які ви переглядали.",
+                    pl: "Otwarcie treningu prowadzi teraz na pełną stronę ze szczegółami, a powrót wraca dokładnie do tego miesiąca albo tygodnia, który przeglądałeś.",
                 },
             },
         ],
@@ -783,6 +847,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Entraînements 2.0 devient la norme",
             ru: "Тренировки 2.0 теперь стандарт",
             uk: "Тренування 2.0 тепер стандарт",
+            pl: "Trening 2.0 jest już standardem",
         },
         changes: [
             {
@@ -794,6 +859,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Entraînements 2.0 sort de la bêta et devient la façon standard de s'entraîner. Un nouvel entraînement se construit toujours série par série — l'option Classique distincte a disparu.",
                     ru: "Тренировки 2.0 вышли из беты и стали стандартным способом тренироваться. Новая тренировка всегда составляется подход за подходом — отдельного варианта «Классическая» больше нет.",
                     uk: "Тренування 2.0 вийшли з бети та стали стандартним способом тренуватися. Нове тренування завжди складається підхід за підходом — окремого варіанта «Класичне» більше немає.",
+                    pl: "Trening 2.0 wyszedł z bety i jest teraz standardowym sposobem trenowania. Kiedy tworzysz trening, jest zawsze budowany seria po serii — osobna opcja Klasyczny zniknęła.",
                 },
             },
             {
@@ -805,6 +871,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Tous vos entraînements existants ont été automatiquement convertis au nouveau format par séries — vous n'avez rien à faire, et vos vidéos envoyées restent attachées.",
                     ru: "Все ваши существующие тренировки автоматически переведены в новый формат с подходами — делать ничего не нужно, а загруженные видео остаются на месте.",
                     uk: "Усі ваші наявні тренування автоматично переведено в новий формат із підходами — робити нічого не потрібно, а завантажені відео залишаються на місці.",
+                    pl: "Wszystkie Twoje istniejące treningi zostały automatycznie przeniesione do nowego formatu opartego na seriach — nie musisz nic robić, a wgrane nagrania zostają przy nich.",
                 },
             },
             {
@@ -816,6 +883,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Chaque entraînement s'ouvre désormais dans le même éditeur et la même vue, pour une expérience homogène partout.",
                     ru: "Каждая тренировка теперь открывается в одном и том же редакторе и представлении, поэтому опыт везде одинаковый.",
                     uk: "Кожне тренування тепер відкривається в тому самому редакторі та вигляді, тож досвід усюди однаковий.",
+                    pl: "Każdy trening otwiera się teraz w tym samym edytorze i tym samym widoku, więc wszędzie działa to tak samo.",
                 },
             },
         ],
@@ -830,6 +898,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Entraînements 2.0 (bêta)",
             ru: "Тренировки 2.0 (бета)",
             uk: "Тренування 2.0 (бета)",
+            pl: "Trening 2.0 (beta)",
         },
         changes: [
             {
@@ -841,6 +910,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Découvrez Entraînements 2.0 (bêta) : construisez vos séances série par série, en donnant à chaque série ses propres répétitions, sa charge et son objectif de difficulté, au lieu d'une consigne unique pour tout l'exercice.",
                     ru: "Представляем Тренировки 2.0 (бета): составляйте занятия подход за подходом, задавая каждому подходу свои повторения, вес и целевую сложность вместо одного задания на всё упражнение.",
                     uk: "Представляємо Тренування 2.0 (бета): складайте заняття підхід за підходом, задаючи кожному підходу свої повторення, вагу та цільову складність замість одного завдання на всю вправу.",
+                    pl: "Przedstawiamy Trening 2.0 (beta): buduj jednostki seria po serii, dając każdej serii własne powtórzenia, ciężar i cel trudności, zamiast jednego zalecenia na całe ćwiczenie.",
                 },
             },
             {
@@ -852,6 +922,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les athlètes peuvent enregistrer ce qu'ils ont réellement réalisé pour chaque série, ce qui rend le suivi des progrès bien plus précis.",
                     ru: "Спортсмены могут записывать, что действительно выполнили, по каждому отдельному подходу — это делает отслеживание прогресса гораздо точнее.",
                     uk: "Спортсмени можуть записувати, що справді виконали, за кожним окремим підходом — це робить відстеження прогресу значно точнішим.",
+                    pl: "Sportowcy mogą zapisać, co naprawdę wykonali w każdej pojedynczej serii, dzięki czemu śledzenie postępów jest znacznie dokładniejsze.",
                 },
             },
             {
@@ -863,6 +934,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Entraînements 2.0 est en bêta et fonctionne comme un nouveau type d'entraînement. À la création, vous pouvez choisir entre l'entraînement Classique et l'Entraînement 2.0. Chacun a son propre éditeur et sa propre vue. Tout sera progressivement unifié vers l'Entraînement 2.0.",
                     ru: "Тренировки 2.0 находятся в бете и работают как новый тип тренировки. При создании тренировки можно выбрать между классической тренировкой и Тренировкой 2.0. У каждой свой редактор и своё представление. Постепенно всё будет объединено в Тренировку 2.0.",
                     uk: "Тренування 2.0 перебувають у беті й працюють як новий тип тренування. Під час створення тренування можна обрати між класичним тренуванням і Тренуванням 2.0. Кожне має власний редактор і власний вигляд. Поступово все буде об'єднано в Тренування 2.0.",
+                    pl: "Trening 2.0 jest w becie i działa jako nowy typ treningu. Przy tworzeniu treningu możesz wybrać między Klasycznym treningiem i Treningiem 2.0. Każdy ma własny edytor i własny widok. Wszystko będzie stopniowo ujednolicane do Treningu 2.0.",
                 },
             },
         ],
@@ -877,6 +949,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Un calendrier bien à nous",
             ru: "Собственный календарь",
             uk: "Власний календар",
+            pl: "Własny kalendarz",
         },
         changes: [
             {
@@ -888,6 +961,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Le calendrier d'entraînement a été reconstruit de zéro — plus rapide et plus léger, avec une vue mensuelle dédiée sur ordinateur et une vue hebdomadaire épurée sur mobile.",
                     ru: "Тренировочный календарь полностью переписан — он быстрее и легче, с собственным месячным видом на компьютере и упрощённым недельным на телефоне.",
                     uk: "Тренувальний календар повністю переписано — він швидший і легший, із власним місячним виглядом на комп'ютері та спрощеним тижневим на телефоні.",
+                    pl: "Kalendarz treningów został zbudowany od nowa — jest szybszy i lżejszy, z osobnym widokiem miesiąca na komputerze i uproszczonym widokiem tygodnia na telefonie.",
                 },
             },
             {
@@ -899,6 +973,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Faites glisser un entraînement vers un autre jour pour le replanifier instantanément.",
                     ru: "Перетащите тренировку на другой день, чтобы мгновенно её перенести.",
                     uk: "Перетягніть тренування на інший день, щоб миттєво його перенести.",
+                    pl: "Przeciągnij i upuść trening na inny dzień, aby od razu go przenieść.",
                 },
             },
             {
@@ -910,6 +985,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Des animations de glisser-déposer plus fluides rendent le déplacement des entraînements naturel.",
                     ru: "Более плавные анимации перетаскивания делают перенос тренировок совсем лёгким.",
                     uk: "Плавніші анімації перетягування роблять перенесення тренувань зовсім легким.",
+                    pl: "Płynniejsze animacje przeciągania sprawiają, że przenoszenie treningów idzie bez wysiłku.",
                 },
             },
         ],
@@ -924,6 +1000,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Refonte des entraînements et du calendrier",
             ru: "Новый вид тренировок и календаря",
             uk: "Новий вигляд тренувань і календаря",
+            pl: "Nowy wygląd treningów i kalendarza",
         },
         changes: [
             {
@@ -935,6 +1012,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les écrans des entraînements et du calendrier ont été retravaillés en UX/UI — mise en page plus claire, événements d'entraînement plus lisibles et bien meilleur comportement sur mobile, avec une vue hebdomadaire repensée.",
                     ru: "Экраны тренировок и календаря переработаны по UX/UI — более понятная вёрстка, яснее отображение тренировок и значительно лучшее поведение на телефоне, включая переработанный недельный вид.",
                     uk: "Екрани тренувань і календаря перероблено за UX/UI — зрозуміліша верстка, ясніше відображення тренувань і значно краща поведінка на телефоні, включно з переробленим тижневим виглядом.",
+                    pl: "Ekrany treningów i kalendarza przeszły przebudowę UX/UI — czystszy układ, wyraźniejsze wpisy treningów i znacznie lepsze zachowanie na telefonie, w tym przeprojektowany widok tygodnia.",
                 },
             },
             {
@@ -946,6 +1024,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Vue de détail d'exercice plus fluide et aperçu des entraînements plus ordonné.",
                     ru: "Более плавный детальный вид упражнения и аккуратнее обзор тренировок.",
                     uk: "Плавніший детальний вигляд вправи та охайніший огляд тренувань.",
+                    pl: "Płynniejszy widok szczegółów ćwiczenia i uporządkowany przegląd treningów.",
                 },
             },
         ],
@@ -960,6 +1039,7 @@ export const changelogEntries: ChangelogEntry[] = [
             fr: "Abonnements et forfaits",
             ru: "Подписки и планы",
             uk: "Підписки та плани",
+            pl: "Subskrypcje i plany",
         },
         changes: [
             {
@@ -971,6 +1051,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Les abonnements sont là — passez au forfait Pro via le paiement sécurisé Stripe et gérez votre facturation à tout moment depuis le portail client.",
                     ru: "Подписки уже здесь — перейдите на план Pro через защищённую оплату Stripe и управляйте счетами в любой момент в клиентском портале.",
                     uk: "Підписки вже тут — перейдіть на план Pro через захищену оплату Stripe і керуйте рахунками будь-коли в клієнтському порталі.",
+                    pl: "Subskrypcje są już dostępne — podnieś plan do Pro przez bezpieczną płatność Stripe i zarządzaj rozliczeniami w dowolnej chwili w portalu klienta.",
                 },
             },
             {
@@ -982,6 +1063,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Forfaits Free et Pro pour les entraîneurs : Pro augmente le nombre d'athlètes actifs que vous pouvez accompagner.",
                     ru: "Планы Free и Pro для тренеров: Pro увеличивает число активных спортсменов, которых вы можете вести.",
                     uk: "Плани Free і Pro для тренерів: Pro збільшує кількість активних спортсменів, яких ви можете вести.",
+                    pl: "Plany Free i Pro dla trenerów: Pro podnosi liczbę aktywnych sportowców, których możesz prowadzić.",
                 },
             },
             {
@@ -993,6 +1075,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Une nouvelle page Abonnement affiche d'un coup d'œil votre forfait actuel, son statut et vos informations de paiement.",
                     ru: "Новая страница «Подписка» показывает ваш текущий план, его статус и платёжные данные в одном месте.",
                     uk: "Нова сторінка «Підписка» показує ваш поточний план, його статус і платіжні дані в одному місці.",
+                    pl: "Nowa strona Subskrypcja pokazuje na pierwszy rzut oka Twój aktualny plan, jego status i dane płatności.",
                 },
             },
             {
@@ -1004,6 +1087,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Si un paiement échoue, vous recevez une notification dans l'application avec un lien en un clic pour mettre à jour votre moyen de paiement.",
                     ru: "Если платёж не прошёл, вы получите уведомление в приложении со ссылкой для быстрого обновления способа оплаты.",
                     uk: "Якщо платіж не пройшов, ви отримаєте сповіщення в застосунку з посиланням для швидкого оновлення способу оплати.",
+                    pl: "Jeśli płatność się nie uda, dostaniesz powiadomienie w aplikacji z linkiem, którym jednym kliknięciem zaktualizujesz metodę płatności.",
                 },
             },
             {
@@ -1015,6 +1099,7 @@ export const changelogEntries: ChangelogEntry[] = [
                     fr: "Un délai de grâce maintient votre accès pendant les nouvelles tentatives de paiement, afin que votre coaching ne s'interrompe jamais brutalement.",
                     ru: "Льготный период сохраняет доступ, пока повторяются попытки списания, так что ваша работа не прервётся внезапно.",
                     uk: "Пільговий період зберігає доступ, поки повторюються спроби списання, тож ваша робота не перерветься раптово.",
+                    pl: "Okres przejściowy utrzymuje Twój dostęp, dopóki nieudana płatność jest ponawiana, więc Twoja praca z zawodnikami nie urywa się nagle.",
                 },
             },
         ],

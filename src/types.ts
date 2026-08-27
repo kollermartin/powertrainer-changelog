@@ -1,7 +1,7 @@
-export type SupportedLocale = "en" | "cs" | "ru" | "uk" | "fr" | "de";
+export type SupportedLocale = "en" | "cs" | "ru" | "uk" | "fr" | "de" | "pl";
 
 /**
- * What a consumer may hand to `locale`. Keeps autocomplete for the six supported
+ * What a consumer may hand to `locale`. Keeps autocomplete for the seven supported
  * codes while accepting the raw value an app's i18n layer produces — `i18n.language`
  * or a route segment, which can carry a region subtag (`de-DE`). `resolveLocale()`
  * normalizes it, so consumers never need an `as SupportedLocale` cast that would

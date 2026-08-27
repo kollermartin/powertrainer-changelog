@@ -33,11 +33,13 @@ describe("resolveLocale", () => {
     it("passes through supported bare codes", () => {
         expect(resolveLocale("de")).toBe("de");
         expect(resolveLocale("uk")).toBe("uk");
+        expect(resolveLocale("pl")).toBe("pl");
     });
 
     it("strips region subtags and normalizes case", () => {
         expect(resolveLocale("de-DE")).toBe("de");
         expect(resolveLocale("cs_CZ")).toBe("cs");
+        expect(resolveLocale("pl-PL")).toBe("pl");
         expect(resolveLocale("FR")).toBe("fr");
     });
 
