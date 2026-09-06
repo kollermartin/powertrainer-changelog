@@ -19,6 +19,33 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.22.0",
+        date: "2026-09-06",
+        title: {
+            en: "Prescribe a pause between sets",
+            cs: "Předepište pauzu mezi sériemi",
+            de: "Schreibe eine Pause zwischen den Sätzen vor",
+            fr: "Prescrivez une pause entre les séries",
+            ru: "Задайте паузу между подходами",
+            uk: "Задайте паузу між підходами",
+            pl: "Zaplanuj przerwę między seriami",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "A training can now say how long to rest between sets. In the editor, each exercise has a Rest between sets switch in the row of the set counter, and turning it on puts a thin strip between the rows — type 90 or 1:30 into the first one and it repeats into every gap below, so the usual case is one entry. To make one gap longer, overwrite it and the ones under it. Write 0 where the next set follows straight on, as a drop set does. Switching the toggle back off clears the pauses on that exercise. The athlete reads it on the training: one line above the sets when every pause is the same, and between the rows when they differ. It works the same in the trainings you write for a client and in the ones you write for yourself.",
+                    cs: "Při vytváření tréninku je možnost psát pauzy mezi sériemi. Každý cvik má v řádku s počítadlem sérií přepínač Pauza mezi sériemi. Po zapnutí se objeví možnost zadat čas pauzy mezi sériemi — napište do prvního políčka 90 nebo 1:30 a hodnota se propíše do všech mezer níž, takže obvyklý případ je jediné zadání. Když má být jedna pauza delší, přepíšete ji i ty pod ní. Napište 0 nebo nechte pole prázdné tam, kde další série navazuje hned. Vypnutím přepínače se pauzy u toho cviku smažou. Sportovec to vidí přímo v tréninku: jedním řádkem nad sériemi, když jsou všechny pauzy stejné, a mezi řádky, když se liší. Funguje to stejně v trénincích, které píšete klientovi, i v těch, které píšete sami sobě.",
+                    de: "Ein Training kann jetzt angeben, wie lange zwischen den Sätzen zu pausieren ist. Im Editor hat jede Übung in der Zeile des Satzzählers einen Schalter Pause zwischen den Sätzen, und beim Einschalten erscheint zwischen den Zeilen ein schmaler Streifen — schreib 90 oder 1:30 in den ersten, und der Wert wird in alle Lücken darunter übernommen, sodass der Normalfall eine einzige Eingabe ist. Soll eine Pause länger sein, überschreibst du sie und die darunter. Schreib 0, wo der nächste Satz direkt folgt, wie bei einem Dropsatz. Schaltest du den Schalter wieder aus, werden die Pausen dieser Übung gelöscht. Der Sportler liest es im Training: eine Zeile über den Sätzen, wenn jede Pause gleich ist, und zwischen den Zeilen, wenn sie sich unterscheiden. In Trainings für deine Klienten funktioniert es genauso wie in deinen eigenen.",
+                    fr: "Un entraînement peut désormais indiquer combien de temps se reposer entre les séries. Dans l'éditeur, chaque exercice a un interrupteur Repos entre les séries sur la ligne du compteur de séries, et l'activer fait apparaître une fine bande entre les lignes — saisissez 90 ou 1:30 dans la première et la valeur se recopie dans tous les intervalles en dessous, si bien que le cas courant tient en une seule saisie. Pour allonger un intervalle, écrasez-le ainsi que ceux du dessous. Écrivez 0 là où la série suivante enchaîne directement, comme dans une série dégressive. Désactiver l'interrupteur efface les repos de cet exercice. L'athlète le lit sur l'entraînement : une ligne au-dessus des séries quand toutes les pauses sont identiques, et entre les lignes quand elles diffèrent. Cela fonctionne de la même façon dans les entraînements que vous écrivez pour un client et dans les vôtres.",
+                    ru: "Тренировка теперь может указывать, сколько отдыхать между подходами. В редакторе у каждого упражнения в строке счётчика подходов есть переключатель «Отдых между подходами», и после включения между строками появляется тонкая полоса — впишите в первую 90 или 1:30, и значение продублируется во все промежутки ниже, так что обычный случай — это одна запись. Чтобы сделать один промежуток длиннее, перезапишите его и те, что под ним. Напишите 0 там, где следующий подход идёт сразу, как в дропсете. Если выключить переключатель, паузы этого упражнения удаляются. Спортсмен видит это в самой тренировке: одной строкой над подходами, когда все паузы одинаковы, и между строками, когда они разные. В тренировках для клиента это работает так же, как и в ваших собственных.",
+                    uk: "Тренування тепер може вказувати, скільки відпочивати між підходами. У редакторі кожна вправа має в рядку лічильника підходів перемикач «Відпочинок між підходами», і після ввімкнення між рядками з'являється тонка смуга — впишіть у першу 90 або 1:30, і значення продублюється в усі проміжки нижче, тож звичайний випадок — це один запис. Щоб зробити один проміжок довшим, перезапишіть його і ті, що під ним. Напишіть 0 там, де наступний підхід іде одразу, як у дропсеті. Якщо вимкнути перемикач, паузи цієї вправи видаляються. Спортсмен бачить це в самому тренуванні: одним рядком над підходами, коли всі паузи однакові, і між рядками, коли вони різні. У тренуваннях для клієнта це працює так само, як і у ваших власних.",
+                    pl: "Trening może teraz określać, jak długo odpoczywać między seriami. W edytorze każde ćwiczenie ma w wierszu licznika serii przełącznik Przerwa między seriami, a po włączeniu między wierszami pojawia się cienki pasek — wpisz w pierwszy 90 albo 1:30, a wartość przepisze się do wszystkich przerw poniżej, więc zwykły przypadek to jeden wpis. Aby wydłużyć jedną przerwę, nadpisz ją i te pod nią. Wpisz 0 tam, gdzie kolejna seria następuje od razu, jak w dropsecie. Wyłączenie przełącznika kasuje przerwy w tym ćwiczeniu. Sportowiec czyta to w samym treningu: jedną linią nad seriami, gdy wszystkie przerwy są takie same, i między wierszami, gdy się różnią. W treningach pisanych dla klienta działa tak samo jak w tych pisanych dla siebie.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.21.0",
         date: "2026-09-06",
         title: {
