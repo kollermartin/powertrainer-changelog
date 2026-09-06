@@ -19,6 +19,45 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.21.0",
+        date: "2026-09-06",
+        title: {
+            en: "Trainings stay marked until you review them",
+            cs: "Tréninky zůstanou označené, dokud je nezkontrolujete",
+            de: "Trainings bleiben markiert, bis du sie überprüft hast",
+            fr: "Les entraînements restent signalés jusqu'à ce que vous les examiniez",
+            ru: "Тренировки остаются отмеченными, пока вы их не проверите",
+            uk: "Тренування залишаються позначеними, доки ви їх не перевірите",
+            pl: "Treningi pozostają oznaczone, dopóki ich nie przejrzysz",
+        },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "For trainers: opening a client's completed training no longer marks it as seen. Until now a look was enough for the badge on the calendar and the count on your home page to disappear — so a training you had opened, watched the videos of and meant to come back to looked exactly like one you had finished. Now a training counts as reviewed when you save your feedback on it, or when you press the new Mark as reviewed button in the training itself (it is also in the calendar menu, where Mark as seen used to be). Until then the badge stays, the home widget keeps counting it, and its notification stays unread. Looked at it and have nothing to add? Mark it as reviewed by hand — and you can always take that back.",
+                    cs: "Pro trenéry: otevření dokončeného tréninku klienta ho už neoznačí jako zobrazený. Dosud stačilo se podívat a upozornění v kalendáři i počet na domovské stránce zmizely — trénink, který jste otevřeli, prohlédli si videa a chtěli se k němu vrátit, tak vypadal stejně jako ten, který jste už vyřídili. Teď se trénink počítá jako zkontrolovaný, až když k němu uložíte hodnocení nebo stisknete nové tlačítko Označit jako zkontrolované přímo v tréninku (najdete ho i v nabídce v kalendáři, kde dřív bylo Označit jako zobrazené). Do té doby upozornění zůstává, widget na domovské stránce trénink dál počítá a jeho oznámení zůstává nepřečtené. Prohlédli jste trénink a nemáte co dodat? Označte ho jako zkontrolovaný ručně — a kdykoli to můžete vzít zpět.",
+                    de: "Für Trainer: Das Öffnen eines abgeschlossenen Trainings deines Klienten markiert es nicht mehr als gesehen. Bisher reichte ein Blick, und schon verschwanden das Abzeichen im Kalender und die Zahl auf deiner Startseite — ein Training, das du geöffnet, dessen Videos du angesehen und zu dem du zurückkommen wolltest, sah genauso aus wie eines, das du erledigt hattest. Jetzt gilt ein Training als überprüft, wenn du dein Feedback dazu speicherst oder im Training selbst den neuen Button Als überprüft markieren drückst (er steht auch im Kalendermenü, wo bisher Als gesehen markieren war). Bis dahin bleibt das Abzeichen, das Widget auf der Startseite zählt es weiter und seine Benachrichtigung bleibt ungelesen. Angesehen, aber nichts zu sagen? Markiere es von Hand als überprüft — und du kannst es jederzeit zurücknehmen.",
+                    fr: "Pour les entraîneurs : ouvrir l'entraînement terminé d'un client ne le marque plus comme vu. Jusqu'ici, un simple coup d'œil suffisait pour que le badge du calendrier et le compteur de votre page d'accueil disparaissent — un entraînement que vous aviez ouvert, dont vous aviez regardé les vidéos et auquel vous comptiez revenir ressemblait exactement à un entraînement réglé. Désormais, un entraînement compte comme examiné quand vous enregistrez votre retour, ou quand vous appuyez sur le nouveau bouton Marquer comme examiné dans l'entraînement lui-même (il figure aussi dans le menu du calendrier, à la place de Marquer comme vu). Jusque-là, le badge reste, le widget de la page d'accueil continue de le compter et sa notification reste non lue. Vous l'avez regardé sans rien à ajouter ? Marquez-le comme examiné à la main — et vous pouvez toujours revenir en arrière.",
+                    ru: "Для тренеров: открытие завершённой тренировки клиента больше не отмечает её как просмотренную. Раньше достаточно было взглянуть — и значок в календаре и счётчик на главной странице исчезали, так что тренировка, которую вы открыли, посмотрели видео и собирались к ней вернуться, выглядела точно так же, как уже разобранная. Теперь тренировка считается проверенной, когда вы сохраняете к ней отзыв или нажимаете новую кнопку «Отметить как проверенную» прямо в тренировке (она есть и в меню календаря, где раньше было «Отметить как просмотренное»). До этого значок остаётся, виджет на главной странице продолжает её считать, а её уведомление остаётся непрочитанным. Посмотрели, но добавить нечего? Отметьте её как проверенную вручную — и это всегда можно отменить.",
+                    uk: "Для тренерів: відкриття завершеного тренування клієнта більше не позначає його як переглянуте. Досі досить було глянути — і значок у календарі та лічильник на головній сторінці зникали, тож тренування, яке ви відкрили, переглянули відео й збиралися до нього повернутися, виглядало точно так само, як уже опрацьоване. Тепер тренування вважається перевіреним, коли ви зберігаєте до нього відгук або натискаєте нову кнопку «Позначити як перевірене» безпосередньо в тренуванні (вона є і в меню календаря, де раніше було «Позначити як переглянуте»). До того значок залишається, віджет на головній сторінці й далі його рахує, а його повідомлення залишається непрочитаним. Переглянули, але додати нічого? Позначте його як перевірене вручну — і це завжди можна скасувати.",
+                    pl: "Dla trenerów: otwarcie ukończonego treningu klienta nie oznacza go już jako obejrzanego. Dotąd wystarczyło spojrzeć, a odznaka w kalendarzu i liczba na stronie głównej znikały — trening, który otworzyłeś, obejrzałeś jego filmy i chciałeś do niego wrócić, wyglądał dokładnie tak samo jak ten, który już załatwiłeś. Teraz trening liczy się jako przejrzany, gdy zapiszesz do niego ocenę albo naciśniesz nowy przycisk Oznacz jako przejrzany w samym treningu (jest też w menu kalendarza, tam gdzie wcześniej było Oznacz jako obejrzane). Do tego czasu odznaka zostaje, widżet na stronie głównej dalej go liczy, a jego powiadomienie pozostaje nieprzeczytane. Przejrzałeś i nie masz nic do dodania? Oznacz go jako przejrzany ręcznie — i zawsze możesz to cofnąć.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Also for trainers: a client's training no longer offers you the Complete / Undo controls. Completing a training is the athlete's job, and next to the review button the undo circle was one tap away from cancelling a completion by accident. Your own trainings keep both.",
+                    cs: "Také pro trenéry: u tréninku klienta už nevidíte tlačítka Dokončit / Zrušit dokončení. Dokončit trénink je věc sportovce a hned vedle tlačítka pro kontrolu bylo kolečko pro zrušení jedno klepnutí od omylu. U vašich vlastních tréninků obě tlačítka zůstávají.",
+                    de: "Ebenfalls für Trainer: Beim Training eines Klienten siehst du die Buttons Abschließen / Abschluss abbrechen nicht mehr. Ein Training abzuschließen ist Sache des Sportlers, und direkt neben dem Überprüfen-Button war der Rückgängig-Kreis nur einen Tipp von einem versehentlich aufgehobenen Abschluss entfernt. Deine eigenen Trainings behalten beide.",
+                    fr: "Toujours pour les entraîneurs : l'entraînement d'un client ne vous propose plus les commandes Terminer / Annuler. Terminer un entraînement est le rôle de l'athlète, et juste à côté du bouton d'examen, le cercle d'annulation n'était qu'à un geste d'annuler une fin d'entraînement par mégarde. Vos propres entraînements gardent les deux.",
+                    ru: "Также для тренеров: в тренировке клиента больше нет кнопок «Завершить» / «Отменить завершение». Завершать тренировку — дело спортсмена, а кружок отмены рядом с кнопкой проверки был в одном касании от случайной отмены завершения. В ваших собственных тренировках обе кнопки остаются.",
+                    uk: "Також для тренерів: у тренуванні клієнта більше немає кнопок «Завершити» / «Скасувати завершення». Завершувати тренування — справа спортсмена, а кружок скасування поруч із кнопкою перевірки був за один дотик від випадкового скасування завершення. У ваших власних тренуваннях обидві кнопки залишаються.",
+                    pl: "Również dla trenerów: trening klienta nie pokazuje Ci już przycisków Zakończ / Cofnij zakończenie. Zakończenie treningu to sprawa sportowca, a kółko cofania tuż obok przycisku przejrzenia było o jedno dotknięcie od przypadkowego cofnięcia zakończenia. Twoje własne treningi zachowują oba.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.20.1",
         date: "2026-09-04",
         title: {
