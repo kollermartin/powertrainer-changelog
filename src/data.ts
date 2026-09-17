@@ -19,6 +19,33 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.23.0",
+        date: "2026-09-17",
+        title: {
+            en: "Message your trainer or your client",
+            cs: "Pište si se svým trenérem nebo klientem",
+            de: "Schreib deinem Trainer oder deinem Klienten",
+            fr: "Échangez des messages avec votre entraîneur ou votre client",
+            ru: "Общайтесь со своим тренером или клиентом",
+            uk: "Спілкуйтеся зі своїм тренером або клієнтом",
+            pl: "Pisz ze swoim trenerem lub klientem",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "PowerTrainer now has chat. A trainer and their athlete share one conversation, opened with the Message button on the client's page or in My trainers, and every conversation lives in the new Messages section. You can write text, record a voice message of up to three minutes, and attach one of your shared trainings so the other side can open it straight from the chat. When a new message arrives while you are away, you get one email about it, and a dot on Messages shows what is unread when you come back. When you stop training together, the conversation stays for reading but nothing new can be sent.",
+                    cs: "PowerTrainer má nově chat. Trenér a jeho sportovec sdílejí jednu konverzaci, kterou otevřete tlačítkem Napsat zprávu na stránce klienta nebo v sekci Moji trenéři, a všechny konverzace najdete v nové sekci Zprávy. Můžete psát text, nahrát hlasovou zprávu dlouhou až tři minuty a připojit některý ze společných tréninků, aby ho druhá strana otevřela přímo z chatu. Když vám nová zpráva přijde, zatímco nejste v aplikaci, dostanete o ní jeden e-mail a po návratu vám tečka u sekce Zprávy ukáže, co máte nepřečtené. Když spolu přestanete trénovat, konverzace zůstane ke čtení, ale nic nového už v ní odeslat nelze.",
+                    de: "PowerTrainer hat jetzt einen Chat. Trainer und Athlet teilen sich eine Unterhaltung, die du mit dem Button Nachricht schreiben auf der Seite des Klienten oder unter Meine Trainer öffnest, und alle Unterhaltungen findest du im neuen Bereich Nachrichten. Du kannst Text schreiben, eine Sprachnachricht von bis zu drei Minuten aufnehmen und eines eurer gemeinsamen Trainings anhängen, damit die andere Seite es direkt aus dem Chat öffnen kann. Kommt eine neue Nachricht, während du nicht in der App bist, bekommst du eine E-Mail dazu, und ein Punkt bei Nachrichten zeigt dir nach der Rückkehr, was ungelesen ist. Wenn ihr nicht mehr zusammen trainiert, bleibt die Unterhaltung zum Lesen erhalten, aber es kann nichts Neues mehr gesendet werden.",
+                    fr: "PowerTrainer dispose désormais d'une messagerie. Un entraîneur et son athlète partagent une seule conversation, ouverte avec le bouton Envoyer un message sur la page du client ou dans Mes entraîneurs, et toutes les conversations se trouvent dans la nouvelle section Messages. Vous pouvez écrire du texte, enregistrer un message vocal de trois minutes au plus et joindre l'un de vos entraînements communs pour que l'autre personne l'ouvre directement depuis la conversation. Si un nouveau message arrive pendant que vous n'êtes pas dans l'application, vous recevez un e-mail à ce sujet, et un point sur Messages vous indique à votre retour ce qui n'est pas lu. Lorsque vous cessez de vous entraîner ensemble, la conversation reste consultable, mais plus rien ne peut y être envoyé.",
+                    ru: "В PowerTrainer появился чат. У тренера и его спортсмена одна общая беседа: её открывает кнопка Написать сообщение на странице клиента или в разделе Мои тренеры, а все беседы собраны в новом разделе Сообщения. Вы можете писать текст, записать голосовое сообщение длиной до трёх минут и прикрепить одну из общих тренировок, чтобы собеседник открыл её прямо из чата. Если новое сообщение придёт, пока вас нет в приложении, вы получите о нём одно письмо, а точка у раздела Сообщения после возвращения покажет, что не прочитано. Когда вы перестанете тренироваться вместе, беседа останется доступной для чтения, но отправить в неё ничего нового уже нельзя.",
+                    uk: "У PowerTrainer з'явився чат. Тренер і його спортсмен мають одну спільну бесіду: її відкриває кнопка Написати повідомлення на сторінці клієнта або в розділі Мої тренери, а всі бесіди зібрано в новому розділі Повідомлення. Ви можете писати текст, записати голосове повідомлення тривалістю до трьох хвилин і прикріпити одне зі спільних тренувань, щоб співрозмовник відкрив його прямо з чату. Якщо нове повідомлення надійде, коли вас немає в застосунку, ви отримаєте про нього один лист, а крапка біля розділу Повідомлення після повернення покаже, що ще не прочитано. Коли ви припините тренуватися разом, бесіда залишиться доступною для читання, але надіслати в неї щось нове вже не можна.",
+                    pl: "PowerTrainer ma teraz czat. Trener i jego sportowiec dzielą jedną rozmowę, którą otwierasz przyciskiem Napisz wiadomość na stronie klienta lub w sekcji Moi trenerzy, a wszystkie rozmowy znajdziesz w nowej sekcji Wiadomości. Możesz pisać tekst, nagrać wiadomość głosową do trzech minut i dołączyć jeden ze wspólnych treningów, aby druga strona otworzyła go prosto z czatu. Gdy nowa wiadomość przyjdzie, kiedy nie ma cię w aplikacji, dostaniesz o niej jeden e-mail, a kropka przy sekcji Wiadomości pokaże ci po powrocie, co jest nieprzeczytane. Gdy przestaniecie razem trenować, rozmowa zostanie do czytania, ale nie da się już w niej wysłać nic nowego.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.22.0",
         date: "2026-09-06",
         title: {
