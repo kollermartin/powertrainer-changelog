@@ -19,6 +19,57 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.24.0",
+        date: "2026-09-20",
+        title: {
+            en: "Send a video from a training to the chat",
+            cs: "Pošlete video z tréninku do chatu",
+            de: "Schick ein Video aus dem Training in den Chat",
+            fr: "Envoyez une vidéo d'un entraînement dans la discussion",
+            ru: "Отправьте видео из тренировки в чат",
+            uk: "Надішліть відео з тренування в чат",
+            pl: "Wyślij wideo z treningu na czat",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "A video recorded for a set can now go straight into the chat. Open the training, find the video under the exercise and use the message button on its card — it opens in your conversation with the other side, where you can write a line about it before sending. Both of you can do it: a trainer picks out a rep to comment on, an athlete asks about one. In the chat the video plays where the conversation is, and its title opens the training at that very set.",
+                    cs: "Video nahrané k sérii teď můžete poslat rovnou do chatu. Otevřete trénink, najděte video pod cvikem a použijte na jeho kartě tlačítko zprávy — otevře se ve vaší konverzaci s druhou stranou, kde k němu ještě před odesláním napíšete pár slov. Může to každý z vás: trenér vybere sérii, ke které chce něco říct, sportovec se na některou zeptá. V chatu se video přehraje přímo tam, kde si píšete, a jeho název otevře trénink u té konkrétní série.",
+                    de: "Ein Video, das du zu einem Satz aufgenommen hast, kannst du jetzt direkt in den Chat schicken. Öffne das Training, such das Video unter der Übung und nutze auf seiner Karte den Nachrichten-Button — es landet in eurer Unterhaltung, wo du vor dem Senden noch etwas dazu schreiben kannst. Das geht von beiden Seiten: Der Trainer greift einen Satz heraus, zu dem er etwas sagen will, der Athlet fragt zu einem nach. Im Chat läuft das Video dort, wo ihr schreibt, und sein Titel öffnet das Training genau bei diesem Satz.",
+                    fr: "Une vidéo enregistrée pour une série peut maintenant partir directement dans la discussion. Ouvrez l'entraînement, trouvez la vidéo sous l'exercice et utilisez le bouton de message sur sa carte — elle s'ouvre dans votre conversation avec l'autre personne, où vous pouvez écrire un mot avant d'envoyer. Chacun peut le faire : l'entraîneur choisit une série à commenter, l'athlète pose une question sur l'une d'elles. Dans la discussion, la vidéo se lit là où vous échangez, et son titre ouvre l'entraînement à cette série précise.",
+                    ru: "Видео, записанное к подходу, теперь можно отправить прямо в чат. Откройте тренировку, найдите видео под упражнением и нажмите на его карточке кнопку сообщения — оно откроется в вашей беседе с собеседником, где перед отправкой вы допишете пару слов. Это доступно обеим сторонам: тренер выбирает подход, о котором хочет сказать, спортсмен спрашивает о своём. В чате видео воспроизводится прямо там, где вы переписываетесь, а его название открывает тренировку на этом самом подходе.",
+                    uk: "Відео, записане до підходу, тепер можна надіслати просто в чат. Відкрийте тренування, знайдіть відео під вправою та натисніть на його картці кнопку повідомлення — воно відкриється у вашій бесіді зі співрозмовником, де перед надсиланням ви допишете кілька слів. Це доступно обом сторонам: тренер обирає підхід, про який хоче сказати, спортсмен запитує про свій. У чаті відео відтворюється просто там, де ви листуєтеся, а його назва відкриває тренування на цьому самому підході.",
+                    pl: "Wideo nagrane do serii możesz teraz wysłać prosto na czat. Otwórz trening, znajdź wideo pod ćwiczeniem i użyj na jego karcie przycisku wiadomości — otworzy się w twojej rozmowie z drugą stroną, gdzie przed wysłaniem dopiszesz kilka słów. Może to zrobić każde z was: trener wybiera serię, o której chce coś powiedzieć, sportowiec o którąś pyta. Na czacie wideo odtwarza się tam, gdzie piszecie, a jego tytuł otwiera trening dokładnie przy tej serii.",
+                },
+            },
+            {
+                type: "fixed",
+                text: {
+                    en: "On a phone the send button needed two taps while the keyboard was open — the first one only closed the keyboard. One tap sends now.",
+                    cs: "Na telefonu bylo potřeba klepnout na tlačítko odeslání dvakrát, když byla otevřená klávesnice — první klepnutí ji jen zavřelo. Teď stačí jedno.",
+                    de: "Auf dem Handy brauchte der Senden-Button zwei Tipser, solange die Tastatur offen war — der erste schloss nur die Tastatur. Jetzt reicht einer.",
+                    fr: "Sur téléphone, le bouton d'envoi demandait deux appuis tant que le clavier était ouvert : le premier ne faisait que le refermer. Un seul appui suffit désormais.",
+                    ru: "На телефоне кнопку отправки приходилось нажимать дважды, пока была открыта клавиатура: первое нажатие лишь закрывало её. Теперь достаточно одного.",
+                    uk: "На телефоні кнопку надсилання доводилося натискати двічі, поки була відкрита клавіатура: перше натискання лише закривало її. Тепер достатньо одного.",
+                    pl: "Na telefonie przycisk wysyłania wymagał dwóch dotknięć, gdy klawiatura była otwarta — pierwsze tylko ją zamykało. Teraz wystarczy jedno.",
+                },
+            },
+            {
+                type: "fixed",
+                text: {
+                    en: "A conversation with a training or a video attached sometimes opened scrolled a little short of its newest message. It now stays at the newest one while those cards finish loading.",
+                    cs: "Konverzace s připojeným tréninkem nebo videem se občas otevřela kousek nad poslední zprávou. Teď zůstane u té nejnovější i ve chvíli, kdy se karty ještě načítají.",
+                    de: "Eine Unterhaltung mit angehängtem Training oder Video öffnete sich manchmal ein Stück oberhalb der neuesten Nachricht. Jetzt bleibt sie bei der neuesten, während diese Karten noch laden.",
+                    fr: "Une conversation contenant un entraînement ou une vidéo s'ouvrait parfois un peu au-dessus de son message le plus récent. Elle reste désormais sur le plus récent pendant que ces cartes finissent de charger.",
+                    ru: "Беседа с прикреплённой тренировкой или видео иногда открывалась чуть выше последнего сообщения. Теперь она остаётся на самом новом, пока эти карточки догружаются.",
+                    uk: "Бесіда з прикріпленим тренуванням або відео іноді відкривалася трохи вище останнього повідомлення. Тепер вона залишається на найновішому, поки ці картки довантажуються.",
+                    pl: "Rozmowa z dołączonym treningiem lub wideo czasem otwierała się nieco powyżej najnowszej wiadomości. Teraz zostaje przy najnowszej, gdy te karty jeszcze się wczytują.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.23.0",
         date: "2026-09-17",
         title: {
