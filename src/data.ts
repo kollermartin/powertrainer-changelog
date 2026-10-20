@@ -19,6 +19,45 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.25.0",
+        date: "2026-10-20",
+        title: {
+            en: "Create a missing exercise right from the training",
+            cs: "Chybějící cvik vytvoříte přímo z tréninku",
+            de: "Leg eine fehlende Übung direkt im Training an",
+            fr: "Créez un exercice manquant directement depuis l'entraînement",
+            ru: "Создайте недостающее упражнение прямо из тренировки",
+            uk: "Створіть відсутню вправу просто з тренування",
+            pl: "Utwórz brakujące ćwiczenie prosto z treningu",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Writing a training and the exercise you need isn't in the list? Type its name in the exercise search and choose Create “<name>” at the bottom of the results. The exercise form opens over your training with the name already filled in. Once you save, the new exercise goes into that row, and nothing you've written in the training so far is lost.",
+                    cs: "Píšete trénink a cvik, který potřebujete, v seznamu není? Napište jeho název do vyhledávání cviků a na konci výsledků zvolte Vytvořit „<název>“. Formulář cviku se otevře nad vaším tréninkem s už vyplněným názvem. Po uložení se nový cvik doplní do toho řádku a nic z toho, co jste v tréninku zatím napsali, se neztratí.",
+                    de: "Du schreibst ein Training und die Übung, die du brauchst, steht nicht in der Liste? Tipp ihren Namen in die Übungssuche und wähle unten in den Ergebnissen „<Name>“ anlegen. Das Übungsformular öffnet sich über deinem Training, der Name ist schon eingetragen. Sobald du speicherst, landet die neue Übung in dieser Zeile, und nichts, was du im Training bisher geschrieben hast, geht verloren.",
+                    fr: "Vous rédigez un entraînement et l'exercice dont vous avez besoin n'est pas dans la liste ? Tapez son nom dans la recherche d'exercices et choisissez Créer « <nom> » en bas des résultats. Le formulaire d'exercice s'ouvre par-dessus votre entraînement, le nom déjà rempli. Dès que vous enregistrez, le nouvel exercice prend place dans cette ligne, et rien de ce que vous avez déjà écrit dans l'entraînement n'est perdu.",
+                    ru: "Составляете тренировку, а нужного упражнения нет в списке? Введите его название в поиск упражнений и выберите внизу результатов Создать «<название>». Форма упражнения откроется поверх вашей тренировки с уже заполненным названием. После сохранения новое упражнение встанет в эту строку, и ничего из того, что вы уже написали в тренировке, не потеряется.",
+                    uk: "Складаєте тренування, а потрібної вправи немає в списку? Введіть її назву в пошук вправ і виберіть унизу результатів Створити «<назва>». Форма вправи відкриється поверх вашого тренування з уже заповненою назвою. Після збереження нова вправа стане в цей рядок, і нічого з того, що ви вже написали в тренуванні, не загубиться.",
+                    pl: "Piszesz trening, a potrzebnego ćwiczenia nie ma na liście? Wpisz jego nazwę w wyszukiwarkę ćwiczeń i wybierz na dole wyników Utwórz „<nazwa>”. Formularz ćwiczenia otworzy się nad twoim treningiem z już wpisaną nazwą. Po zapisaniu nowe ćwiczenie trafi do tego wiersza, a nic z tego, co do tej pory napisałeś w treningu, nie przepadnie.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Tutorial descriptions are now plain text. The formatting toolbar is gone, and the description is a simple text box that keeps your line breaks. If you wrote a description before this change, it may now show stray formatting marks such as <p> or <strong>. Open the tutorial, edit the description and save it to clean it up.",
+                    cs: "Popisy tutoriálů jsou teď prostý text. Panel pro formátování zmizel a popis je jednoduché textové pole, které zachová vaše zalomení řádků. Pokud jste popis napsali před touto změnou, mohou se v něm teď objevit zbylé formátovací značky, třeba <p> nebo <strong>. Otevřete tutoriál, upravte popis a uložte ho, tím je odstraníte.",
+                    de: "Tutorial-Beschreibungen sind jetzt reiner Text. Die Formatierungsleiste ist weg, die Beschreibung ist ein einfaches Textfeld, das deine Zeilenumbrüche behält. Wenn du eine Beschreibung vor dieser Änderung geschrieben hast, zeigt sie jetzt vielleicht übrig gebliebene Formatierungszeichen wie <p> oder <strong>. Öffne das Tutorial, bearbeite die Beschreibung und speichere sie, dann sind sie weg.",
+                    fr: "Les descriptions des tutoriels sont désormais du texte simple. La barre de mise en forme a disparu, et la description est une simple zone de texte qui conserve vos retours à la ligne. Si vous avez écrit une description avant ce changement, elle peut maintenant afficher des balises de mise en forme résiduelles comme <p> ou <strong>. Ouvrez le tutoriel, modifiez la description et enregistrez-la pour les faire disparaître.",
+                    ru: "Описания туториалов теперь простой текст. Панель форматирования убрана, а описание стало обычным текстовым полем, которое сохраняет ваши переносы строк. Если вы написали описание до этого изменения, в нём теперь могут отображаться лишние знаки форматирования, например <p> или <strong>. Откройте туториал, отредактируйте описание и сохраните его, чтобы их убрать.",
+                    uk: "Описи туторіалів тепер простий текст. Панель форматування прибрано, а опис став звичайним текстовим полем, яке зберігає ваші перенесення рядків. Якщо ви написали опис до цієї зміни, у ньому тепер можуть відображатися зайві знаки форматування, наприклад <p> або <strong>. Відкрийте туторіал, відредагуйте опис і збережіть його, щоб їх прибрати.",
+                    pl: "Opisy tutoriali są teraz zwykłym tekstem. Pasek formatowania zniknął, a opis to proste pole tekstowe, które zachowuje twoje podziały wierszy. Jeśli napisałeś opis przed tą zmianą, mogą się w nim teraz pojawiać pozostałe znaczniki formatowania, np. <p> lub <strong>. Otwórz tutorial, edytuj opis i zapisz go, aby je usunąć.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.24.0",
         date: "2026-09-20",
         title: {
