@@ -19,6 +19,33 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.25.1",
+        date: "2026-10-20",
+        title: {
+            en: "Training actions on the training page",
+            cs: "Akce tréninku přímo na jeho stránce",
+            de: "Trainingsaktionen direkt auf der Trainingsseite",
+            fr: "Les actions de l'entraînement sur sa page",
+            ru: "Действия с тренировкой прямо на её странице",
+            uk: "Дії з тренуванням просто на його сторінці",
+            pl: "Akcje treningu prosto na jego stronie",
+        },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "A training's page now has the same ⋯ menu as its card in the calendar, next to the training's status. Edit, copy or delete the training from there, and if you're a trainer, publish or unpublish it. Copy asks which day to copy the training to, then opens the copy. Delete asks you to confirm, then takes you back to the calendar.",
+                    cs: "Stránka tréninku má teď vedle stavu tréninku stejné menu ⋯ jako jeho karta v kalendáři. Odtud trénink upravíte, zkopírujete nebo smažete, a pokud jste trenér, také ho zveřejníte nebo zveřejnění zrušíte. Kopírování se zeptá, na který den trénink zkopírovat, a pak kopii otevře. Mazání si vyžádá potvrzení a pak vás vrátí do kalendáře.",
+                    de: "Die Seite eines Trainings hat jetzt neben dem Trainingsstatus dasselbe ⋯-Menü wie seine Karte im Kalender. Dort bearbeitest, kopierst oder löschst du das Training, und als Trainer veröffentlichst du es oder nimmst die Veröffentlichung zurück. Beim Kopieren wählst du den Tag, auf den das Training kopiert wird, danach öffnet sich die Kopie. Beim Löschen bestätigst du zuerst, dann geht es zurück zum Kalender.",
+                    fr: "La page d'un entraînement a désormais, à côté de son statut, le même menu ⋯ que sa carte dans le calendrier. Vous pouvez y modifier, copier ou supprimer l'entraînement et, si vous êtes coach, le publier ou annuler sa publication. La copie vous demande vers quel jour copier l'entraînement, puis ouvre la copie. La suppression vous demande de confirmer, puis vous ramène au calendrier.",
+                    ru: "На странице тренировки рядом с её статусом теперь есть то же меню ⋯, что и на её карточке в календаре. Отсюда тренировку можно изменить, скопировать или удалить, а тренер может также опубликовать её или снять с публикации. При копировании вы выбираете, на какой день скопировать тренировку, после чего открывается копия. Удаление требует подтверждения и затем возвращает вас в календарь.",
+                    uk: "На сторінці тренування поруч із його статусом тепер є те саме меню ⋯, що й на його картці в календарі. Звідси тренування можна змінити, скопіювати або видалити, а тренер може також опублікувати його чи зняти з публікації. Під час копіювання ви обираєте, на який день скопіювати тренування, після чого відкривається копія. Видалення потребує підтвердження й потім повертає вас до календаря.",
+                    pl: "Strona treningu ma teraz obok jego statusu to samo menu ⋯ co jego karta w kalendarzu. Stamtąd edytujesz, kopiujesz lub usuwasz trening, a jako trener możesz go też opublikować lub cofnąć publikację. Kopiowanie pyta, na który dzień skopiować trening, a potem otwiera kopię. Usuwanie prosi o potwierdzenie, a potem wraca do kalendarza.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.25.0",
         date: "2026-10-20",
         title: {
