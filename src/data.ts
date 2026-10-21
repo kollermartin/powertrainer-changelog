@@ -19,6 +19,33 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.26.0",
+        date: "2026-10-21",
+        title: {
+            en: "Discover what you can do yourself",
+            cs: "Objevte, co zvládnete sami",
+            de: "Entdecke, was du selbst tun kannst",
+            fr: "Découvrez ce que vous pouvez faire vous-même",
+            ru: "Узнайте, что вы можете делать сами",
+            uk: "Дізнайтеся, що ви можете робити самі",
+            pl: "Odkryj, co możesz zrobić sam",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "Athletes now see a Discover card on Home listing what you can do for yourself: plan your own trainings (with video of your sets), competitions, personal bests, your own exercises and tutorials — and find a trainer, if you don't have one yet. Each item opens its page, and it's ticked once you have one. Close the card with ✕ whenever you like; it also goes away once everything is ticked.",
+                    cs: "Sportovci teď na Domů vidí kartu Objevte se vším, co zvládnete sami: naplánovat si vlastní tréninky (i s videem sérií), soutěže, osobní maxima, vlastní cviky a tutoriály — a najít si trenéra, pokud ho ještě nemáte. Každá položka otevře svou stránku a odškrtne se, jakmile ji máte. Kartu můžete kdykoli zavřít křížkem ✕; zmizí také, jakmile je vše odškrtnuté.",
+                    de: "Athleten sehen auf der Startseite jetzt eine Entdecken-Karte mit allem, was du selbst tun kannst: eigene Trainings planen (mit Video deiner Sätze), Wettkämpfe, Bestleistungen, eigene Übungen und Tutorials — und einen Trainer finden, falls du noch keinen hast. Jeder Punkt öffnet seine Seite und wird abgehakt, sobald du einen hast. Schließe die Karte jederzeit mit ✕; sie verschwindet auch, sobald alles abgehakt ist.",
+                    fr: "Les athlètes voient désormais sur l'Accueil une carte Découvrir qui liste ce que vous pouvez faire vous-même : planifier vos propres entraînements (avec la vidéo de vos séries), vos compétitions, vos records personnels, vos propres exercices et tutoriels — et trouver un entraîneur si vous n'en avez pas encore. Chaque élément ouvre sa page et se coche dès que vous en avez un. Fermez la carte avec ✕ quand vous le souhaitez ; elle disparaît aussi une fois tout coché.",
+                    ru: "Спортсмены теперь видят на Главной карточку «Узнайте», где перечислено, что вы можете делать сами: планировать собственные тренировки (с видео подходов), соревнования, личные рекорды, свои упражнения и обучающие видео — и найти тренера, если у вас его ещё нет. Каждый пункт открывает свою страницу и отмечается, как только у вас что-то есть. Закройте карточку крестиком ✕ в любой момент; она также исчезнет, когда всё будет отмечено.",
+                    uk: "Спортсмени тепер бачать на Головній картку «Дізнайтеся», де перелічено, що ви можете робити самі: планувати власні тренування (з відео підходів), змагання, особисті рекорди, власні вправи й навчальні відео — і знайти тренера, якщо у вас його ще немає. Кожен пункт відкриває свою сторінку й позначається, щойно у вас щось є. Закрийте картку хрестиком ✕ будь-коли; вона також зникне, коли все буде позначено.",
+                    pl: "Sportowcy widzą teraz na stronie głównej kartę Odkryj z tym, co możesz zrobić sam: zaplanować własne treningi (z wideo serii), zawody, rekordy, własne ćwiczenia i tutoriale — i znaleźć trenera, jeśli jeszcze go nie masz. Każda pozycja otwiera swoją stronę i zostaje odhaczona, gdy już coś masz. Zamknij kartę krzyżykiem ✕, kiedy chcesz; zniknie też, gdy wszystko będzie odhaczone.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.25.1",
         date: "2026-10-20",
         title: {
