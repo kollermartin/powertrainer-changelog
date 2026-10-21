@@ -19,6 +19,45 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.27.0",
+        date: "2026-10-21",
+        title: {
+            en: "Filter your own exercises",
+            cs: "Filtr vlastních cviků",
+            de: "Eigene Übungen filtern",
+            fr: "Filtrez vos propres exercices",
+            ru: "Фильтр своих упражнений",
+            uk: "Фільтр власних вправ",
+            pl: "Filtruj własne ćwiczenia",
+        },
+        changes: [
+            {
+                type: "added",
+                text: {
+                    en: "The exercise library has a new filter beside Favorites that shows only the exercises you created yourself. It works together with Favorites and every other filter.",
+                    cs: "Knihovna cviků má vedle Oblíbených nový filtr, který ukáže jen cviky, které jste si vytvořili sami. Funguje společně s Oblíbenými i všemi ostatními filtry.",
+                    de: "Die Übungsbibliothek hat neben Favoriten einen neuen Filter, der nur die Übungen zeigt, die du selbst erstellt hast. Er lässt sich mit Favoriten und allen anderen Filtern kombinieren.",
+                    fr: "La bibliothèque d'exercices propose, à côté des Favoris, un nouveau filtre qui n'affiche que les exercices que vous avez créés vous-même. Il se combine avec les Favoris et tous les autres filtres.",
+                    ru: "В библиотеке упражнений рядом с «Избранным» появился новый фильтр, который показывает только созданные вами упражнения. Он работает вместе с «Избранным» и всеми остальными фильтрами.",
+                    uk: "У бібліотеці вправ поруч з «Обраним» з'явився новий фільтр, який показує лише створені вами вправи. Він працює разом з «Обраним» і всіма іншими фільтрами.",
+                    pl: "Biblioteka ćwiczeń ma obok Ulubionych nowy filtr, który pokazuje tylko ćwiczenia utworzone przez Ciebie. Działa razem z Ulubionymi i wszystkimi pozostałymi filtrami.",
+                },
+            },
+            {
+                type: "improved",
+                text: {
+                    en: "Exercise library filters now apply as soon as you change them — no more Search button. The name search updates the list once you stop typing, or straight away when you press Enter.",
+                    cs: "Filtry v knihovně cviků se teď použijí hned, jak je změníte — tlačítko Hledat už není potřeba. Hledání podle názvu aktualizuje seznam, jakmile přestanete psát, nebo hned po stisku Enter.",
+                    de: "Die Filter der Übungsbibliothek greifen jetzt sofort, sobald du sie änderst — ohne Suchen-Button. Die Namenssuche aktualisiert die Liste, sobald du aufhörst zu tippen, oder sofort mit Enter.",
+                    fr: "Les filtres de la bibliothèque d'exercices s'appliquent désormais dès que vous les modifiez — plus besoin du bouton Rechercher. La recherche par nom met la liste à jour dès que vous arrêtez de taper, ou immédiatement avec Entrée.",
+                    ru: "Фильтры библиотеки упражнений теперь применяются сразу при изменении — кнопка «Поиск» больше не нужна. Поиск по названию обновляет список, как только вы перестаёте печатать, или сразу по нажатию Enter.",
+                    uk: "Фільтри бібліотеки вправ тепер застосовуються одразу після зміни — кнопка «Пошук» більше не потрібна. Пошук за назвою оновлює список, щойно ви перестаєте друкувати, або одразу після натискання Enter.",
+                    pl: "Filtry biblioteki ćwiczeń działają teraz od razu po zmianie — bez przycisku Szukaj. Wyszukiwanie po nazwie odświeża listę, gdy przestaniesz pisać, albo od razu po naciśnięciu Enter.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.26.0",
         date: "2026-10-21",
         title: {
