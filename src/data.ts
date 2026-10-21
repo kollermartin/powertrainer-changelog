@@ -19,6 +19,33 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.27.1",
+        date: "2026-10-21",
+        title: {
+            en: "Tidier filters on phones",
+            cs: "Přehlednější filtry na telefonu",
+            de: "Übersichtlichere Filter auf dem Handy",
+            fr: "Des filtres plus clairs sur téléphone",
+            ru: "Аккуратные фильтры на телефоне",
+            uk: "Охайніші фільтри на телефоні",
+            pl: "Przejrzystsze filtry na telefonie",
+        },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "On a phone, the filters in the exercise library and the trainer catalog no longer fill the screen. They open from a filter button, and a number on it shows how many filters are in use. The exercise name search, Favorites and your own exercises stay right on the page, and so does the catalog's sort. On a computer, nothing changes.",
+                    cs: "Na telefonu už filtry v knihovně cviků a v katalogu trenérů nezaberou celou obrazovku. Otevřete je tlačítkem filtru a číslo na něm ukazuje, kolik filtrů právě používáte. Hledání cviku podle názvu, Oblíbené a vlastní cviky zůstávají přímo na stránce, stejně jako řazení katalogu. Na počítači se nic nemění.",
+                    de: "Auf dem Handy füllen die Filter in der Übungsbibliothek und im Trainerkatalog nicht mehr den ganzen Bildschirm. Du öffnest sie über einen Filter-Button, und eine Zahl darauf zeigt, wie viele Filter aktiv sind. Die Namenssuche, Favoriten und deine eigenen Übungen bleiben direkt auf der Seite, ebenso die Sortierung des Katalogs. Am Computer ändert sich nichts.",
+                    fr: "Sur téléphone, les filtres de la bibliothèque d'exercices et du catalogue des entraîneurs n'occupent plus tout l'écran. Ils s'ouvrent depuis un bouton de filtre, et un chiffre dessus indique combien de filtres sont actifs. La recherche par nom, les Favoris et vos propres exercices restent directement sur la page, tout comme le tri du catalogue. Sur ordinateur, rien ne change.",
+                    ru: "На телефоне фильтры в библиотеке упражнений и в каталоге тренеров больше не занимают весь экран. Они открываются кнопкой фильтра, а число на ней показывает, сколько фильтров включено. Поиск по названию, «Избранное» и ваши собственные упражнения остаются прямо на странице, как и сортировка каталога. На компьютере ничего не меняется.",
+                    uk: "На телефоні фільтри в бібліотеці вправ і в каталозі тренерів більше не займають увесь екран. Вони відкриваються кнопкою фільтра, а число на ній показує, скільки фільтрів увімкнено. Пошук за назвою, «Обране» та ваші власні вправи залишаються просто на сторінці, як і сортування каталогу. На комп'ютері нічого не змінюється.",
+                    pl: "Na telefonie filtry w bibliotece ćwiczeń i w katalogu trenerów nie zajmują już całego ekranu. Otwierasz je przyciskiem filtra, a liczba na nim pokazuje, ile filtrów jest włączonych. Wyszukiwanie po nazwie, Ulubione i Twoje własne ćwiczenia zostają bezpośrednio na stronie, podobnie jak sortowanie katalogu. Na komputerze nic się nie zmienia.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.27.0",
         date: "2026-10-21",
         title: {
@@ -73,13 +100,13 @@ export const changelogEntries: ChangelogEntry[] = [
             {
                 type: "added",
                 text: {
-                    en: "Athletes now see a Discover card on Home listing what you can do for yourself: plan your own trainings (with video of your sets), competitions, personal bests, your own exercises and tutorials — and find a trainer, if you don't have one yet. Each item opens its page, and it's ticked once you have one. Close the card with ✕ whenever you like; it also goes away once everything is ticked.",
-                    cs: "Sportovci teď na Domů vidí kartu Objevte se vším, co zvládnete sami: naplánovat si vlastní tréninky (i s videem sérií), soutěže, osobní maxima, vlastní cviky a tutoriály — a najít si trenéra, pokud ho ještě nemáte. Každá položka otevře svou stránku a odškrtne se, jakmile ji máte. Kartu můžete kdykoli zavřít křížkem ✕; zmizí také, jakmile je vše odškrtnuté.",
-                    de: "Athleten sehen auf der Startseite jetzt eine Entdecken-Karte mit allem, was du selbst tun kannst: eigene Trainings planen (mit Video deiner Sätze), Wettkämpfe, Bestleistungen, eigene Übungen und Tutorials — und einen Trainer finden, falls du noch keinen hast. Jeder Punkt öffnet seine Seite und wird abgehakt, sobald du einen hast. Schließe die Karte jederzeit mit ✕; sie verschwindet auch, sobald alles abgehakt ist.",
-                    fr: "Les athlètes voient désormais sur l'Accueil une carte Découvrir qui liste ce que vous pouvez faire vous-même : planifier vos propres entraînements (avec la vidéo de vos séries), vos compétitions, vos records personnels, vos propres exercices et tutoriels — et trouver un entraîneur si vous n'en avez pas encore. Chaque élément ouvre sa page et se coche dès que vous en avez un. Fermez la carte avec ✕ quand vous le souhaitez ; elle disparaît aussi une fois tout coché.",
-                    ru: "Спортсмены теперь видят на Главной карточку «Узнайте», где перечислено, что вы можете делать сами: планировать собственные тренировки (с видео подходов), соревнования, личные рекорды, свои упражнения и обучающие видео — и найти тренера, если у вас его ещё нет. Каждый пункт открывает свою страницу и отмечается, как только у вас что-то есть. Закройте карточку крестиком ✕ в любой момент; она также исчезнет, когда всё будет отмечено.",
-                    uk: "Спортсмени тепер бачать на Головній картку «Дізнайтеся», де перелічено, що ви можете робити самі: планувати власні тренування (з відео підходів), змагання, особисті рекорди, власні вправи й навчальні відео — і знайти тренера, якщо у вас його ще немає. Кожен пункт відкриває свою сторінку й позначається, щойно у вас щось є. Закрийте картку хрестиком ✕ будь-коли; вона також зникне, коли все буде позначено.",
-                    pl: "Sportowcy widzą teraz na stronie głównej kartę Odkryj z tym, co możesz zrobić sam: zaplanować własne treningi (z wideo serii), zawody, rekordy, własne ćwiczenia i tutoriale — i znaleźć trenera, jeśli jeszcze go nie masz. Każda pozycja otwiera swoją stronę i zostaje odhaczona, gdy już coś masz. Zamknij kartę krzyżykiem ✕, kiedy chcesz; zniknie też, gdy wszystko będzie odhaczone.",
+                    en: "Athletes now find a “Discover what you can do yourself” card on their Dashboard. It shows everything you can manage on your own: plan your own trainings (with video of your sets), competitions and personal bests, create your own exercises and tutorials — and find a trainer if you don't have one yet. Each item takes you to its page and gets ticked once you've used it. Close the card with ✕ whenever you like; it also disappears on its own once everything is ticked.",
+                    cs: "Sportovci teď na Nástěnce najdou kartu „Objevte, co zvládnete sami“. Ukáže vám, co všechno můžete dělat sami: plánovat si vlastní tréninky (i s videem sérií), soutěže a osobní maxima, vytvářet vlastní cviky a tutoriály — a najít si trenéra, pokud ho ještě nemáte. Každá položka vás zavede na svou stránku a odškrtne se, jakmile ji začnete používat. Kartu můžete kdykoli zavřít křížkem ✕; zmizí i sama, jakmile bude vše odškrtnuté.",
+                    de: "Athleten sehen auf dem Dashboard jetzt eine Entdecken-Karte mit allem, was du selbst tun kannst: eigene Trainings planen (mit Video deiner Sätze), Wettkämpfe, Bestleistungen, eigene Übungen und Tutorials — und einen Trainer finden, falls du noch keinen hast. Jeder Punkt öffnet seine Seite und wird abgehakt, sobald du einen hast. Schließe die Karte jederzeit mit ✕; sie verschwindet auch, sobald alles abgehakt ist.",
+                    fr: "Les athlètes voient désormais sur le Tableau de bord une carte Découvrir qui liste ce que vous pouvez faire vous-même : planifier vos propres entraînements (avec la vidéo de vos séries), vos compétitions, vos records personnels, vos propres exercices et tutoriels — et trouver un entraîneur si vous n'en avez pas encore. Chaque élément ouvre sa page et se coche dès que vous en avez un. Fermez la carte avec ✕ quand vous le souhaitez ; elle disparaît aussi une fois tout coché.",
+                    ru: "Спортсмены теперь видят на Панели карточку «Узнайте», где перечислено, что вы можете делать сами: планировать собственные тренировки (с видео подходов), соревнования, личные рекорды, свои упражнения и обучающие видео — и найти тренера, если у вас его ещё нет. Каждый пункт открывает свою страницу и отмечается, как только у вас что-то есть. Закройте карточку крестиком ✕ в любой момент; она также исчезнет, когда всё будет отмечено.",
+                    uk: "Спортсмени тепер бачать на Панелі картку «Дізнайтеся», де перелічено, що ви можете робити самі: планувати власні тренування (з відео підходів), змагання, особисті рекорди, власні вправи й навчальні відео — і знайти тренера, якщо у вас його ще немає. Кожен пункт відкриває свою сторінку й позначається, щойно у вас щось є. Закрийте картку хрестиком ✕ будь-коли; вона також зникне, коли все буде позначено.",
+                    pl: "Sportowcy widzą teraz na Pulpicie kartę Odkryj z tym, co możesz zrobić sam: zaplanować własne treningi (z wideo serii), zawody, rekordy, własne ćwiczenia i tutoriale — i znaleźć trenera, jeśli jeszcze go nie masz. Każda pozycja otwiera swoją stronę i zostaje odhaczona, gdy już coś masz. Zamknij kartę krzyżykiem ✕, kiedy chcesz; zniknie też, gdy wszystko będzie odhaczone.",
                 },
             },
         ],
