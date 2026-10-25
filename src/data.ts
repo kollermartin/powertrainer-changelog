@@ -7,7 +7,7 @@ import type { ChangelogEntry } from "./types";
  *   1. Prepend a new ChangelogEntry to this array (newest at the top), and commit it.
  *   2. npm version minor for a feature, patch for an improvement or a fix — this tags v<x>.
  *   3. git push origin main && git push origin v<x> — the tag push is the release.
- *   4. In fe-web and fe-landing: npm install @powertrainer/changelog (naming it matters), then deploy.
+ *   4. In fe-web, fe-landing and fe-mobile: npm install @powertrainer/changelog (naming it matters), then deploy.
  *
  * Every string is written in all seven supported locales (en, cs, de, fr, ru, uk, pl) —
  * the same coverage both consuming apps ship. `en` is the only required one and

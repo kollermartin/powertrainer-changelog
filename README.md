@@ -1,7 +1,7 @@
 # @powertrainer/changelog
 
-Single source of truth for the PowerTrainer changelog, shared by **fe-web** (React 18) and
-**fe-landing** (React 19). Ships:
+Single source of truth for the PowerTrainer changelog, shared by **fe-web** (React 18),
+**fe-landing** (React 19) and **fe-mobile** (React Native, data only). Ships:
 
 - the changelog **data** (typed, fully translated into all seven supported locales),
 - a `localize()` helper,
@@ -47,6 +47,8 @@ The component is hook-free, so it renders as a server component directly inside 
 
 ### Data-only (render it yourself)
 
+fe-mobile renders this way, since `<Changelog />` renders DOM elements.
+
 ```tsx
 import { getChangelog, localize } from "@powertrainer/changelog";
 
@@ -67,7 +69,7 @@ getChangelog().map((entry) =>
 
 ## Adding a changelog entry (the release checklist)
 
-**This package is never published to npm.** Both consumers install it as a GitHub tag dependency
+**This package is never published to npm.** Every consumer installs it as a GitHub tag dependency
 (`"github:kollermartin/powertrainer-changelog#v1.17.0"`), so *pushing the tag* is the release, and
 `dist/` is built by the `prepare` script on the consumer's install rather than committed here.
 
@@ -78,9 +80,10 @@ getChangelog().map((entry) =>
 2. Commit the entry. Version convention in practice: a new feature is a **minor**, an improvement or
    a fix is a **patch**.
 3. `npm version minor` (or `patch` / `major`) — commits the bump and creates the `v<x>` tag.
-4. `git push origin main && git push origin v<x>`. The tag has to be on GitHub before either
+4. `git push origin main && git push origin v<x>`. The tag has to be on GitHub before any
    consumer can install it.
-5. In **fe-web** and **fe-landing**: `npm install @powertrainer/changelog`, commit, deploy.
+5. In **fe-web**, **fe-landing** and **fe-mobile**: `npm install @powertrainer/changelog`, commit,
+   deploy. fe-mobile's bump is JavaScript only, so it ships with the next build, no native rebuild.
 
 > ⚠️ **Name the package in step 5.** A bare `npm install` updates only the spec string in
 > `package.json` and leaves the lockfile resolved to the *old* commit — a lock that contradicts
