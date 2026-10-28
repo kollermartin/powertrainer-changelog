@@ -19,6 +19,33 @@ import type { ChangelogEntry } from "./types";
  */
 export const changelogEntries: ChangelogEntry[] = [
     {
+        version: "1.27.2",
+        date: "2026-10-28",
+        title: {
+            en: "Empty pages show the next step",
+            cs: "Prázdné stránky ukážou další krok",
+            de: "Leere Seiten zeigen den nächsten Schritt",
+            fr: "Les pages vides indiquent l'étape suivante",
+            ru: "Пустые страницы подсказывают следующий шаг",
+            uk: "Порожні сторінки підказують наступний крок",
+            pl: "Puste strony podpowiadają kolejny krok",
+        },
+        changes: [
+            {
+                type: "improved",
+                text: {
+                    en: "When a list is still empty — trainings on a day, competitions, personal bests, exercises, tutorials or clients — you can create the first one right there, and an empty Home widget takes you to its section. Since you can plan your own trainings, competitions and personal bests, these pages no longer say your trainer has to add them.",
+                    cs: "Když je seznam ještě prázdný — tréninky v daném dni, soutěže, osobní rekordy, cviky, tutoriály nebo klienti — můžete první položku vytvořit přímo tam a prázdný widget na úvodní stránce vás zavede do své sekce. Protože si tréninky, soutěže a osobní rekordy můžete plánovat sami, tyto stránky už neříkají, že je musí přidat váš trenér.",
+                    de: "Wenn eine Liste noch leer ist — Trainings an einem Tag, Wettkämpfe, Bestleistungen, Übungen, Tutorials oder Klienten —, kannst du den ersten Eintrag direkt dort anlegen, und ein leeres Widget auf der Startseite bringt dich zu seinem Bereich. Da du deine Trainings, Wettkämpfe und Bestleistungen selbst planen kannst, steht dort nicht mehr, dass dein Trainer sie anlegen muss.",
+                    fr: "Quand une liste est encore vide — entraînements d'un jour, compétitions, records personnels, exercices, tutoriels ou clients —, vous pouvez créer le premier élément directement depuis cette page, et un widget vide de l'accueil vous mène à sa section. Comme vous pouvez planifier vous-même vos entraînements, compétitions et records personnels, ces pages n'indiquent plus que votre entraîneur doit les ajouter.",
+                    ru: "Когда список ещё пуст — тренировки за день, соревнования, личные рекорды, упражнения, обучающие видео или клиенты, — вы можете создать первую запись прямо там, а пустой виджет на главной ведёт в свой раздел. Поскольку тренировки, соревнования и личные рекорды вы можете планировать сами, эти страницы больше не говорят, что их должен добавить тренер.",
+                    uk: "Коли список ще порожній — тренування за день, змагання, особисті рекорди, вправи, навчальні відео чи клієнти, — ви можете створити перший запис просто там, а порожній віджет на головній веде до свого розділу. Оскільки тренування, змагання та особисті рекорди ви можете планувати самі, ці сторінки більше не кажуть, що їх має додати тренер.",
+                    pl: "Gdy lista jest jeszcze pusta — treningi w danym dniu, zawody, rekordy osobiste, ćwiczenia, tutoriale czy klienci — możesz utworzyć pierwszą pozycję od razu na miejscu, a pusty widżet na stronie głównej przeniesie Cię do swojej sekcji. Ponieważ treningi, zawody i rekordy osobiste możesz planować sam, te strony nie mówią już, że musi je dodać Twój trener.",
+                },
+            },
+        ],
+    },
+    {
         version: "1.27.1",
         date: "2026-10-21",
         title: {
